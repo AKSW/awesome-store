@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+<title>WARC Record: {{ resource_iri }}</title>
+{% endblock %}
+
+{% block content %}
+<h1>WARC Record</h1>
+
+<pre>dowarc:WARCrecord</pre>
+<pre>{{ page.meta.resource_iri }}</pre>
+
+{{ page.content }}
+
+{% endblock %}

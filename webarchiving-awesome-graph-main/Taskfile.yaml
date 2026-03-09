@@ -1,0 +1,41 @@
+version: '3'
+
+dotenv: ['custom.env', 'default.env']
+
+vars:
+  AWESOME_FILE: ../awesome-web-archiving/README.md
+  BASE_IRI: http://awesome.org/iipc/
+
+tasks:
+  default:
+    desc: List all tasks
+    cmds:
+      - task -a
+
+  install:
+    desc: Install the dependencies with poetry
+    cmds:
+      - poetry install
+      - pipx install kisumu
+
+  run:
+    desc: Execute the command
+    cmds:
+      - poetry run python -m waag.cli --awesome-file {{.AWESOME_FILE}} --iri {{.BASE_IRI}} --output-dir graphs
+
+  test:
+    desc: Run tests
+    cmds:
+      - poetry run pytest
+
+  format:
+    desc: Format the code
+    aliases: ["ruff"]
+    cmds:
+      - poetry run ruff format
+      - poetry run ruff check --fix
+
+  build:
+    desc: Build the README
+    cmds:
+      - pipx run kisumu build -g graphs/awesome.ttl -t templates/README.md.jinja -o README.md

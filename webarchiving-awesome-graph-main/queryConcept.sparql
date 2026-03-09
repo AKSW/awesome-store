@@ -1,0 +1,12 @@
+CONSTRUCT {
+  ?concept a skos:Concept ;
+        dc:title ?label ;
+        dc:type skos:Concept ;
+        skos:broader ?broader .
+}
+WHERE {
+  ?concept a skos:Concept ;
+        rdfs:label ?label .
+
+  OPTIONAL { ?concept skos:broader ?broader }
+}

@@ -1,0 +1,120 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix rdact: <http://rdaregistry.info/termList/RDACarrierType/> .
+@prefix rdau: <http://rdaregistry.info/Elements/u/> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix lv: <http://purl.org/lobid/lv#> .
+@prefix dowarc: <https://github.com/DOWARC/dowarc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://d-nb.info/XX61027920>
+    a bibo:Series ; # Kollektion
+    dc:type bibo:Series ;
+    dc:identifier "(DE-101)XX61027920", "(OCoLC)7XX36221";
+    dc:title "Geschichte" ;
+    dc:subject <https://d-nb.info/gnd/4020517-4> ;
+    dcterms:subject <https://d-nb.info/gnd/4020517-4> ;
+    dcterms:issued "-" ;
+    dcterms:medium <http://rdaregistry.info/termList/RDACarrierType/1018>;
+    rdau:P60048 <http://rdaregistry.info/termList/RDACarrierType/1018>;
+    rdau:P60049 <http://rdaregistry.info/termList/RDAContentType/1020>, <https://d-nb.info/gnd/4596172-4>;
+    rdau:P60050 <http://rdaregistry.info/termList/RDAMediaType/1003>;
+    owl:sameAs <http://hub.culturegraph.org/resource/DNB-XX61027920> .
+
+<https://d-nb.info/XX48103730>
+    a bibo:Website ; # Website
+    dc:type bibo:Website ;
+    dc:identifier "(DE-101)XX48103730"  ;
+    dc:title "Example" ;
+    dc:relation <https://d-nb.info/XX61027920>, <https://example.org/> ;
+    dc:subject "Geschichte", <https://d-nb.info/gnd/4020517-4> ;
+    dcterms:isPartOf <https://d-nb.info/XX61027920> ;
+    dcterms:subject <https://d-nb.info/gnd/4020517-4> ;
+    dcterms:medium <http://rdaregistry.info/termList/RDACarrierType/1018>, <https://d-nb.info/gnd/4596172-4> ;
+    rdau:P60048 <http://rdaregistry.info/termList/RDACarrierType/1018>, <https://d-nb.info/gnd/4596172-4> ;
+    foaf:primaryTopic <https://example.org/> .
+
+<https://d-nb.info/XX48103749>
+    a lv:ArchivedWebPage ; # Zeitschnitt
+    dc:type lv:ArchivedWebPage ;
+    dc:identifier "(DE-101)XX48103749", <urn:pwid:webarchiv.dnb.de:2012-05-18:page:https://example.org/> ;
+    dc:date "2012-05-18T16:44:37"^^xsd:dateTime ;
+    dc:relation <https://d-nb.info/XX48103730>, <urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3>, <https://storagecluster.webarchiv.dnb.de/Crawl1-20120518024348-682ff1af-b7a0-e121-72dc-015056c02008-000.warc.gz> ;
+    dc:format <https://d-nb.info/gnd/4596172-4> , <http://rdaregistry.info/termList/RDACarrierType/1018>, <http://rdaregistry.info/termList/RDAMediaType/1003>, <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    dc:source <https://example.org/> ;
+    dcterms:issued "2012" ;
+    dcterms:created "2012-05-18T02:43:53Z"^^xsd:dateTime ;
+    dcterms:isPartOf <https://d-nb.info/XX48103730> ;
+    dcterms:medium <https://d-nb.info/gnd/4596172-4>, <http://rdaregistry.info/termList/RDACarrierType/1018>, <http://rdaregistry.info/termList/RDAMediaType/1003>, <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    dcterms:source <https://example.org/> ;
+    foaf:primaryTopic <https://example.org/> ;
+    lv:webPageArchived <https://example.org/> ;
+    bibo:issue "2012-05-18" ;
+    rdau:P60048 <http://rdaregistry.info/termList/RDACarrierType/1018> ;
+    rdau:P60049 <http://rdaregistry.info/termList/RDAContentType/1020> ;
+    rdau:P60050 <http://rdaregistry.info/termList/RDAMediaType/1003> ;
+    owl:sameAs <http://hub.culturegraph.org/resource/DNB-1048103749> .
+
+<https://example.org/> a schema:WebPage .
+
+<https://storagecluster.webarchiv.dnb.de/Crawl1-20120518024348-682ff1af-b7a0-e121-72dc-015056c02008-000.warc.gz>
+    a dowarc:WARCfile ; # WARC File
+    dc:type dowarc:WARCfile ;
+    dc:creator "Crawler" ;
+    dc:date "2012-05-18T02:43:53Z"^^xsd:dateTime ;
+    dc:format "application/warc" ;
+    dc:identifier "Crawl1-20120518024348-682ff1af-b7a0-e121-72dc-015056c02008-000.warc.gz" ;
+    dc:relation <urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3>, <urn:uuid:4c9a8a1a-5933-438c-b4d8-07996b55087e>, <urn:uuid:b0bdc768-5f4d-44d8-ab2b-34da42b0457f> .
+
+<urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3>
+    a dowarc:WARCrecord ; # WARC Record, warcinfo
+    dowarc:WARC-Type "warcinfo" ;
+    dowarc:WARC-Filename "Crawl1-20120518024348-682ff1af-b7a0-e121-72dc-015056c02008-000.warc.gz" ;
+    dowarc:WARC-Date "2012-05-18T02:43:53Z"^^xsd:dateTime ;
+    dowarc:WARC-Record-ID <urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3> ;
+    dc:type dowarc:WARCrecord ;
+    dc:date "2012-05-18T02:43:53Z"^^xsd:dateTime ;
+    dc:identifier <urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3> ;
+    dc:relation <https://storagecluster.webarchiv.dnb.de/Crawl1-20120518024348-682ff1af-b7a0-e121-72dc-015056c02008-000.warc.gz> ;
+    dc:format "application/warc-fields", "11790b" ;
+    dcterms:format "application/warc-fields" ;
+    dcterms:extent "11790b" .
+
+<urn:uuid:4c9a8a1a-5933-438c-b4d8-07996b55087e>
+    a dowarc:WARCrecord ; # WARC Record, request, seed request
+    dowarc:WARC-Type "request" ;
+    dowarc:WARC-Target-URI <https://example.org/> ;
+    dowarc:WARC-Date "2012-05-18T02:43:54Z"^^xsd:dateTime ;
+    dowarc:WARC-Record-ID <urn:uuid:4c9a8a1a-5933-438c-b4d8-07996b55087e> ;
+    dowarc:WARC-Warcinfo-ID <urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3> ;
+    dowarc:WARC-Concurrent-To <urn:uuid:b0bdc768-5f4d-44d8-ab2b-34da42b0457f> ;
+    dc:type dowarc:WARCrecord ;
+    dc:date "2012-05-18T02:43:54Z"^^xsd:dateTime ;
+    dc:identifier <urn:uuid:4c9a8a1a-5933-438c-b4d8-07996b55087e> ;
+    dc:source <https://example.org/> ;
+    dc:relation <urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3>, <urn:uuid:b0bdc768-5f4d-44d8-ab2b-34da42b0457f> ;
+    dc:format "application/http;msgtype=request", "271b" ;
+    dcterms:format "application/http;msgtype=request" ;
+    dcterms:extent "271b" .
+
+<urn:uuid:b0bdc768-5f4d-44d8-ab2b-34da42b0457f>
+    a dowarc:WARCrecord ; # WARC Record, response, response to seed request
+    dowarc:WARC-Type "response" ;
+    dowarc:WARC-Target-URI <https://example.org/> ;
+    dowarc:WARC-Date "2012-05-18T02:43:54Z"^^xsd:dateTime ;
+    dowarc:WARC-Record-ID <urn:uuid:b0bdc768-5f4d-44d8-ab2b-34da42b0457f> ;
+    dowarc:WARC-Warcinfo-ID <urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3> ;
+    dc:type dowarc:WARCrecord ;
+    dc:date "2012-05-18T02:43:54Z"^^xsd:dateTime ;
+    dc:identifier <urn:uuid:b0bdc768-5f4d-44d8-ab2b-34da42b0457f>, <urn:pwid:webarchiv.dnb.de:2012-05-18:part:https://example.org/> ;
+    dc:source <https://example.org/> ;
+    dc:relation <urn:uuid:97792be5-b319-4c65-8b00-224f1cad79a3>, <urn:uuid:b0bdc768-5f4d-44d8-ab2b-34da42b0457f> ;
+    dc:format "application/http;msgtype=response", "4364b" ;
+    dcterms:format "application/http;msgtype=response" ;
+    dcterms:extent "4364b" .
