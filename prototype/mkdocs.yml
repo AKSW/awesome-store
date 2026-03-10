@@ -1,0 +1,16 @@
+site_name: AKSW demo Store
+logo_path: resources/images/logo.png
+theme:
+  name: null
+  custom_dir: templates
+
+plugins:
+  - mkrdf:
+      graph_file: ./awesome.ttl
+      # sparql_endpoint: http://localhost:8080/
+      base_iri: http://localhost:8080/
+      class_template_map:
+          http://purl.org/ontology/bibo/Series: category.jinja
+
+      instance_template_map:
+        http://localhost:8000/: home.jinja

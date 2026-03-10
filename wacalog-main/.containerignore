@@ -1,8 +1,0 @@
-data
-site
-testsite
-Containerfile
-poetry.lock
-pyproject.toml
-Taskfile.yaml
-README.md

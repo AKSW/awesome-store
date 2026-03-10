@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ resource | property("rdfs:label") }}</h1>
+
+<p>{{ resource | property("dct:description") }}</p>
+
+<h2>Subcategories</h2>
+
+{% set sub_query = "
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?sub {
+  ?sub skos:broader ?resourceIri .
+}
+" %}
+
+<ul>
+{% for row in resource | query(sub_query) %}
+    {% set title = row.sub | property("rdfs:label") %}
+
+    <li>
+        <a href="{{ row.sub | iri_resolver }}">
+            {{ title }}
+        </a>
+    </li>
+{% endfor %}
+</ul>
+
+{% endblock %}

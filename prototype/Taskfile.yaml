@@ -1,0 +1,28 @@
+version: 3
+
+tasks:
+  default:
+    desc: List all tasks
+    cmds:
+      - task -l
+
+  install:
+    desc: Serve the site
+    cmds:
+      - poetry install
+
+  build:
+    desc: Build the site
+    cmds:
+      - poetry run mkdocs build
+
+  serve:
+    desc: Serve the site
+    cmds:
+      - poetry run mkdocs serve
+
+  serve:endpoint:
+    desc: Serve the site
+    summary: Serve the data with [sparql-file](https://github.com/AKSW/sparql-file)
+    cmds:
+      - sparql-file --port 8080 data/websites.ttl
