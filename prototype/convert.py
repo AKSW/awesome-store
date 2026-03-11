@@ -1,20 +1,25 @@
 from rdflib import Graph, Namespace, URIRef
-from rdflib.namespace import RDF, SKOS
+from rdflib.namespace import RDF, SKOS, FOAF
 
 # namespaces
 BASE = "http://awesome.org/iipc/"
-NEW_BASE = "http://awesome.org/iipc/categories/"
+CAT_BASE = "http://awesome.org/iipc/categories/"
+PROJ_BASE = "http://awesome.org/iipc/projects/"
 
 EX = Namespace("http://awesome.org/schema#")
+DOAP = Namespace("http://usefulinc.com/ns/doap#")
+SIOC = Namespace("http://rdfs.org/sioc/ns#")
 
 g = Graph()
 g.parse("awesome.ttl", format="turtle")
 
 new_graph = Graph()
 
-# store mapping oldIRI -> newIRI
-iri_map = {}
+# mappings
+category_map = {}
+project_map = {}
 
+# convert categories
 for concept in g.subjects(RDF.type, SKOS.Concept):
 
     iri_str = str(concept)
@@ -24,23 +29,42 @@ for concept in g.subjects(RDF.type, SKOS.Concept):
     else:
         slug = iri_str.split("/")[-1]
 
-    new_iri = URIRef(NEW_BASE + slug)
+    new_iri = URIRef(CAT_BASE + slug)
 
-    iri_map[concept] = new_iri
+    category_map[concept] = new_iri
+
+# convert projects
+for project in g.subjects(RDF.type, SIOC.Item):
+
+    iri_str = str(project)
+    slug = iri_str.rstrip("/").split("/")[-1]
+
+    new_iri = URIRef(PROJ_BASE + slug)
+
+    project_map[project] = new_iri
 
 # rewrite triples
 for s, p, o in g:
 
-    if s in iri_map:
-        s = iri_map[s]
+    # rewrite subject
+    if s in category_map:
+        s = category_map[s]
+    elif s in project_map:
+        new_project = project_map[s]
 
-    if o in iri_map:
-        o = iri_map[o]
+        # add homepage triple
+        new_graph.add((new_project, FOAF.homepage, s))
+
+        s = new_project
+
+    # rewrite object
+    if o in category_map:
+        o = category_map[o]
 
     new_graph.add((s, p, o))
 
 # classify Category / SubCategory
-for concept, new_iri in iri_map.items():
+for concept, new_iri in category_map.items():
 
     parent = list(g.objects(concept, SKOS.broader))
 

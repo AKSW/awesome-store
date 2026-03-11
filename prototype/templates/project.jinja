@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+<title>Webpage: {{ sub_cat }}</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Project: {{ resource["rdfs:label"] | first }}</h1>
+
+    <p>{{ resource["dcterms:description"] | first }}</p>
+
+    <h2>Home Page</h2>
+    <a href="{{ resource["doap:homepage"] | first  }}">
+            {{ resource["rdfs:label"] | first }}
+            </a>
+{% endblock %}
+
+
+

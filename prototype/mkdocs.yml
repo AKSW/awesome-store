@@ -12,6 +12,7 @@ plugins:
       class_template_map:
           http://awesome.org/schema#Category: category.jinja
           http://awesome.org/schema#SubCategory: sub_category.jinja
-
+          http://rdfs.org/sioc/ns#Item: project.jinja
+          
       instance_template_map:
         http://awesome.org/: home.jinja
