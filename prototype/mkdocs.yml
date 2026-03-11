@@ -6,11 +6,12 @@ theme:
 
 plugins:
   - mkrdf:
-      graph_file: ./awesome.ttl
+      graph_file: ./awesome_new.ttl
       # sparql_endpoint: http://localhost:8080/
-      base_iri: http://localhost:8080/
+      base_iri: http://awesome.org/
       class_template_map:
-          http://purl.org/ontology/bibo/Series: category.jinja
+          http://awesome.org/schema#Category: category.jinja
+          http://awesome.org/schema#SubCategory: sub_category.jinja
 
       instance_template_map:
-        http://localhost:8000/: home.jinja
+        http://awesome.org/: home.jinja

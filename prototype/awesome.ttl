@@ -9,11 +9,6 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix bibo: <http://purl.org/ontology/bibo/> .
 
-<categories>
-    a bibo:Series ;
-    dc:type bibo:Series ;
-    dc:title "Catagories" .
-
 <http://awesome.org/iipc/#trainingdocumentation> a skos:Concept ;
     rdfs:label "Training/Documentation" .
 

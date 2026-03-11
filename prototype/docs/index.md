@@ -1,4 +1,4 @@
-resource_iri: http://localhost:8080/
+resource_iri: http://awesome.org/
 template: home.jinja
 
 

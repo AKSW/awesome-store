@@ -1,12 +1,10 @@
 {% extends "base.html" %}
 
-{% set collection_query = "prefix bibo: <http://purl.org/ontology/bibo/> select ?resource_iri { ?resource_iri a bibo:Series . }" %}
-
 {% set category_query = " prefix skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT ?resource_iri {
   ?resource_iri a skos:Concept ;
        rdfs:label ?title .
-  OPTIONAL { ?resource_iri dct:description ?description }
+  OPTIONAL { ?resource_iri dcterms:description ?description }
   FILTER NOT EXISTS { ?resource_iri skos:broader ?parent }
 }
 " %}
@@ -18,15 +16,8 @@ SELECT ?resource_iri {
 {% block content %}
 
     {{ page.content }}
-    <h2>Collections</h2>
-    <ul>
-        {% for row in resource | query(collection_query) %}
-        {% set title = row.resource_iri | property("dc:title") %}
-        <li><a href="{{ row.resource_iri | iri_resolver }}">{{ title }} ({{ row.resource_iri }})</a></li>
-        {% endfor %}
-    </ul>
-    <h2>Categories</h2>
 
+    <h2>Categories</h2>
     <ul>
 
         {% for cat in resource | query(category_query) %}

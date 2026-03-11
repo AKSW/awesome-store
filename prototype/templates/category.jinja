@@ -1,30 +1,45 @@
 {% extends "base.html" %}
 
-{% block content %}
-
-<h1>{{ resource | property("rdfs:label") }}</h1>
-
-<p>{{ resource | property("dct:description") }}</p>
-
-<h2>Subcategories</h2>
-
-{% set sub_query = "
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT ?sub {
-  ?sub skos:broader ?resourceIri .
+{% set subcat_query = " prefix skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?resource_iri {
+  ?resource_iri a skos:Concept ;
+       rdfs:label ?title .
+  ?resource_iri skos:broader ?resourceIri .
+}
+" %}
+{% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
+SELECT ?resource_iri {
+  ?resource_iri a sioc:Item ;
+       rdfs:label ?title .
+  ?resource_iri doap:category ?resourceIri .
 }
 " %}
 
-<ul>
-{% for row in resource | query(sub_query) %}
-    {% set title = row.sub | property("rdfs:label") %}
-
-    <li>
-        <a href="{{ row.sub | iri_resolver }}">
-            {{ title }}
-        </a>
-    </li>
-{% endfor %}
-</ul>
-
+{% block htmltitle %}
+<title>Webpage: {{ resource_iri }}</title>
 {% endblock %}
+
+{% block content %}
+    <h1>Catagory: {{ resource["rdfs:label"] | first }}</h1>
+
+    <p>{{ resource["dcterms:description"] | first }}</p>
+
+    <h2>Subcategories</h2>
+    <ul>
+        {% for row in resource | query(subcat_query) %}
+        {% set title = row.resource_iri | property("rdfs:label") %}
+        <li><a href="{{ row.resource_iri | iri_resolver }}">{{ title }} ({{ row.resource_iri }})</a></li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Project</h2>
+    <ul>
+        {% for row in resource | query(cat_item_query) %}
+        {% set title = row.resource_iri | property("rdfs:label") %}
+        <li><a href="{{ row.resource_iri | iri_resolver }}">{{ title }} ({{ row.resource_iri }})</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+
+
