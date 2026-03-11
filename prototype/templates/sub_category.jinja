@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
+SELECT ?resource_iri {
+  ?resource_iri a sioc:Item ;
+       rdfs:label ?title .
+  ?resource_iri doap:category ?resourceIri .
+}
+" %}
+
+{% block htmltitle %}
+<title>Webpage: {{ sub_cat }}</title>
+{% endblock %}
+
+{% block content %}
+    <h1>SubCatagory: {{ resource["rdfs:label"] | first }}</h1>
+
+    <p>{{ resource["dcterms:description"] | first }}</p>
+
+    <h2>Project</h2>
+    <ul>
+        {% for row in resource | query(cat_item_query) %}
+        {% set title = row.resource_iri | property("rdfs:label") %}
+        <li><a href="{{ row.resource_iri | iri_resolver }}">{{ title }} ({{ row.resource_iri }})</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
+
+
+
