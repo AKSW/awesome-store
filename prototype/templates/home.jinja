@@ -1,17 +1,12 @@
 {% extends "base.html" %}
 
 {% set category_query = " prefix skos: <http://www.w3.org/2004/02/skos/core#>
-SELECT ?resource_iri {
-  ?resource_iri a skos:Concept ;
+SELECT ?resource_cat {
+  ?resource_cat a skos:Concept ;
        rdfs:label ?title .
-  OPTIONAL { ?resource_iri dcterms:description ?description }
-  FILTER NOT EXISTS { ?resource_iri skos:broader ?parent }
+  FILTER NOT EXISTS { ?resource_cat skos:broader ?parent }
 }
 " %}
-
-{% block htmltitle %}
-    <title>Demopage</title>
-{% endblock %}
 
 {% block content %}
 
@@ -21,13 +16,11 @@ SELECT ?resource_iri {
     <ul>
 
         {% for cat in resource | query(category_query) %}
-        {% set title = cat.resource_iri | property("rdfs:label") %}
+        {% set title = cat.resource_cat | property("rdfs:label") %}
 
-        <li>
-            <a href="{{ cat.resource_iri | iri_resolver  }}">
-            {{ title }} ({{ cat.resource_iri }})
-            </a>
-        </li>
+        <li><a href="{{ cat.resource_cat | iri_resolver  }}">
+            {{ title }}
+        </a></li>
         {% endfor %}
 
     </ul>

@@ -3,7 +3,9 @@ logo_path: resources/images/logo.png
 theme:
   name: null
   custom_dir: templates
-
+extra_css:
+  - resources/css/bootstrap.min.css
+  - resources/css/custom.css
 plugins:
   - mkrdf:
       graph_file: ./awesome_new.ttl

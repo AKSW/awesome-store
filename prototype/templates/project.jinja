@@ -1,19 +1,52 @@
 {% extends "base.html" %}
 
-{% block htmltitle %}
-<title>Webpage: {{ sub_cat }}</title>
-{% endblock %}
-
 {% block content %}
-    <h1>Project: {{ resource["rdfs:label"] | first }}</h1>
 
-    <p>{{ resource["dcterms:description"] | first }}</p>
+<h1>
+  {{ resource["rdfs:label"] | first }}
 
-    <h2>Home Page</h2>
-    <a href="{{ resource["doap:homepage"] | first  }}">
-            {{ resource["rdfs:label"] | first }}
-            </a>
+    {% for t in resource["rdf:type"] %}
+        {% if (t | iri_resolver) == "http://usefulinc.com/ns/doap#Project" %} 💽
+        {% endif %}
+    {% endfor %}    
+</h1>
+
+{% set description =
+    resource["doap:description"] | first
+    or resource["dcterms:description"] | first
+%}
+
+{% set homepage =
+    resource["doap:homepage"] | first
+    or resource["foaf:homepage"] | first
+%}
+
+{% set stars = resource["ns1:num_stars"] | first %}
+{% set watchers = resource["ns1:num_watchers"] | first %}
+{% set moved = resource["rdfs:seeAlso"] | first %}
+
+{% if description %}
+<p>{{ description }}</p>
+{% endif %}
+
+{% if homepage %}
+<h2>Home Page</h2>
+<a href="{{ homepage | iri_resolver }}">
+    {{ homepage | iri_resolver }}
+</a>
+{% endif %}
+
+{% if stars or watchers %}
+<h2>Repository Stats</h2>
+<p>
+{% if stars %} ⭐ {{ stars }} &nbsp; {% endif %}
+{% if watchers %} 👀 {{ watchers }} {% endif %}
+</p>
+{% endif %}
+
+{% if moved %}
+<h2>Status</h2>
+<p>➡️ moved to <a href="{{ moved | string }}">{{ moved | string }}</a></p>
+{% endif %}
+
 {% endblock %}
-
-
-
