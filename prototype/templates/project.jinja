@@ -2,51 +2,61 @@
 
 {% block content %}
 
-<h1>
-  {{ resource["rdfs:label"] | first }}
+    <div class="content-wrapper">
+        <h1>
+            {{ resource["rdfs:label"] | first }}
 
-    {% for t in resource["rdf:type"] %}
-        {% if (t | iri_resolver) == "http://usefulinc.com/ns/doap#Project" %} 💽
+            {% for t in resource["rdf:type"] %}
+                {% if (t | iri_resolver) == "http://usefulinc.com/ns/doap#Project" %} 💽
+                {% endif %}
+            {% endfor %}    
+        </h1>
+
+        {% set description =
+            resource["doap:description"] | first
+            or resource["dcterms:description"] | first
+        %}
+
+        {% set homepage =
+            resource["doap:homepage"] | first
+        %}
+
+        {% set stars = resource["ns1:num_stars"] | first %}
+        {% set watchers = resource["ns1:num_watchers"] | first %}
+        {% set moved = resource["rdfs:seeAlso"] | first %}
+        {% set sameas = resource["owl:sameAs"] | first %}
+
+
+        {% if description %}
+            <p class="description">{{ description }}</p>
         {% endif %}
-    {% endfor %}    
-</h1>
 
-{% set description =
-    resource["doap:description"] | first
-    or resource["dcterms:description"] | first
-%}
+        {% if sameas %}
+            <h2>Same As</h2>
+            <a href="{{ sameas | iri_resolver }}">
+                {{ sameas | iri_resolver }}
+            </a>
+        {% endif %}
 
-{% set homepage =
-    resource["doap:homepage"] | first
-    or resource["foaf:homepage"] | first
-%}
+        {% if homepage %}
+            <h3>Home Page</h3>
+            <a href="{{ homepage | iri_resolver }}">
+                {{ homepage | iri_resolver }}
+            </a>
+        {% endif %}
 
-{% set stars = resource["ns1:num_stars"] | first %}
-{% set watchers = resource["ns1:num_watchers"] | first %}
-{% set moved = resource["rdfs:seeAlso"] | first %}
+        {% if stars or watchers %}
+            <h3>Repository Stats</h3>
+            <p>
+            {% if stars %} ⭐ {{ stars }} &nbsp; {% endif %}
+            {% if watchers %} 👀 {{ watchers }} {% endif %}
+            </p>
+        {% endif %}
 
-{% if description %}
-<p>{{ description }}</p>
-{% endif %}
-
-{% if homepage %}
-<h2>Home Page</h2>
-<a href="{{ homepage | iri_resolver }}">
-    {{ homepage | iri_resolver }}
-</a>
-{% endif %}
-
-{% if stars or watchers %}
-<h2>Repository Stats</h2>
-<p>
-{% if stars %} ⭐ {{ stars }} &nbsp; {% endif %}
-{% if watchers %} 👀 {{ watchers }} {% endif %}
-</p>
-{% endif %}
-
-{% if moved %}
-<h2>Status</h2>
-<p>➡️ moved to <a href="{{ moved | string }}">{{ moved | string }}</a></p>
-{% endif %}
+        {% if moved %}
+            <h3>Status</h3>
+            <p>➡️ moved to <a href="{{ moved | string }}">{{ moved | string }}</a></p>
+        {% endif %}
+    </div>
 
 {% endblock %}

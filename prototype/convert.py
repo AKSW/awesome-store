@@ -1,5 +1,6 @@
 from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import RDF, SKOS, FOAF
+from rdflib.namespace import OWL, RDFS
 
 # namespaces
 BASE = "http://awesome.org/iipc/"
@@ -51,9 +52,7 @@ for s, p, o in g:
         s = category_map[s]
     elif s in project_map:
         new_project = project_map[s]
-
-        # add homepage triple
-        new_graph.add((new_project, FOAF.homepage, s))
+        new_graph.add((new_project, OWL.sameAs, s))
 
         s = new_project
 

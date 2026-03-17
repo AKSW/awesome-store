@@ -2,6 +2,7 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ns1: <https://siodc.example.org/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,7 +15,7 @@
     rdfs:label "The Web as History" ;
     dcterms:description "An open-source book that provides a conceptual overview to web archiving research, as well as several case studies." ;
     doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
-    foaf:homepage <https://www.uclpress.co.uk/products/84010> .
+    owl:sameAs <https://www.uclpress.co.uk/products/84010> .
 
 <http://awesome.org/iipc/projects/ArchiveBox> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -32,7 +33,7 @@
     doap:repository <https://github.com/ArchiveBox/ArchiveBox.git>,
         <https://github.com/ArchiveBox/ArchiveBox.svn> ;
     doap:shortdesc "🗃 Open source self-hosted web archiving. Takes URLs/browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more..." ;
-    foaf:homepage <https://github.com/ArchiveBox/ArchiveBox> ;
+    owl:sameAs <https://github.com/ArchiveBox/ArchiveBox> ;
     ns1:num_stars 25001 ;
     ns1:num_watchers 178 .
 
@@ -51,7 +52,7 @@
     doap:repository <https://github.com/helgeho/ArchiveSpark.git>,
         <https://github.com/helgeho/ArchiveSpark.svn> ;
     doap:shortdesc "An Apache Spark framework for easy data processing, extraction as well as derivation for web archives and archival collections, developed at Internet Archive." ;
-    foaf:homepage <https://github.com/helgeho/ArchiveSpark> ;
+    owl:sameAs <https://github.com/helgeho/ArchiveSpark> ;
     ns1:num_stars 152 ;
     ns1:num_watchers 15 .
 
@@ -69,14 +70,14 @@
     doap:repository <https://github.com/recrm/ArchiveTools.git>,
         <https://github.com/recrm/ArchiveTools.svn> ;
     doap:shortdesc "A collection of tools for archiving and analysing the internet." ;
-    foaf:homepage <https://github.com/recrm/ArchiveTools> ;
+    owl:sameAs <https://github.com/recrm/ArchiveTools> ;
     ns1:num_stars 78 ;
     ns1:num_watchers 5 .
 
 <http://awesome.org/iipc/projects/Category:Web_Crawl> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "The Web Crawl section of COPTR" ;
     doap:category <http://awesome.org/iipc/categories/other-awesome-lists> ;
-    foaf:homepage <http://coptr.digipres.org/Category:Web_Crawl> .
+    owl:sameAs <http://coptr.digipres.org/Category:Web_Crawl> .
 
 <http://awesome.org/iipc/projects/HadoopConcatGz> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -92,7 +93,7 @@
     doap:repository <https://github.com/helgeho/HadoopConcatGz.git>,
         <https://github.com/helgeho/HadoopConcatGz.svn> ;
     doap:shortdesc "A Splitable Hadoop InputFormat for Concatenated GZIP Files and *.(w)arc.gz" ;
-    foaf:homepage <https://github.com/helgeho/HadoopConcatGz> ;
+    owl:sameAs <https://github.com/helgeho/HadoopConcatGz> ;
     ns1:num_stars 9 ;
     ns1:num_watchers 2 .
 
@@ -111,7 +112,7 @@
     doap:repository <https://github.com/machawk1/Mink.git>,
         <https://github.com/machawk1/Mink.svn> ;
     doap:shortdesc "Chrome extension that uses Memento to indicate that a page a user is viewing on the live web has an archived copy and to give the user access to the copy" ;
-    foaf:homepage <https://github.com/machawk1/Mink> ;
+    owl:sameAs <https://github.com/machawk1/Mink> ;
     ns1:num_stars 54 ;
     ns1:num_watchers 4 .
 
@@ -119,7 +120,7 @@
     rdfs:label "@NetPreserve" ;
     dcterms:description "Official IIPC handle." ;
     doap:category <http://awesome.org/iipc/categories/twitter> ;
-    foaf:homepage <https://twitter.com/NetPreserve> .
+    owl:sameAs <https://twitter.com/NetPreserve> .
 
 <http://awesome.org/iipc/projects/PANDORAE> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -137,7 +138,7 @@
     doap:repository <https://github.com/Guillaume-Levrier/PANDORAE.git>,
         <https://github.com/Guillaume-Levrier/PANDORAE.svn> ;
     doap:shortdesc "A data retrieval & exploration protocol designed to investigate science and policy processes" ;
-    foaf:homepage <https://github.com/Guillaume-Levrier/PANDORAE> ;
+    owl:sameAs <https://github.com/Guillaume-Levrier/PANDORAE> ;
     ns1:num_stars 14 ;
     ns1:num_watchers 2 .
 
@@ -146,7 +147,7 @@
     rdfs:label "Reconstructive" ;
     dcterms:description "Reconstructive is a ServiceWorker module for client-side reconstruction of composite mementos by rerouting resource requests to corresponding archived copies (JavaScript)." ;
     doap:category <http://awesome.org/iipc/categories/replay> ;
-    foaf:homepage <https://oduwsdl.github.io/Reconstructive/> .
+    owl:sameAs <https://oduwsdl.github.io/Reconstructive/> .
 
 <http://awesome.org/iipc/projects/SingleFile> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -164,7 +165,7 @@
     doap:repository <https://github.com/gildas-lormeau/SingleFile.git>,
         <https://github.com/gildas-lormeau/SingleFile.svn> ;
     doap:shortdesc "Web Extension for saving a faithful copy of a complete web page in a single HTML file" ;
-    foaf:homepage <https://github.com/gildas-lormeau/SingleFile> ;
+    owl:sameAs <https://github.com/gildas-lormeau/SingleFile> ;
     ns1:num_stars 19164 ;
     ns1:num_watchers 131 .
 
@@ -174,7 +175,7 @@
     dcterms:description "A transactional archive that selectively captures and stores transactions that take place between a web client (browser) and a web server. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <http://mementoweb.github.io/SiteStory/> .
+    owl:sameAs <http://mementoweb.github.io/SiteStory/> .
 
 <http://awesome.org/iipc/projects/Sparkling> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -191,7 +192,7 @@
     doap:repository <https://github.com/internetarchive/Sparkling.git>,
         <https://github.com/internetarchive/Sparkling.svn> ;
     doap:shortdesc "Internet Archive's Sparkling Data Processing Library" ;
-    foaf:homepage <https://github.com/internetarchive/Sparkling> ;
+    owl:sameAs <https://github.com/internetarchive/Sparkling> ;
     ns1:num_stars 13 ;
     ns1:num_watchers 20 .
 
@@ -211,14 +212,14 @@
     doap:repository <https://github.com/N0taN3rd/Squidwarc.git>,
         <https://github.com/N0taN3rd/Squidwarc.svn> ;
     doap:shortdesc "Squidwarc is a high fidelity, user scriptable, archival crawler that uses Chrome or Chromium with or without a head" ;
-    foaf:homepage <https://github.com/N0taN3rd/Squidwarc> ;
+    owl:sameAs <https://github.com/N0taN3rd/Squidwarc> ;
     ns1:num_stars 171 ;
     ns1:num_watchers 9 .
 
 <http://awesome.org/iipc/projects/Web-Archiving-Community> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Web Archiving Community" ;
     doap:category <http://awesome.org/iipc/categories/other-awesome-lists> ;
-    foaf:homepage <https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community> .
+    owl:sameAs <https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community> .
 
 <http://awesome.org/iipc/projects/Web2Warc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -235,7 +236,7 @@
     doap:repository <https://github.com/helgeho/Web2Warc.git>,
         <https://github.com/helgeho/Web2Warc.svn> ;
     doap:shortdesc "An easy-to-use and highly customizable crawler that enables you to create your own little Web archives (WARC/CDX)" ;
-    foaf:homepage <https://github.com/helgeho/Web2Warc> ;
+    owl:sameAs <https://github.com/helgeho/Web2Warc> ;
     ns1:num_stars 25 ;
     ns1:num_watchers 3 .
 
@@ -247,20 +248,20 @@
     dcterms:description "Browser extension for Firefox and Chrome which lets you archive web pages you visit. " ;
     doap:category <http://awesome.org/iipc/categories/In_Development>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <https://github.com/WebMemex> .
+    owl:sameAs <https://github.com/WebMemex> .
 
 <http://awesome.org/iipc/projects/WebSciDL> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "@WebSciDL" ;
     dcterms:description "ODU Web Science and Digital Libraries Research Group." ;
     doap:category <http://awesome.org/iipc/categories/twitter> ;
-    foaf:homepage <https://twitter.com/WebSciDL> .
+    owl:sameAs <https://twitter.com/WebSciDL> .
 
 <http://awesome.org/iipc/projects/aibjbgmpmnidnmagaefhmcjhadpffaoi> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Chrome link checker" ;
     dcterms:description "Browser extension: basic link checker." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <https://chrome.google.com/webstore/detail/link-checker/aibjbgmpmnidnmagaefhmcjhadpffaoi> .
+    owl:sameAs <https://chrome.google.com/webstore/detail/link-checker/aibjbgmpmnidnmagaefhmcjhadpffaoi> .
 
 <http://awesome.org/iipc/projects/arch> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -277,7 +278,7 @@
     doap:repository <https://github.com/internetarchive/arch.git>,
         <https://github.com/internetarchive/arch.svn> ;
     doap:shortdesc "Web application for distributed compute analysis of Archive-It web archive collections." ;
-    foaf:homepage <https://github.com/internetarchive/arch> ;
+    owl:sameAs <https://github.com/internetarchive/arch> ;
     ns1:num_stars 20 ;
     ns1:num_watchers 20 .
 
@@ -285,7 +286,7 @@
     rdfs:label "Archive-It" ;
     dcterms:description "From the Internet Archive." ;
     doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
-    foaf:homepage <https://archive-it.org/> .
+    owl:sameAs <https://archive-it.org/> .
 
 <http://awesome.org/iipc/projects/archivenow> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -302,7 +303,7 @@
     doap:repository <https://github.com/oduwsdl/archivenow.git>,
         <https://github.com/oduwsdl/archivenow.svn> ;
     doap:shortdesc "A Tool To Push Web Resources Into Web Archives" ;
-    foaf:homepage <https://github.com/oduwsdl/archivenow> ;
+    owl:sameAs <https://github.com/oduwsdl/archivenow> ;
     ns1:num_stars 422 ;
     ns1:num_watchers 20 .
 
@@ -310,20 +311,20 @@
     rdfs:label "Archivers Slack" ;
     dcterms:description "" ;
     doap:category <http://awesome.org/iipc/categories/slack> ;
-    foaf:homepage <https://archivers.slack.com> .
+    owl:sameAs <https://archivers.slack.com> .
 
 <http://awesome.org/iipc/projects/archivesunleashed.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Archives Unleashed Slack" ;
     dcterms:description "" ;
     doap:category <http://awesome.org/iipc/categories/slack> ;
-    foaf:homepage <https://archivesunleashed.slack.com/> .
+    owl:sameAs <https://archivesunleashed.slack.com/> .
 
 <http://awesome.org/iipc/projects/archivewebpage> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "ArchiveWeb.Page" ;
     dcterms:description "A plugin for Chrome and other Chromium based browsers that lets you interactively archive web pages, replay them, and export them as WARC & WACZ files. Also available as an Electron based desktop application." ;
     doap:category <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <https://webrecorder.net/archivewebpage/> .
+    owl:sameAs <https://webrecorder.net/archivewebpage/> .
 
 <http://awesome.org/iipc/projects/aut> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -341,7 +342,7 @@
     doap:repository <https://github.com/archivesunleashed/aut.git>,
         <https://github.com/archivesunleashed/aut.svn> ;
     doap:shortdesc "The Archives Unleashed Toolkit is an open-source toolkit for analyzing web archives." ;
-    foaf:homepage <https://github.com/archivesunleashed/aut> ;
+    owl:sameAs <https://github.com/archivesunleashed/aut> ;
     ns1:num_stars 148 ;
     ns1:num_watchers 14 .
 
@@ -360,14 +361,14 @@
     doap:repository <https://github.com/bellingcat/auto-archiver.git>,
         <https://github.com/bellingcat/auto-archiver.svn> ;
     doap:shortdesc "Automatically archive links to videos, images, and social media content from Google Sheets (and more)." ;
-    foaf:homepage <https://github.com/bellingcat/auto-archiver> ;
+    owl:sameAs <https://github.com/bellingcat/auto-archiver> ;
     ns1:num_stars 942 ;
     ns1:num_watchers 26 .
 
 <http://awesome.org/iipc/projects/awesome-memento> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Awesome Memento" ;
     doap:category <http://awesome.org/iipc/categories/other-awesome-lists> ;
-    foaf:homepage <https://github.com/machawk1/awesome-memento> .
+    owl:sameAs <https://github.com/machawk1/awesome-memento> .
 
 <http://awesome.org/iipc/projects/awesome-website-change-monitoring> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -382,7 +383,7 @@
     doap:repository <https://github.com/edgi-govdata-archiving/awesome-website-change-monitoring.git>,
         <https://github.com/edgi-govdata-archiving/awesome-website-change-monitoring.svn> ;
     doap:shortdesc "A curated list of awesome tools for website diffing and change monitoring." ;
-    foaf:homepage <https://github.com/edgi-govdata-archiving/awesome-website-change-monitoring> ;
+    owl:sameAs <https://github.com/edgi-govdata-archiving/awesome-website-change-monitoring> ;
     ns1:num_stars 511 ;
     ns1:num_watchers 30 .
 
@@ -390,19 +391,19 @@
     rdfs:label "Common Crawl Foundation Blog" ;
     dcterms:description "" ;
     doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
-    foaf:homepage <https://commoncrawl.org/blog> .
+    owl:sameAs <https://commoncrawl.org/blog> .
 
 <http://awesome.org/iipc/projects/blog.dshr.org> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "DSHR's Blog" ;
     dcterms:description "David Rosenthal regularly reviews and summarizes work done in the Digital Preservation field." ;
     doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
-    foaf:homepage <https://blog.dshr.org/> .
+    owl:sameAs <https://blog.dshr.org/> .
 
 <http://awesome.org/iipc/projects/browsertrix> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Browsertrix" ;
     dcterms:description "From " ;
     doap:category <http://awesome.org/iipc/categories/self-hostable-open-source> ;
-    foaf:homepage <https://webrecorder.net/browsertrix/> .
+    owl:sameAs <https://webrecorder.net/browsertrix/> .
 
 <http://awesome.org/iipc/projects/browsertrix-crawler> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -420,7 +421,7 @@
     doap:repository <https://github.com/webrecorder/browsertrix-crawler.git>,
         <https://github.com/webrecorder/browsertrix-crawler.svn> ;
     doap:shortdesc "Run a high-fidelity browser-based web archiving crawler in a single Docker container" ;
-    foaf:homepage <https://github.com/webrecorder/browsertrix-crawler> ;
+    owl:sameAs <https://github.com/webrecorder/browsertrix-crawler> ;
     ns1:num_stars 877 ;
     ns1:num_watchers 23 .
 
@@ -439,7 +440,7 @@
     doap:repository <https://github.com/internetarchive/brozzler.git>,
         <https://github.com/internetarchive/brozzler.svn> ;
     doap:shortdesc "brozzler - distributed browser-based web crawler" ;
-    foaf:homepage <https://github.com/internetarchive/brozzler> ;
+    owl:sameAs <https://github.com/internetarchive/brozzler> ;
     ns1:num_stars 743 ;
     ns1:num_watchers 38 .
 
@@ -458,7 +459,7 @@
     doap:repository <https://github.com/wabarc/cairn.git>,
         <https://github.com/wabarc/cairn.svn> ;
     doap:shortdesc "NPM package and CLI tool for saving web page as single HTML file" ;
-    foaf:homepage <https://github.com/wabarc/cairn> ;
+    owl:sameAs <https://github.com/wabarc/cairn> ;
     ns1:num_stars 49 ;
     ns1:num_watchers 3 .
 
@@ -477,14 +478,14 @@
     doap:repository <https://github.com/commoncrawl/cc-notebooks.git>,
         <https://github.com/commoncrawl/cc-notebooks.svn> ;
     doap:shortdesc "Various Jupyter notebooks about Common Crawl data" ;
-    foaf:homepage <https://github.com/commoncrawl/cc-notebooks> ;
+    owl:sameAs <https://github.com/commoncrawl/cc-notebooks> ;
     ns1:num_stars 58 ;
     ns1:num_watchers 18 .
 
 <http://awesome.org/iipc/projects/ccfpartners.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Common Crawl Foundation Partners" ;
     doap:category <http://awesome.org/iipc/categories/slack> ;
-    foaf:homepage <https://ccfpartners.slack.com/> .
+    owl:sameAs <https://ccfpartners.slack.com/> .
 
 <http://awesome.org/iipc/projects/cdx-toolkit> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -492,7 +493,7 @@
     dcterms:description "Library and CLI to consult cdx indexes and create WARC extractions of subsets. Abstracts away Common Crawl's unusual crawl structure. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/utilities> ;
-    foaf:homepage <https://pypi.org/project/cdx-toolkit/> .
+    owl:sameAs <https://pypi.org/project/cdx-toolkit/> .
 
 <http://awesome.org/iipc/projects/chatnoir-resiliparse> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -509,14 +510,14 @@
     doap:repository <https://github.com/chatnoir-eu/chatnoir-resiliparse.git>,
         <https://github.com/chatnoir-eu/chatnoir-resiliparse.svn> ;
     doap:shortdesc "A robust web archive analytics toolkit" ;
-    foaf:homepage <https://github.com/chatnoir-eu/chatnoir-resiliparse> ;
+    owl:sameAs <https://github.com/chatnoir-eu/chatnoir-resiliparse> ;
     ns1:num_stars 116 ;
     ns1:num_watchers 8 .
 
 <http://awesome.org/iipc/projects/chronicle> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Hanzo" ;
     doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
-    foaf:homepage <https://www.hanzo.co/chronicle> .
+    owl:sameAs <https://www.hanzo.co/chronicle> .
 
 <http://awesome.org/iipc/projects/chronicler> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -533,7 +534,7 @@
     doap:repository <https://github.com/CGamesPlay/chronicler.git>,
         <https://github.com/CGamesPlay/chronicler.svn> ;
     doap:shortdesc "Offline-first web browser" ;
-    foaf:homepage <https://github.com/CGamesPlay/chronicler> ;
+    owl:sameAs <https://github.com/CGamesPlay/chronicler> ;
     ns1:num_stars 89 ;
     ns1:num_watchers 5 .
 
@@ -543,18 +544,18 @@
     dcterms:description "SQL-queryable index, with CDX info plus language classification. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/analysis> ;
-    foaf:homepage <https://commoncrawl.org/tag/columnar-index/> .
+    owl:sameAs <https://commoncrawl.org/tag/columnar-index/> .
 
 <http://awesome.org/iipc/projects/common-crawl> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Common Crawl" ;
     doap:category <http://awesome.org/iipc/categories/mailing-lists> ;
-    foaf:homepage <https://groups.google.com/g/common-crawl> .
+    owl:sameAs <https://groups.google.com/g/common-crawl> .
 
 <http://awesome.org/iipc/projects/conifer.rhizome.org> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Conifer" ;
     dcterms:description "From " ;
     doap:category <http://awesome.org/iipc/categories/self-hostable-open-source> ;
-    foaf:homepage <https://conifer.rhizome.org/> .
+    owl:sameAs <https://conifer.rhizome.org/> .
 
 <http://awesome.org/iipc/projects/crau> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -571,7 +572,7 @@
     doap:repository <https://github.com/turicas/crau.git>,
         <https://github.com/turicas/crau.svn> ;
     doap:shortdesc "Easy-to-use Web archiver" ;
-    foaf:homepage <https://github.com/turicas/crau> ;
+    owl:sameAs <https://github.com/turicas/crau> ;
     ns1:num_stars 63 ;
     ns1:num_watchers 3 .
 
@@ -581,7 +582,7 @@
     dcterms:description "A simple web crawler in Golang. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <https://git.autistici.org/ale/crawl> .
+    owl:sameAs <https://git.autistici.org/ale/crawl> .
 
 <http://awesome.org/iipc/projects/crocoite> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -599,7 +600,7 @@
     doap:repository <https://github.com/PromyLOPh/crocoite.git>,
         <https://github.com/PromyLOPh/crocoite.svn> ;
     doap:shortdesc "Web archiving using Google Chrome" ;
-    foaf:homepage <https://github.com/PromyLOPh/crocoite> ;
+    owl:sameAs <https://github.com/PromyLOPh/crocoite> ;
     ns1:num_stars 47 ;
     ns1:num_watchers 6 .
 
@@ -608,7 +609,7 @@
     rdfs:label "Chrome Revolver" ;
     dcterms:description "Browser extension: switches between browser tabs." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda> .
+    owl:sameAs <https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda> .
 
 <http://awesome.org/iipc/projects/dn> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -625,7 +626,7 @@
     doap:repository <https://github.com/DO-SAY-GO/dn.git>,
         <https://github.com/DO-SAY-GO/dn.svn> ;
     doap:shortdesc " 💾 dn - offline full-text search and archiving for your Chromium-based browser. " ;
-    foaf:homepage <https://github.com/DO-SAY-GO/dn> ;
+    owl:sameAs <https://github.com/DO-SAY-GO/dn> ;
     ns1:num_stars 3853 ;
     ns1:num_watchers 41 .
 
@@ -636,7 +637,7 @@
     dcterms:description "For running Xenu and Notepad++ on Ubuntu.",
         "For running Xenu and Notepad++ on macOS." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <https://www.playonlinux.com/en/>,
+    owl:sameAs <https://www.playonlinux.com/en/>,
         <https://www.playonmac.com/en/> .
 
 <http://awesome.org/iipc/projects/fbarc> a <http://rdfs.org/sioc/ns#Item>,
@@ -654,7 +655,7 @@
     doap:repository <https://github.com/justinlittman/fbarc.git>,
         <https://github.com/justinlittman/fbarc.svn> ;
     doap:shortdesc "A commandline tool and Python library for archiving data from Facebook using the Graph API." ;
-    foaf:homepage <https://github.com/justinlittman/fbarc> ;
+    owl:sameAs <https://github.com/justinlittman/fbarc> ;
     ns1:num_stars 78 ;
     ns1:num_watchers 15 .
 
@@ -673,7 +674,7 @@
     doap:repository <https://github.com/flameshot-org/flameshot.git>,
         <https://github.com/flameshot-org/flameshot.svn> ;
     doap:shortdesc "Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:" ;
-    foaf:homepage <https://github.com/flameshot-org/flameshot> ;
+    owl:sameAs <https://github.com/flameshot-org/flameshot> ;
     ns1:num_stars 27849 ;
     ns1:num_watchers 210 .
 
@@ -693,7 +694,7 @@
     doap:repository <https://github.com/WebMemex/freeze-dry.git>,
         <https://github.com/WebMemex/freeze-dry.svn> ;
     doap:shortdesc "Snapshots a web page to get it as a static, self-contained HTML document." ;
-    foaf:homepage <https://github.com/WebMemex/freeze-dry> ;
+    owl:sameAs <https://github.com/WebMemex/freeze-dry> ;
     ns1:num_stars 295 ;
     ns1:num_watchers 10 .
 
@@ -712,7 +713,7 @@
     doap:repository <https://github.com/karust/gogetcrawl.git>,
         <https://github.com/karust/gogetcrawl.svn> ;
     doap:shortdesc "Extract web archive data using Wayback Machine and Common Crawl" ;
-    foaf:homepage <https://github.com/karust/gogetcrawl> ;
+    owl:sameAs <https://github.com/karust/gogetcrawl> ;
     ns1:num_stars 161 ;
     ns1:num_watchers 3 .
 
@@ -728,7 +729,7 @@
     doap:license <https://api.github.com/licenses/apache-2.0> ;
     doap:repository <https://github.com/nlnwa/gowarcserver.git>,
         <https://github.com/nlnwa/gowarcserver.svn> ;
-    foaf:homepage <https://github.com/nlnwa/gowarcserver> ;
+    owl:sameAs <https://github.com/nlnwa/gowarcserver> ;
     ns1:num_stars 16 ;
     ns1:num_watchers 6 .
 
@@ -746,7 +747,7 @@
     doap:repository <https://github.com/ArchiveTeam/grab-site.git>,
         <https://github.com/ArchiveTeam/grab-site.svn> ;
     doap:shortdesc "The archivist's web crawler: WARC output, dashboard for all crawls, dynamic ignore patterns" ;
-    foaf:homepage <https://github.com/ArchiveTeam/grab-site> ;
+    owl:sameAs <https://github.com/ArchiveTeam/grab-site> ;
     ns1:num_stars 1524 ;
     ns1:num_watchers 42 .
 
@@ -765,7 +766,7 @@
     doap:repository <https://github.com/webrecorder/har2warc.git>,
         <https://github.com/webrecorder/har2warc.svn> ;
     doap:shortdesc "Convert HTTP Archive (HAR) -> Web Archive (WARC) format" ;
-    foaf:homepage <https://github.com/webrecorder/har2warc> ;
+    owl:sameAs <https://github.com/webrecorder/har2warc> ;
     ns1:num_stars 54 ;
     ns1:num_watchers 6 .
 
@@ -784,7 +785,7 @@
     doap:repository <https://github.com/steffenfritz/html2warc.git>,
         <https://github.com/steffenfritz/html2warc.svn> ;
     doap:shortdesc "simple script to convert web resources to a single warc file" ;
-    foaf:homepage <https://github.com/steffenfritz/html2warc> ;
+    owl:sameAs <https://github.com/steffenfritz/html2warc> ;
     ns1:num_stars 22 ;
     ns1:num_watchers 3 .
 
@@ -804,31 +805,31 @@
     doap:repository <https://github.com/medialab/hyphe.git>,
         <https://github.com/medialab/hyphe.svn> ;
     doap:shortdesc "Websites crawler with built-in exploration and control web interface" ;
-    foaf:homepage <https://github.com/medialab/hyphe> ;
+    owl:sameAs <https://github.com/medialab/hyphe> ;
     ns1:num_stars 359 ;
     ns1:num_watchers 31 .
 
 <http://awesome.org/iipc/projects/iipc-mailing-list> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "IIPC" ;
     doap:category <http://awesome.org/iipc/categories/mailing-lists> ;
-    foaf:homepage <http://netpreserve.org/about-us/iipc-mailing-list/> .
+    owl:sameAs <http://netpreserve.org/about-us/iipc-mailing-list/> .
 
 <http://awesome.org/iipc/projects/iipc.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "IIPC Slack" ;
     dcterms:description "Ask " ;
     doap:category <http://awesome.org/iipc/categories/slack> ;
-    foaf:homepage <https://iipc.slack.com/> .
+    owl:sameAs <https://iipc.slack.com/> .
 
 <http://awesome.org/iipc/projects/index.html> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Definition of Web Archivability" ;
     dcterms:description "This describes the ease with which web content can be preserved. (" ;
     doap:category <http://awesome.org/iipc/categories/resources-for-web-publishers> ;
-    foaf:homepage <https://nullhandle.org/web-archivability/index.html> .
+    owl:sameAs <https://nullhandle.org/web-archivability/index.html> .
 
 <http://awesome.org/iipc/projects/index.php?title=The_WARC_Ecosystem> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "The WARC Ecosystem" ;
     doap:category <http://awesome.org/iipc/categories/other-awesome-lists> ;
-    foaf:homepage <http://www.archiveteam.org/index.php?title=The_WARC_Ecosystem> .
+    owl:sameAs <http://www.archiveteam.org/index.php?title=The_WARC_Ecosystem> .
 
 <http://awesome.org/iipc/projects/ipwb> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -844,7 +845,7 @@
     doap:repository <https://github.com/oduwsdl/ipwb.git>,
         <https://github.com/oduwsdl/ipwb.svn> ;
     doap:shortdesc "InterPlanetary Wayback: A distributed and persistent archive replay system using IPFS" ;
-    foaf:homepage <https://github.com/oduwsdl/ipwb> ;
+    owl:sameAs <https://github.com/oduwsdl/ipwb> ;
     ns1:num_stars 643 ;
     ns1:num_watchers 21 .
 
@@ -862,7 +863,7 @@
     doap:repository <https://github.com/iipc/jwarc.git>,
         <https://github.com/iipc/jwarc.svn> ;
     doap:shortdesc "Java library for reading and writing WARC files with a typed API" ;
-    foaf:homepage <https://github.com/iipc/jwarc> ;
+    owl:sameAs <https://github.com/iipc/jwarc> ;
     ns1:num_stars 50 ;
     ns1:num_watchers 5 .
 
@@ -880,7 +881,7 @@
     doap:repository <https://github.com/netarchivesuite/jwat.git>,
         <https://github.com/netarchivesuite/jwat.svn> ;
     doap:shortdesc "Java Web Archive Toolkit" ;
-    foaf:homepage <https://github.com/netarchivesuite/jwat> ;
+    owl:sameAs <https://github.com/netarchivesuite/jwat> ;
     ns1:num_stars 3 ;
     ns1:num_watchers 7 .
 
@@ -898,7 +899,7 @@
     doap:repository <https://github.com/netarchivesuite/jwat-tools.git>,
         <https://github.com/netarchivesuite/jwat-tools.svn> ;
     doap:shortdesc "JWAT Tools" ;
-    foaf:homepage <https://github.com/netarchivesuite/jwat-tools> ;
+    owl:sameAs <https://github.com/netarchivesuite/jwat-tools> ;
     ns1:num_stars 5 ;
     ns1:num_watchers 6 .
 
@@ -918,14 +919,14 @@
     doap:repository <https://github.com/Y2Z/monolith.git>,
         <https://github.com/Y2Z/monolith.svn> ;
     doap:shortdesc "⬛️ CLI tool and library for saving complete web pages as a single HTML file" ;
-    foaf:homepage <https://github.com/Y2Z/monolith> ;
+    owl:sameAs <https://github.com/Y2Z/monolith> ;
     ns1:num_stars 14238 ;
     ns1:num_watchers 67 .
 
 <http://awesome.org/iipc/projects/netpreserveblog.wordpress.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "IIPC Blog" ;
     doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
-    foaf:homepage <https://netpreserveblog.wordpress.com/> .
+    owl:sameAs <https://netpreserveblog.wordpress.com/> .
 
 <http://awesome.org/iipc/projects/node-warc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -942,7 +943,7 @@
     doap:repository <https://github.com/N0taN3rd/node-warc.git>,
         <https://github.com/N0taN3rd/node-warc.svn> ;
     doap:shortdesc "Parse And Create Web ARChive  (WARC) files with node.js" ;
-    foaf:homepage <https://github.com/N0taN3rd/node-warc> ;
+    owl:sameAs <https://github.com/N0taN3rd/node-warc> ;
     ns1:num_stars 101 ;
     ns1:num_watchers 7 .
 
@@ -961,7 +962,7 @@
     doap:repository <https://github.com/archivesunleashed/notebooks.git>,
         <https://github.com/archivesunleashed/notebooks.svn> ;
     doap:shortdesc "Various examples of notebooks for working with web archives with the Archives Unleashed Toolkit, and derivatives generated by the Archives Unleashed Toolkit." ;
-    foaf:homepage <https://github.com/archivesunleashed/notebooks> ;
+    owl:sameAs <https://github.com/archivesunleashed/notebooks> ;
     ns1:num_stars 26 ;
     ns1:num_watchers 5 .
 
@@ -980,7 +981,7 @@
     doap:repository <https://github.com/go-shiori/obelisk.git>,
         <https://github.com/go-shiori/obelisk.svn> ;
     doap:shortdesc "Go package and CLI tool for saving web page as single HTML file" ;
-    foaf:homepage <https://github.com/go-shiori/obelisk> ;
+    owl:sameAs <https://github.com/go-shiori/obelisk> ;
     ns1:num_stars 293 ;
     ns1:num_watchers 9 .
 
@@ -989,14 +990,14 @@
     rdfs:label "Chrome Open Multiple URLs" ;
     dcterms:description "Browser extension: opens multiple URLs and also extracts URLs from text." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <https://chrome.google.com/webstore/detail/open-multiple-urls/oifijhaokejakekmnjmphonojcfkpbbh?hl=de> .
+    owl:sameAs <https://chrome.google.com/webstore/detail/open-multiple-urls/oifijhaokejakekmnjmphonojcfkpbbh?hl=de> .
 
 <http://awesome.org/iipc/projects/ojkcdipcgfaekbeaelaapakgnjflfglf> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Chrome Check My Links" ;
     dcterms:description "Browser extension: a link checker with more options." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf> .
+    owl:sameAs <https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf> .
 
 <http://awesome.org/iipc/projects/openwayback> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1004,12 +1005,12 @@
     dcterms:description "The open source project aimed to develop Wayback Machine, the key software used by web archives worldwide to play back archived websites in the user's browser. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/replay> ;
-    foaf:homepage <https://github.com/iipc/openwayback/> .
+    owl:sameAs <https://github.com/iipc/openwayback/> .
 
 <http://awesome.org/iipc/projects/openwayback-dev> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "OpenWayback" ;
     doap:category <http://awesome.org/iipc/categories/mailing-lists> ;
-    foaf:homepage <https://groups.google.com/g/openwayback-dev> .
+    owl:sameAs <https://groups.google.com/g/openwayback-dev> .
 
 <http://awesome.org/iipc/projects/playback> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1026,7 +1027,7 @@
     doap:repository <https://github.com/wabarc/playback.git>,
         <https://github.com/wabarc/playback.svn> ;
     doap:shortdesc "Playback webpages from Wayback Machine" ;
-    foaf:homepage <https://github.com/wabarc/playback> ;
+    owl:sameAs <https://github.com/wabarc/playback> ;
     ns1:num_stars 9 ;
     ns1:num_watchers 3 .
 
@@ -1035,7 +1036,7 @@
     rdfs:label "Chrome link gopher" ;
     dcterms:description "Browser extension: link harvester on a page." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <https://chrome.google.com/webstore/detail/bpjdkodgnbfalgghnbeggfbfjpcfamkf/publish-accepted?hl=en-US&gl=US> .
+    owl:sameAs <https://chrome.google.com/webstore/detail/bpjdkodgnbfalgghnbeggfbfjpcfamkf/publish-accepted?hl=en-US&gl=US> .
 
 <http://awesome.org/iipc/projects/pywb> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1053,7 +1054,7 @@
     doap:repository <https://github.com/webrecorder/pywb.git>,
         <https://github.com/webrecorder/pywb.svn> ;
     doap:shortdesc "Core Python Web Archiving Toolkit for replay and recording of web archives" ;
-    foaf:homepage <https://github.com/webrecorder/pywb> ;
+    owl:sameAs <https://github.com/webrecorder/pywb> ;
     ns1:num_stars 1558 ;
     ns1:num_watchers 59 .
 
@@ -1063,7 +1064,7 @@
     dcterms:description "A browser-based, fully client-side replay engine for both local and remote WARC & WACZ files. Also available as an Electron based desktop application. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/replay> ;
-    foaf:homepage <https://webrecorder.net/replaywebpage/> .
+    owl:sameAs <https://webrecorder.net/replaywebpage/> .
 
 <http://awesome.org/iipc/projects/scoop> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1080,21 +1081,21 @@
     doap:repository <https://github.com/harvard-lil/scoop.git>,
         <https://github.com/harvard-lil/scoop.svn> ;
     doap:shortdesc "🍨 High-fidelity, browser-based, single-page web archiving library and CLI for witnessing the web." ;
-    foaf:homepage <https://github.com/harvard-lil/scoop> ;
+    owl:sameAs <https://github.com/harvard-lil/scoop> ;
     ns1:num_stars 171 ;
     ns1:num_watchers 6 .
 
 <http://awesome.org/iipc/projects/search?q=%23webarchiving> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "#WebArchiving" ;
     doap:category <http://awesome.org/iipc/categories/twitter> ;
-    foaf:homepage <https://twitter.com/search?q=%23webarchiving> .
+    owl:sameAs <https://twitter.com/search?q=%23webarchiving> .
 
 <http://awesome.org/iipc/projects/securitytrails.com> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "SecurityTrails" ;
     dcterms:description "Web based archive for WHOIS and DNS records. REST API available free of charge." ;
     doap:category <http://awesome.org/iipc/categories/search--discovery> ;
-    foaf:homepage <https://securitytrails.com/> .
+    owl:sameAs <https://securitytrails.com/> .
 
 <http://awesome.org/iipc/projects/sfm-ui> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1102,7 +1103,7 @@
     dcterms:description "Open source software that enables users to create social media collections from Twitter, Tumblr, Flickr, and Sina Weibo public APIs. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <https://gwu-libraries.github.io/sfm-ui/> .
+    owl:sameAs <https://gwu-libraries.github.io/sfm-ui/> .
 
 <http://awesome.org/iipc/projects/shine> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1120,7 +1121,7 @@
     doap:repository <https://github.com/ukwa/shine.git>,
         <https://github.com/ukwa/shine.svn> ;
     doap:shortdesc "Prototype SOLR-powered web archive exploration UI." ;
-    foaf:homepage <https://github.com/ukwa/shine> ;
+    owl:sameAs <https://github.com/ukwa/shine> ;
     ns1:num_stars 43 ;
     ns1:num_watchers 17 .
 
@@ -1138,7 +1139,7 @@
     doap:repository <https://github.com/netarchivesuite/solrwayback.git>,
         <https://github.com/netarchivesuite/solrwayback.svn> ;
     doap:shortdesc "A search interface and wayback machine for the UKWA Solr based warc-indexer framework." ;
-    foaf:homepage <https://github.com/netarchivesuite/solrwayback> ;
+    owl:sameAs <https://github.com/netarchivesuite/solrwayback> ;
     ns1:num_stars 131 ;
     ns1:num_watchers 22 .
 
@@ -1148,7 +1149,7 @@
     dcterms:description "A collection of resources for building low-latency, scalable web crawlers on Apache Storm. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <http://stormcrawler.net/> .
+    owl:sameAs <http://stormcrawler.net/> .
 
 <http://awesome.org/iipc/projects/twarc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1166,7 +1167,7 @@
     doap:repository <https://github.com/DocNow/twarc.git>,
         <https://github.com/DocNow/twarc.svn> ;
     doap:shortdesc "A command line tool (and Python library) for archiving Twitter JSON" ;
-    foaf:homepage <https://github.com/DocNow/twarc> ;
+    owl:sameAs <https://github.com/DocNow/twarc> ;
     ns1:num_stars 1386 ;
     ns1:num_watchers 33 .
 
@@ -1185,7 +1186,7 @@
     doap:repository <https://github.com/archivesunleashed/twut.git>,
         <https://github.com/archivesunleashed/twut.svn> ;
     doap:shortdesc "An open-source toolkit for analyzing line-oriented JSON Twitter archives with Apache Spark." ;
-    foaf:homepage <https://github.com/archivesunleashed/twut> ;
+    owl:sameAs <https://github.com/archivesunleashed/twut> ;
     ns1:num_stars 9 ;
     ns1:num_watchers 3 .
 
@@ -1201,7 +1202,7 @@
     doap:license <https://api.github.com/licenses/apache-2.0> ;
     doap:repository <https://github.com/emmadickson/unwarcit.git>,
         <https://github.com/emmadickson/unwarcit.svn> ;
-    foaf:homepage <https://github.com/emmadickson/unwarcit> ;
+    owl:sameAs <https://github.com/emmadickson/unwarcit> ;
     ns1:num_stars 12 ;
     ns1:num_watchers 4 .
 
@@ -1211,7 +1212,7 @@
     dcterms:description "Temporal web archive search based on " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/search--discovery> ;
-    foaf:homepage <http://tempas.L3S.de/v1> .
+    owl:sameAs <http://tempas.L3S.de/v1> .
 
 <http://awesome.org/iipc/projects/v2> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1219,7 +1220,7 @@
     dcterms:description "Temporal web archive search based on links and anchor texts extracted from the German web from 1996 to 2013 (results are not limited to German pages, e.g., " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/search--discovery> ;
-    foaf:homepage <http://tempas.L3S.de/v2> .
+    owl:sameAs <http://tempas.L3S.de/v2> .
 
 <http://awesome.org/iipc/projects/wail> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1237,7 +1238,7 @@
     doap:repository <https://github.com/machawk1/wail.git>,
         <https://github.com/machawk1/wail.svn> ;
     doap:shortdesc ":whale2: Web Archiving Integration Layer: One-Click User Instigated Preservation" ;
-    foaf:homepage <https://github.com/machawk1/wail> ;
+    owl:sameAs <https://github.com/machawk1/wail> ;
     ns1:num_stars 378 ;
     ns1:num_watchers 13 .
 
@@ -1255,7 +1256,7 @@
     doap:repository <https://github.com/iipc/warc2html.git>,
         <https://github.com/iipc/warc2html.svn> ;
     doap:shortdesc "Converts WARC files to static HTML" ;
-    foaf:homepage <https://github.com/iipc/warc2html> ;
+    owl:sameAs <https://github.com/iipc/warc2html> ;
     ns1:num_stars 48 ;
     ns1:num_watchers 10 .
 
@@ -1274,7 +1275,7 @@
     doap:repository <https://github.com/chfoo/warcat.git>,
         <https://github.com/chfoo/warcat.svn> ;
     doap:shortdesc "Tool and library for handling Web ARChive (WARC) files." ;
-    foaf:homepage <https://github.com/chfoo/warcat> ;
+    owl:sameAs <https://github.com/chfoo/warcat> ;
     ns1:num_stars 164 ;
     ns1:num_watchers 10 .
 
@@ -1293,7 +1294,7 @@
     doap:repository <https://github.com/chfoo/warcat-rs.git>,
         <https://github.com/chfoo/warcat-rs.svn> ;
     doap:shortdesc "Command-line tool and Rust library for handling Web ARChive (WARC) files" ;
-    foaf:homepage <https://github.com/chfoo/warcat-rs> ;
+    owl:sameAs <https://github.com/chfoo/warcat-rs> ;
     ns1:num_stars 25 ;
     ns1:num_watchers 1 .
 
@@ -1313,7 +1314,7 @@
     doap:repository <https://github.com/webrecorder/warcio.git>,
         <https://github.com/webrecorder/warcio.svn> ;
     doap:shortdesc "Streaming WARC/ARC library for fast web archive IO" ;
-    foaf:homepage <https://github.com/webrecorder/warcio> ;
+    owl:sameAs <https://github.com/webrecorder/warcio> ;
     ns1:num_stars 430 ;
     ns1:num_watchers 21 .
 
@@ -1332,7 +1333,7 @@
     doap:repository <https://github.com/archivesunleashed/warclight.git>,
         <https://github.com/archivesunleashed/warclight.svn> ;
     doap:shortdesc "A Rails engine supporting the discovery of web archives." ;
-    foaf:homepage <https://github.com/archivesunleashed/warclight> ;
+    owl:sameAs <https://github.com/archivesunleashed/warclight> ;
     ns1:num_stars 50 ;
     ns1:num_watchers 4 .
 
@@ -1350,7 +1351,7 @@
     doap:repository <https://github.com/internetarchive/warcprox.git>,
         <https://github.com/internetarchive/warcprox.svn> ;
     doap:shortdesc "WARC writing MITM HTTP/S proxy" ;
-    foaf:homepage <https://github.com/internetarchive/warcprox> ;
+    owl:sameAs <https://github.com/internetarchive/warcprox> ;
     ns1:num_stars 420 ;
     ns1:num_watchers 35 .
 
@@ -1360,7 +1361,7 @@
     dcterms:description "A " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <http://matkelly.com/warcreate/> .
+    owl:sameAs <http://matkelly.com/warcreate/> .
 
 <http://awesome.org/iipc/projects/warctools> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1376,7 +1377,7 @@
     doap:repository <https://github.com/internetarchive/warctools.git>,
         <https://github.com/internetarchive/warctools.svn> ;
     doap:shortdesc "Command line tools and libraries for handling and manipulating WARC files (and HTTP contents)" ;
-    foaf:homepage <https://github.com/internetarchive/warctools> ;
+    owl:sameAs <https://github.com/internetarchive/warctools> ;
     ns1:num_stars 164 ;
     ns1:num_watchers 41 .
 
@@ -1395,14 +1396,14 @@
     doap:repository <https://github.com/peterk/warcworker.git>,
         <https://github.com/peterk/warcworker.svn> ;
     doap:shortdesc "A dockerized, queued high fidelity web archiver based on Squidwarc" ;
-    foaf:homepage <https://github.com/peterk/warcworker> ;
+    owl:sameAs <https://github.com/peterk/warcworker> ;
     ns1:num_stars 61 ;
     ns1:num_watchers 5 .
 
 <http://awesome.org/iipc/projects/wasapi-community> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "WASAPI" ;
     doap:category <http://awesome.org/iipc/categories/mailing-lists> ;
-    foaf:homepage <https://groups.google.com/g/wasapi-community> .
+    owl:sameAs <https://groups.google.com/g/wasapi-community> .
 
 <http://awesome.org/iipc/projects/wasp> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1417,7 +1418,7 @@
     doap:license <https://api.github.com/licenses/mit> ;
     doap:repository <https://github.com/webis-de/wasp.git>,
         <https://github.com/webis-de/wasp.svn> ;
-    foaf:homepage <https://github.com/webis-de/wasp> ;
+    owl:sameAs <https://github.com/webis-de/wasp> ;
     ns1:num_stars 27 ;
     ns1:num_watchers 12 .
 
@@ -1437,7 +1438,7 @@
     doap:repository <https://github.com/wabarc/wayback.git>,
         <https://github.com/wabarc/wayback.svn> ;
     doap:shortdesc "An archiving tool with an IM-style interface that prioritizes privacy and accessibility, integrated with various archival services including Internet Archive, archive.today, Ghostarchive, IPFS, Telegraph, and file systems." ;
-    foaf:homepage <https://github.com/wabarc/wayback> ;
+    owl:sameAs <https://github.com/wabarc/wayback> ;
     ns1:num_stars 2064 ;
     ns1:num_watchers 9 .
 
@@ -1457,14 +1458,14 @@
     doap:repository <https://github.com/akamhy/waybackpy.git>,
         <https://github.com/akamhy/waybackpy.svn> ;
     doap:shortdesc "Wayback Machine API interface & a command-line tool" ;
-    foaf:homepage <https://github.com/akamhy/waybackpy> ;
+    owl:sameAs <https://github.com/akamhy/waybackpy> ;
     ns1:num_stars 549 ;
     ns1:num_watchers 10 .
 
 <http://awesome.org/iipc/projects/web-archive> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Smarsh" ;
     doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
-    foaf:homepage <https://www.smarsh.com/platform/compliance-management/web-archive> .
+    owl:sameAs <https://www.smarsh.com/platform/compliance-management/web-archive> .
 
 <http://awesome.org/iipc/projects/web-graph> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1472,13 +1473,13 @@
     dcterms:description "A host or domain-level graph of the web, with ranking information. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/analysis> ;
-    foaf:homepage <https://commoncrawl.org/category/web-graph/> .
+    owl:sameAs <https://commoncrawl.org/category/web-graph/> .
 
 <http://awesome.org/iipc/projects/web_archiving> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Comparison of web archiving software" ;
     doap:category <http://awesome.org/iipc/categories/tools--software> ;
-    foaf:homepage <https://github.com/archivers-space/research/tree/master/web_archiving> .
+    owl:sameAs <https://github.com/archivers-space/research/tree/master/web_archiving> .
 
 <http://awesome.org/iipc/projects/webarchive> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1496,7 +1497,7 @@
     doap:repository <https://github.com/richardlehane/webarchive.git>,
         <https://github.com/richardlehane/webarchive.svn> ;
     doap:shortdesc "golang readers for ARC and WARC webarchive formats" ;
-    foaf:homepage <https://blogs.bl.uk/webarchive/>,
+    owl:sameAs <https://blogs.bl.uk/webarchive/>,
         <https://github.com/richardlehane/webarchive> ;
     ns1:num_stars 20 ;
     ns1:num_watchers 7 .
@@ -1516,20 +1517,20 @@
     doap:repository <https://github.com/ukwa/webarchive-discovery.git>,
         <https://github.com/ukwa/webarchive-discovery.svn> ;
     doap:shortdesc "Please note that the warc-indexer tool & code is now supported by NetArchiveSuite. The 'warc-indexer' directory and code that exists in this repo is now only for reference. For support and issues of 'warc-indexer', please communicate with NetArchiveSuite." ;
-    foaf:homepage <https://github.com/ukwa/webarchive-discovery> ;
+    owl:sameAs <https://github.com/ukwa/webarchive-discovery> ;
     ns1:num_stars 128 ;
     ns1:num_watchers 24 .
 
 <http://awesome.org/iipc/projects/webarchivewednesday> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "#WebArchiveWednesday" ;
     doap:category <http://awesome.org/iipc/categories/twitter> ;
-    foaf:homepage <https://twitter.com/hashtag/webarchivewednesday> .
+    owl:sameAs <https://twitter.com/hashtag/webarchivewednesday> .
 
 <http://awesome.org/iipc/projects/webarchivingrt.wordpress.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Web Archiving Roundtable" ;
     dcterms:description "Unofficial blog of the Web Archiving Roundtable of the " ;
     doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
-    foaf:homepage <https://webarchivingrt.wordpress.com/> .
+    owl:sameAs <https://webarchivingrt.wordpress.com/> .
 
 <http://awesome.org/iipc/projects/webcuratortool.org> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1537,7 +1538,7 @@
     dcterms:description "Open-source workflow management for selective web archiving. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <https://webcuratortool.org> .
+    owl:sameAs <https://webcuratortool.org> .
 
 <http://awesome.org/iipc/projects/webdatacommons.org> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1545,17 +1546,17 @@
     dcterms:description "Structured data extracted from Common Crawl. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/analysis> ;
-    foaf:homepage <http://webdatacommons.org/> .
+    owl:sameAs <http://webdatacommons.org/> .
 
 <http://awesome.org/iipc/projects/website-archiving> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "MirrorWeb" ;
     doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
-    foaf:homepage <https://www.mirrorweb.com/solutions/capabilities/website-archiving> .
+    owl:sameAs <https://www.mirrorweb.com/solutions/capabilities/website-archiving> .
 
 <http://awesome.org/iipc/projects/websites> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Arkiwera" ;
     doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
-    foaf:homepage <https://arkiwera.se/wp/websites/> .
+    owl:sameAs <https://arkiwera.se/wp/websites/> .
 
 <http://awesome.org/iipc/projects/wget> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1563,7 +1564,7 @@
     dcterms:description "An open source file retrieval utility that of " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <http://www.gnu.org/software/wget/> .
+    owl:sameAs <http://www.gnu.org/software/wget/> .
 
 <http://awesome.org/iipc/projects/wget-lua> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1580,7 +1581,7 @@
     doap:repository <https://github.com/alard/wget-lua.git>,
         <https://github.com/alard/wget-lua.svn> ;
     doap:shortdesc "Wget with Lua extension" ;
-    foaf:homepage <https://github.com/alard/wget-lua> ;
+    owl:sameAs <https://github.com/alard/wget-lua> ;
     ns1:num_stars 24 ;
     ns1:num_watchers 3 .
 
@@ -1590,21 +1591,21 @@
     dcterms:description "An open source, extensible, web-scale, archival quality web crawler. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <https://github.com/internetarchive/heritrix3/wiki> .
+    owl:sameAs <https://github.com/internetarchive/heritrix3/wiki> .
 
 <http://awesome.org/iipc/projects/windows-use-snipping-tool-to-capture-screenshots> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Windows Snipping Tool" ;
     dcterms:description "Windows built-in for partial screen capture and annotation. On macOS you can use Command + Shift + 4 (keyboard shortcut for taking partial screen capture)." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <https://support.microsoft.com/en-gb/help/13776/windows-use-snipping-tool-to-capture-screenshots> .
+    owl:sameAs <https://support.microsoft.com/en-gb/help/13776/windows-use-snipping-tool-to-capture-screenshots> .
 
 <http://awesome.org/iipc/projects/winebottler.kronenberg.org> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "WineBottler" ;
     dcterms:description "For running Xenu and Notepad++ on macOS." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <http://winebottler.kronenberg.org/> .
+    owl:sameAs <http://winebottler.kronenberg.org/> .
 
 <http://awesome.org/iipc/projects/wpull> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1621,7 +1622,7 @@
     doap:repository <https://github.com/ArchiveTeam/wpull.git>,
         <https://github.com/ArchiveTeam/wpull.svn> ;
     doap:shortdesc "Wget-compatible web downloader and crawler." ;
-    foaf:homepage <https://github.com/ArchiveTeam/wpull> ;
+    owl:sameAs <https://github.com/ArchiveTeam/wpull> ;
     ns1:num_stars 593 ;
     ns1:num_watchers 22 .
 
@@ -1629,14 +1630,14 @@
     rdfs:label "WS-DL Blog" ;
     dcterms:description "Web Science and Digital Libraries Research Group blogs about various Web archiving related topics, scholarly work, and academic trip reports." ;
     doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
-    foaf:homepage <https://ws-dl.blogspot.com/> .
+    owl:sameAs <https://ws-dl.blogspot.com/> .
 
 <http://awesome.org/iipc/projects/www.community-archive.org> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Community Archive" ;
     dcterms:description "Open Twitter Database and API with tools and resources for building on archived Twitter data." ;
     doap:category <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <https://www.community-archive.org/> .
+    owl:sameAs <https://www.community-archive.org/> .
 
 <http://awesome.org/iipc/projects/www.httrack.com> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1644,12 +1645,12 @@
     dcterms:description "An open source website copying utility. " ;
     doap:category <http://awesome.org/iipc/categories/Stable>,
         <http://awesome.org/iipc/categories/acquisition> ;
-    foaf:homepage <http://www.httrack.com/> .
+    owl:sameAs <http://www.httrack.com/> .
 
 <http://awesome.org/iipc/projects/www.pagefreezer.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "PageFreezer" ;
     doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
-    foaf:homepage <https://www.pagefreezer.com/> .
+    owl:sameAs <https://www.pagefreezer.com/> .
 
 <http://awesome.org/iipc/projects/xdotool> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
@@ -1664,7 +1665,7 @@
     doap:repository <https://github.com/jordansissel/xdotool.git>,
         <https://github.com/jordansissel/xdotool.svn> ;
     doap:shortdesc "fake keyboard/mouse input, window management, and more " ;
-    foaf:homepage <https://github.com/jordansissel/xdotool> ;
+    owl:sameAs <https://github.com/jordansissel/xdotool> ;
     ns1:num_stars 3572 ;
     ns1:num_watchers 64 .
 
@@ -1673,14 +1674,14 @@
     rdfs:label "Xenu" ;
     dcterms:description "Desktop link checker for Windows." ;
     doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
-    foaf:homepage <http://home.snafu.de/tilman/xenulink.html> .
+    owl:sameAs <http://home.snafu.de/tilman/xenulink.html> .
 
 <http://awesome.org/iipc/projects/zotero> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Zotero Robust Links Extension" ;
     dcterms:description "A " ;
     doap:category <http://awesome.org/iipc/categories/curation> ;
-    foaf:homepage <https://robustlinks.mementoweb.org/zotero/> .
+    owl:sameAs <https://robustlinks.mementoweb.org/zotero/> .
 
 <http://awesome.org/iipc/categories/resources-for-web-publishers> a <http://awesome.org/schema#Category>,
         skos:Concept ;
