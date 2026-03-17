@@ -25,4 +25,4 @@ tasks:
     desc: Serve the data endpoint
     summary: Serve the data with [sparql-file](https://github.com/AKSW/sparql-file)
     cmds:
-      - sparql-file --port 8080 data/websites.ttl
+      - sparql-file --port 8080 awesome_new.ttl
