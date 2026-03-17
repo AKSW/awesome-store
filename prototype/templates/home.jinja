@@ -35,12 +35,10 @@ SELECT ?category_iri {
 
                     <div class="items-wrapper">
                         {% for item in resource | query(cat_item_query) %}
-                            {% set sameas = item.item_iri | property("owl:sameAs") %}
-
                             <a class="it" href="{{ item.item_iri | iri_resolver }}">
-                                {{ item.title }} ({{ sameas | iri_resolver }})
+                                {{ item.title }}
                             </a>
-                            
+
                         {% endfor %}
                     </div>
                     <a href="{{ cat.category_iri | iri_resolver }}">

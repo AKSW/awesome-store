@@ -27,7 +27,6 @@ SELECT ?project_iri {
             <div class="list-wrapper">
                 {% for item in items %}
                     {% set title = item.project_iri | property("rdfs:label") %}
-
                     <a class="it" href="{{ item.project_iri | iri_resolver }}">
                         {{ title }}
                     </a>
