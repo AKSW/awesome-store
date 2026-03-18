@@ -11,10 +11,15 @@ h3 {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
 a {
     text-decoration: none;
 }
+
 
 .items-wrapper, .list-wrapper {
     display: grid;
@@ -68,6 +73,104 @@ a {
     background-color: #0e3a6988;
 }
 
+
+.icon-wrapper {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+}
+
+.project-title {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 25px;
+
+    .title-info {
+        display: flex; 
+        flex-wrap: nowrap; 
+        gap: 15px;
+    }
+    .sameas {
+        a {
+            font-size: 13px;
+        }
+        h4 {
+            margin-bottom: 0.1rem;
+        }
+    }
+}
+
+.project-info {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-bottom: 25px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.project-image {
+    width: 90%;
+    height: 200px;
+    background-color: #ccc;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.project-description{
+    margin: 25px 20px;
+    margin-bottom: 25px;
+}
+
+.project-detail {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.tab-bar {
+    overflow: hidden;
+}
+
+.tab-bar button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.5s;
+}
+
+.tab-bar button.active {
+    border-bottom: 3px solid #4a8fd9;
+}
+
+.tab-content {
+    display: none;
+
+    div {
+        margin: 30px;
+    }
+    p {
+        margin: 0;
+    }
+}
+
+.tab-content.active {
+    display: block;
+}
+
 @media (max-width: 768px) {
     .items-wrapper, .list-wrapper {
         display: flex; 
@@ -76,5 +179,14 @@ a {
     }
     .it {
         width: 100%;
+    }
+    .project-title {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            text-align: center;
+        }
     }
 }

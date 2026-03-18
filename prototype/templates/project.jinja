@@ -1,62 +1,159 @@
 {% extends "base.html" %}
 
 {% block content %}
+    {% set sameas = resource["owl:sameAs"] | first %}
+
+    {% set stars = resource["ns1:num_stars"] | first %}
+    {% set watchers = resource["ns1:num_watchers"] | first %}
+    {% set developer = resource["doap:developer"] | first %}
+    {% set moved = resource["rdfs:seeAlso"] | first %}
+
+    {% set description =
+        resource["doap:description"] | first
+        or resource["dcterms:description"] | first
+    %}
+
+    {% set date = resource["doap:date"] | first %}
+    {% set created = resource["doap:created"] | first %}
+    {% set license = resource["doap:license"] | first %}
+    {% set category = resource["doap:category"] %}
+
+    {% set homepage = resource["doap:homepage"] | first %}
+    {% set repository = resource["doap:repository"] %}
+    {% set bug_database = resource["doap:bug-database"] | first %}
 
     <div class="content-wrapper">
-        <h1>
-            {{ resource["rdfs:label"] | first }}
+        <div class="project-title">
+            <div class="icon-wrapper"></div>
+                <div>
+                <h2>
+                    <strong>{{ resource["rdfs:label"] | first }}</strong> 
+                </h2>
+                <div class="title-info">
+                    <h2>
+                        {% for t in resource["rdf:type"] %}
+                            {% if (t | iri_resolver) == "http://usefulinc.com/ns/doap#Project" %}💽
+                            {% endif %}
+                        {% endfor %}   
+                    </h2>
+                    {% if sameas %}
+                        <div class="sameas">
+                            <h4>Same As</h4>
+                            <a href="{{ sameas | iri_resolver }}">
+                                {{ sameas | iri_resolver }}
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
 
-            {% for t in resource["rdf:type"] %}
-                {% if (t | iri_resolver) == "http://usefulinc.com/ns/doap#Project" %} 💽
+        {% if stars or watchers or developer or moved %}
+            <div class="project-info">
+                {% if stars  %}
+                    <div>
+                        <h4>Stars</h4>
+                        <p> {{ stars }} ⭐ </p>
+                    </div>
                 {% endif %}
-            {% endfor %}    
-        </h1>
+                {% if watchers %}
+                    <div>
+                        <h4>Watch</h4>
+                        <p> {{ watchers }} 👀 </p>
+                    </div>
+                {% endif %}
 
-        {% set description =
-            resource["doap:description"] | first
-            or resource["dcterms:description"] | first
-        %}
+                {% if developer %}
+                    <div>
+                        <h4>Developer</h4>
+                        <p> {{ developer | iri_resolver }} </p>
+                    </div>
+                {% endif %}
 
-        {% set homepage =
-            resource["doap:homepage"] | first
-        %}
+                {% if moved %}
+                    <div>
+                        <h4>Moved to</h4>
+                        <p><a href="➡️ {{ moved | string }}</a></p>
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
 
-        {% set stars = resource["ns1:num_stars"] | first %}
-        {% set watchers = resource["ns1:num_watchers"] | first %}
-        {% set moved = resource["rdfs:seeAlso"] | first %}
-        {% set sameas = resource["owl:sameAs"] | first %}
-
+        <div class="project-image">
+        </div>
 
         {% if description %}
-            <p class="description">{{ description }}</p>
+            <div class="project-description">
+                {% if description %}
+                    <p class="description">{{ description }}</p>
+                {% endif %}
+            </div>
         {% endif %}
 
-        {% if sameas %}
-            <h2>Same As</h2>
-            <a href="{{ sameas | iri_resolver }}">
-                {{ sameas | iri_resolver }}
-            </a>
-        {% endif %}
+        <div class="project-detail">
+            <div class="tab-bar">
+                <button class="tabs active" onclick="openTab(event, 'Info')">Infomation</button>
+                <button class="tabs" onclick="openTab(event, 'Link')">Link</button>
+            </div>
 
-        {% if homepage %}
-            <h3>Home Page</h3>
-            <a href="{{ homepage | iri_resolver }}">
-                {{ homepage | iri_resolver }}
-            </a>
-        {% endif %}
 
-        {% if stars or watchers %}
-            <h3>Repository Stats</h3>
-            <p>
-            {% if stars %} ⭐ {{ stars }} &nbsp; {% endif %}
-            {% if watchers %} 👀 {{ watchers }} {% endif %}
-            </p>
-        {% endif %}
+            <div id="Info" class="tab-content tabs active">
+                {% if created %}
+                    <div>
+                        <h4>Created</h4>
+                        <p> {{ created }} </p>
+                    </div>
+                {% endif %}
 
-        {% if moved %}
-            <h3>Status</h3>
-            <p>➡️ moved to <a href="{{ moved | string }}">{{ moved | string }}</a></p>
-        {% endif %}
+                {% if license %}
+                    <div>
+                        <h4>License</h4>
+                        <p> {{ license | iri_resolver }} </p>
+                    </div>
+                {% endif %}
+
+                {% if category %}
+                    <div>
+                        <h4>Catagories</h4>
+                        <p> 
+                            {% for cat in category %}
+                                {{ (cat | iri_resolver)
+                                    | replace('../../categories/', '')
+                                    | replace('/', '')
+                                    | replace('-', ' ')
+                                }} <br>
+                            {% endfor %}
+                        </p>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div id="Link" class="tab-content tabs">
+                {% if homepage %}
+                    <div>
+                        <h4>Home Page</h4>
+                        <a href="{{ homepage | iri_resolver }}"> {{ homepage | iri_resolver }} </a>
+                    </div>
+                {% endif %}
+
+                {% if repository %}
+                    <div>
+                        <h4>Repositories</h4>
+                        <a href="{{ repo | iri_resolver }}">
+                            {% for repo in repository %}
+                                {{ repo | iri_resolver }} <br>
+                            {% endfor %}  
+                        </a>                    
+                    </div>
+                {% endif %}
+
+                {% if bug_database %}
+                    <div>
+                        <h4>Bug Database</h4>
+                        <a href="{{ bug_database | iri_resolver }}"> {{ bug_database | iri_resolver }} </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
     </div>
-
 {% endblock %}

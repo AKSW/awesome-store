@@ -6,6 +6,8 @@ theme:
 extra_css:
   - resources/css/bootstrap.min.css
   - resources/css/custom.css
+extra_javascript:
+  - resources/js/script.js
 plugins:
   - mkrdf:
       graph_file: ./awesome_new.ttl
