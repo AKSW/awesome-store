@@ -29,7 +29,18 @@ SELECT ?project_iri {
         {% set sub_cats = resource | query(subcat_query) %}
 
         {% if sub_cats %}
-            <h2>Subcategories</h2>
+			<div>
+				<h2>Subcategories</h2>
+				<div class="quick-select-subcat-wrapper">
+					{% for sub_cat in sub_cats %}
+						{% set title = sub_cat.subcat_iri | property("rdfs:label") %}
+						<a class="quick-select-subcat" href="{{ sub_cat.subcat_iri | iri_resolver }}">
+							{{ title }}
+						</a>
+
+					{% endfor %}
+				</div>
+			</div>
 
             <div class="categories-wrapper">
                 {% for sub_cat in sub_cats %}
@@ -58,7 +69,7 @@ SELECT ?project_iri {
 						<a href="{{ sub_cat.subcat_iri | iri_resolver }}">
 							Show more
 						</a>
-      		      </div>
+      		     	</div>
 
                 {% endfor %}
             </div>

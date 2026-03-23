@@ -25,8 +25,17 @@
           <img height="20 em" class="me-2" src="{{ config.logo_path | url }}" role="image">
           <h1 class="fs-4">{{ config.site_name }}</h1>
         </a>
-      </header>
 
+        <form id="search-form" class="d-flex" role="search" onsubmit="return false;">
+          <input
+            id="search-query"
+            class="form-control"
+            type="search"
+            placeholder="Search..."
+          >
+        </form>
+      </header>
+      <div id="mkdocs-search-results"></div>
 
         {% block content %}
         {{ page.content }}
@@ -43,6 +52,9 @@
     Docs Build Date UTC : {{ build_date_utc }}
     -->
 
+    <script>
+      var base_url = "{{ base_url | default('') }}";
+    </script>
     {%- for script in config.extra_javascript %}
       {{ script | script_tag }}
     {%- endfor %}

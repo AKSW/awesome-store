@@ -1,14 +1,17 @@
 site_name: AKSW demo Store
 logo_path: resources/images/logo.png
 theme:
+theme:
   name: null
   custom_dir: templates
 extra_css:
   - resources/css/bootstrap.min.css
   - resources/css/custom.css
 extra_javascript:
+  - resources/js/bootstrap.min.js
   - resources/js/script.js
 plugins:
+  - search
   - mkrdf:
       graph_file: ./awesome_new.ttl
       # sparql_endpoint: http://localhost:8080/

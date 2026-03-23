@@ -20,6 +20,16 @@ a {
     text-decoration: none;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+}
+
+#mkdocs-search-results {
+    width: 300px;
+}
 
 .items-wrapper, .list-wrapper {
     display: grid;
@@ -27,8 +37,8 @@ a {
     gap: 12px;
 }
 
-.categories-wrapper {
-    margin: 0 20px;
+.categories-wrapper, .content-wrapper{
+    margin: 0 40px;
 }
 
 .it {
@@ -73,11 +83,28 @@ a {
     background-color: #0e3a6988;
 }
 
+.quick-select-subcat-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    .quick-select-subcat{
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+    }
+}
 
 .icon-wrapper {
+    display: flex;
     width: 100px;
     height: 100px;
-    background-color: #ccc;
+    font-size: 100px;
+    align-items: center;
 }
 
 .project-title {
@@ -110,12 +137,24 @@ a {
     border-top: 1px solid #ccc;
     padding-top: 10px;
     margin-bottom: 25px;
+    p {
+        margin: 0;
+    }
 
+    .vl {
+        border-left: 1px solid #ccc;
+        height: auto;
+    }
+    
     div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .vl:last-of-type {
+        display: none;
     }
 }
 
@@ -133,13 +172,22 @@ a {
     margin-bottom: 25px;
 }
 
-.project-detail {
-    border-radius: 20px;
-    border: 1px solid #ccc;
+#ProjectDetail {
+    border: 1px solid #0000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color:rgb(187, 204, 204)
 }
+
+#InfoTab {background-color: rgb(187, 204, 204)}
+#LinkTab {background-color: rgb(187, 204, 204)}
 
 .tab-bar {
     overflow: hidden;
+    background-color: lightgray;
+    z-index: 5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .tab-bar button {
@@ -152,8 +200,8 @@ a {
     transition: 0.5s;
 }
 
-.tab-bar button.active {
-    border-bottom: 3px solid #4a8fd9;
+.tab-bar button:not(.active) {
+    background-color: lightgray !important;
 }
 
 .tab-content {

@@ -24,7 +24,7 @@
 
     <div class="content-wrapper">
         <div class="project-title">
-            <div class="icon-wrapper"></div>
+            <div class="icon-wrapper">💽</div>
                 <div>
                 <h2>
                     <strong>{{ resource["rdfs:label"] | first }}</strong> 
@@ -55,19 +55,23 @@
                         <h4>Stars</h4>
                         <p> {{ stars }} ⭐ </p>
                     </div>
+                    <div class="vl"></div>
                 {% endif %}
+
                 {% if watchers %}
                     <div>
                         <h4>Watch</h4>
                         <p> {{ watchers }} 👀 </p>
                     </div>
+                    <div class="vl"></div>
                 {% endif %}
 
                 {% if developer %}
                     <div>
                         <h4>Developer</h4>
-                        <p> {{ developer | iri_resolver }} </p>
+                        <a href="{{ developer | iri_resolver }}"> {{ developer | iri_resolver }} </a>
                     </div>
+                    <div class="vl"></div>
                 {% endif %}
 
                 {% if moved %}
@@ -75,6 +79,7 @@
                         <h4>Moved to</h4>
                         <p><a href="➡️ {{ moved | string }}</a></p>
                     </div>
+                    <div class="vl"></div>
                 {% endif %}
             </div>
         {% endif %}
@@ -92,67 +97,72 @@
 
         <div class="project-detail">
             <div class="tab-bar">
-                <button class="tabs active" onclick="openTab(event, 'Info')">Infomation</button>
-                <button class="tabs" onclick="openTab(event, 'Link')">Link</button>
+                <button id="InfoTab" class="tabs active" onclick="openTab(event, 'Info')">Infomation</button>
+                <button id="LinkTab" class="tabs" onclick="openTab(event, 'Link')">Link</button>
             </div>
 
+            <div id="ProjectDetail">
+                <div id="Info" class="tab-content tabs active">
+                    {% if created %}
+                        <div>
+                            <h4>Created</h4>
+                            <p> {{ created }} </p>
+                        </div>
+                    {% endif %}
 
-            <div id="Info" class="tab-content tabs active">
-                {% if created %}
-                    <div>
-                        <h4>Created</h4>
-                        <p> {{ created }} </p>
-                    </div>
-                {% endif %}
+                    {% if license %}
+                        <div>
+                            <h4>License</h4>
+                            <p> {{ license | iri_resolver }} </p>
+                        </div>
+                    {% endif %}
 
-                {% if license %}
-                    <div>
-                        <h4>License</h4>
-                        <p> {{ license | iri_resolver }} </p>
-                    </div>
-                {% endif %}
+                    {% if category %}
+                        <div>
+                            <h4>Catagories</h4>
+                            <p> 
+                                {% for cat in category %}
+                                    {% set label_query = "
+                                        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+                                        SELECT ?label {
+                                        <" ~ (cat | string | replace('Resource(', '') | replace(')', '')) ~ "> rdfs:label ?label .
+                                        }
+                                    " %}
+                                    {% for row in resource | query(label_query) %}
+                                        {{  row.label }} <br>
+                                    {% endfor %}
+                                {% endfor %}
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
 
-                {% if category %}
-                    <div>
-                        <h4>Catagories</h4>
-                        <p> 
-                            {% for cat in category %}
-                                {{ (cat | iri_resolver)
-                                    | replace('../../categories/', '')
-                                    | replace('/', '')
-                                    | replace('-', ' ')
-                                }} <br>
-                            {% endfor %}
-                        </p>
-                    </div>
-                {% endif %}
-            </div>
+                <div id="Link" class="tab-content tabs">
+                    {% if homepage %}
+                        <div>
+                            <h4>Home Page</h4>
+                            <a href="{{ homepage | iri_resolver }}"> {{ homepage | iri_resolver }} </a>
+                        </div>
+                    {% endif %}
 
-            <div id="Link" class="tab-content tabs">
-                {% if homepage %}
-                    <div>
-                        <h4>Home Page</h4>
-                        <a href="{{ homepage | iri_resolver }}"> {{ homepage | iri_resolver }} </a>
-                    </div>
-                {% endif %}
+                    {% if repository %}
+                        <div>
+                            <h4>Repositories</h4>
+                            <a href="{{ repo | iri_resolver }}">
+                                {% for repo in repository %}
+                                    {{ repo | iri_resolver }} <br>
+                                {% endfor %}  
+                            </a>                    
+                        </div>
+                    {% endif %}
 
-                {% if repository %}
-                    <div>
-                        <h4>Repositories</h4>
-                        <a href="{{ repo | iri_resolver }}">
-                            {% for repo in repository %}
-                                {{ repo | iri_resolver }} <br>
-                            {% endfor %}  
-                        </a>                    
-                    </div>
-                {% endif %}
-
-                {% if bug_database %}
-                    <div>
-                        <h4>Bug Database</h4>
-                        <a href="{{ bug_database | iri_resolver }}"> {{ bug_database | iri_resolver }} </a>
-                    </div>
-                {% endif %}
+                    {% if bug_database %}
+                        <div>
+                            <h4>Bug Database</h4>
+                            <a href="{{ bug_database | iri_resolver }}"> {{ bug_database | iri_resolver }} </a>
+                        </div>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
