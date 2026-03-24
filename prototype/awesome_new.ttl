@@ -7,24 +7,24 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://127.0.0.1:8000/iipc/categories/trainingdocumentation> a <http://127.0.0.1:8000/schema#Category>,
+<http://awesome.org/iipc/categories/trainingdocumentation> a <http://awesome.org/schema#Category>,
         skos:Concept ;
     rdfs:label "Training/Documentation" .
 
-<http://127.0.0.1:8000/iipc/projects/84010> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/84010> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "The Web as History" ;
     dcterms:description "An open-source book that provides a conceptual overview to web archiving research, as well as several case studies." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship> ;
+    doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
     owl:sameAs <https://www.uclpress.co.uk/products/84010> .
 
-<http://127.0.0.1:8000/iipc/projects/ArchiveBox> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/ArchiveBox> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "ArchiveBox" ;
     dcterms:date "2025-09-23T08:08:48+00:00"^^xsd:dateTime ;
     dcterms:description "A tool which maintains an additive archive from RSS feeds, bookmarks, and links using wget, Chrome headless, and other methods (formerly " ;
     doap:bug-database <https://github.com/ArchiveBox/ArchiveBox/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2017-05-05T08:50:14+00:00"^^xsd:dateTime ;
     doap:description "🗃 Open source self-hosted web archiving. Takes URLs/browser history/bookmarks/Pocket/Pinboard/etc., saves HTML, JS, PDFs, media, and more..." ;
     doap:developer <https://github.com/ArchiveBox> ;
@@ -37,14 +37,14 @@
     ns1:num_stars 25001 ;
     ns1:num_watchers 178 .
 
-<http://127.0.0.1:8000/iipc/projects/ArchiveSpark> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/ArchiveSpark> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "ArchiveSpark" ;
     dcterms:date "2025-07-30T16:53:17+00:00"^^xsd:dateTime ;
     dcterms:description "An Apache Spark framework (not only) for Web Archives that enables easy data processing, extraction as well as derivation. " ;
     doap:bug-database <https://github.com/helgeho/ArchiveSpark/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/analysis> ;
     doap:created "2015-08-06T19:42:53+00:00"^^xsd:dateTime ;
     doap:description "An Apache Spark framework for easy data processing, extraction as well as derivation for web archives and archival collections, developed at Internet Archive." ;
     doap:developer <https://github.com/helgeho> ;
@@ -56,13 +56,13 @@
     ns1:num_stars 152 ;
     ns1:num_watchers 15 .
 
-<http://127.0.0.1:8000/iipc/projects/ArchiveTools> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/ArchiveTools> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "ArchiveTools" ;
     dcterms:date "2025-08-11T00:25:48+00:00"^^xsd:dateTime ;
     dcterms:description "Collection of tools to extract and interact with WARC files (Python)." ;
     doap:bug-database <https://github.com/recrm/ArchiveTools/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/utilities> ;
+    doap:category <http://awesome.org/iipc/categories/utilities> ;
     doap:created "2015-01-14T18:53:32+00:00"^^xsd:dateTime ;
     doap:description "A collection of tools for archiving and analysing the internet." ;
     doap:developer <https://github.com/recrm> ;
@@ -74,19 +74,19 @@
     ns1:num_stars 78 ;
     ns1:num_watchers 5 .
 
-<http://127.0.0.1:8000/iipc/projects/Category:Web_Crawl> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/Category:Web_Crawl> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "The Web Crawl section of COPTR" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/other-awesome-lists> ;
+    doap:category <http://awesome.org/iipc/categories/other-awesome-lists> ;
     owl:sameAs <http://coptr.digipres.org/Category:Web_Crawl> .
 
-<http://127.0.0.1:8000/iipc/projects/HadoopConcatGz> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/HadoopConcatGz> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "HadoopConcatGz" ;
     dcterms:date "2024-07-30T16:14:07+00:00"^^xsd:dateTime ;
     dcterms:description "A Splitable Hadoop InputFormat for Concatenated GZIP Files (and " ;
     doap:bug-database <https://github.com/helgeho/HadoopConcatGz/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2016-08-08T13:36:13+00:00"^^xsd:dateTime ;
     doap:description "A Splitable Hadoop InputFormat for Concatenated GZIP Files and *.(w)arc.gz" ;
     doap:developer <https://github.com/helgeho> ;
@@ -97,14 +97,14 @@
     ns1:num_stars 9 ;
     ns1:num_watchers 2 .
 
-<http://127.0.0.1:8000/iipc/projects/Mink> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/Mink> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Mink" ;
     dcterms:date "2025-06-24T16:55:44+00:00"^^xsd:dateTime ;
     dcterms:description "A " ;
     doap:bug-database <https://github.com/machawk1/Mink/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2014-01-17T18:25:53+00:00"^^xsd:dateTime ;
     doap:description "Chrome extension that uses Memento to indicate that a page a user is viewing on the live web has an archived copy and to give the user access to the copy" ;
     doap:developer <https://github.com/machawk1> ;
@@ -116,20 +116,20 @@
     ns1:num_stars 54 ;
     ns1:num_watchers 4 .
 
-<http://127.0.0.1:8000/iipc/projects/NetPreserve> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/NetPreserve> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "@NetPreserve" ;
     dcterms:description "Official IIPC handle." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/twitter> ;
+    doap:category <http://awesome.org/iipc/categories/twitter> ;
     owl:sameAs <https://twitter.com/NetPreserve> .
 
-<http://127.0.0.1:8000/iipc/projects/PANDORAE> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/PANDORAE> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "PANDORÆ" ;
     dcterms:date "2025-06-10T19:41:56+00:00"^^xsd:dateTime ;
     dcterms:description "A desktop research software to be plugged on a Solr endpoint to query, retrieve, normalize and visually explore web archives. " ;
     doap:bug-database <https://github.com/Guillaume-Levrier/PANDORAE/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2018-12-10T09:34:27+00:00"^^xsd:dateTime ;
     doap:description "A data retrieval & exploration protocol designed to investigate science and policy processes" ;
     doap:developer <https://github.com/Guillaume-Levrier> ;
@@ -142,21 +142,21 @@
     ns1:num_stars 14 ;
     ns1:num_watchers 2 .
 
-<http://127.0.0.1:8000/iipc/projects/Reconstructive> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/Reconstructive> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Reconstructive" ;
     dcterms:description "Reconstructive is a ServiceWorker module for client-side reconstruction of composite mementos by rerouting resource requests to corresponding archived copies (JavaScript)." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/replay> ;
+    doap:category <http://awesome.org/iipc/categories/replay> ;
     owl:sameAs <https://oduwsdl.github.io/Reconstructive/> .
 
-<http://127.0.0.1:8000/iipc/projects/SingleFile> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/SingleFile> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "SingleFile" ;
     dcterms:date "2025-09-23T14:55:52+00:00"^^xsd:dateTime ;
     dcterms:description "Browser extension for Firefox/Chrome and CLI tool to save a faithful copy of a complete page as a single HTML file. " ;
     doap:bug-database <https://github.com/gildas-lormeau/SingleFile/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2010-09-12T23:50:21+00:00"^^xsd:dateTime ;
     doap:description "Web Extension for saving a faithful copy of a complete web page in a single HTML file" ;
     doap:developer <https://github.com/gildas-lormeau> ;
@@ -169,22 +169,22 @@
     ns1:num_stars 19164 ;
     ns1:num_watchers 131 .
 
-<http://127.0.0.1:8000/iipc/projects/SiteStory> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/SiteStory> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "SiteStory" ;
     dcterms:description "A transactional archive that selectively captures and stores transactions that take place between a web client (browser) and a web server. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <http://mementoweb.github.io/SiteStory/> .
 
-<http://127.0.0.1:8000/iipc/projects/Sparkling> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/Sparkling> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Sparkling" ;
     dcterms:date "2025-07-30T16:52:22+00:00"^^xsd:dateTime ;
     dcterms:description "Internet Archive's Sparkling Data Processing Library. " ;
     doap:bug-database <https://github.com/internetarchive/Sparkling/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2022-04-28T14:28:21+00:00"^^xsd:dateTime ;
     doap:description "Internet Archive's Sparkling Data Processing Library" ;
     doap:developer <https://github.com/internetarchive> ;
@@ -196,14 +196,14 @@
     ns1:num_stars 13 ;
     ns1:num_watchers 20 .
 
-<http://127.0.0.1:8000/iipc/projects/Squidwarc> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/Squidwarc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Squidwarc" ;
     dcterms:date "2025-07-29T19:20:13+00:00"^^xsd:dateTime ;
     dcterms:description "An " ;
     doap:bug-database <https://github.com/N0taN3rd/Squidwarc/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2017-07-20T06:57:07+00:00"^^xsd:dateTime ;
     doap:description "Squidwarc is a high fidelity, user scriptable, archival crawler that uses Chrome or Chromium with or without a head" ;
     doap:developer <https://github.com/N0taN3rd> ;
@@ -216,19 +216,19 @@
     ns1:num_stars 171 ;
     ns1:num_watchers 9 .
 
-<http://127.0.0.1:8000/iipc/projects/Web-Archiving-Community> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/Web-Archiving-Community> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Web Archiving Community" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/other-awesome-lists> ;
+    doap:category <http://awesome.org/iipc/categories/other-awesome-lists> ;
     owl:sameAs <https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community> .
 
-<http://127.0.0.1:8000/iipc/projects/Web2Warc> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/Web2Warc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Web2Warc" ;
     dcterms:date "2025-05-23T03:33:48+00:00"^^xsd:dateTime ;
     dcterms:description "An easy-to-use and highly customizable crawler that enables anyone to create their own little Web archives (WARC/CDX). " ;
     doap:bug-database <https://github.com/helgeho/Web2Warc/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2016-01-29T10:43:55+00:00"^^xsd:dateTime ;
     doap:description "An easy-to-use and highly customizable crawler that enables you to create your own little Web archives (WARC/CDX)" ;
     doap:developer <https://github.com/helgeho> ;
@@ -240,37 +240,37 @@
     ns1:num_stars 25 ;
     ns1:num_watchers 3 .
 
-<http://127.0.0.1:8000/iipc/projects/WebMemex> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/WebMemex> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project,
         foaf:Agent,
         foaf:Organization ;
     rdfs:label "WebMemex" ;
     dcterms:description "Browser extension for Firefox and Chrome which lets you archive web pages you visit. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <https://github.com/WebMemex> .
 
-<http://127.0.0.1:8000/iipc/projects/WebSciDL> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/WebSciDL> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "@WebSciDL" ;
     dcterms:description "ODU Web Science and Digital Libraries Research Group." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/twitter> ;
+    doap:category <http://awesome.org/iipc/categories/twitter> ;
     owl:sameAs <https://twitter.com/WebSciDL> .
 
-<http://127.0.0.1:8000/iipc/projects/aibjbgmpmnidnmagaefhmcjhadpffaoi> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/aibjbgmpmnidnmagaefhmcjhadpffaoi> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Chrome link checker" ;
     dcterms:description "Browser extension: basic link checker." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <https://chrome.google.com/webstore/detail/link-checker/aibjbgmpmnidnmagaefhmcjhadpffaoi> .
 
-<http://127.0.0.1:8000/iipc/projects/arch> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/arch> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Archives Research Compute Hub" ;
     dcterms:date "2025-09-08T20:15:07+00:00"^^xsd:dateTime ;
     dcterms:description "Web application for distributed compute analysis of Archive-It web archive collections. " ;
     doap:bug-database <https://github.com/internetarchive/arch/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/analysis> ;
     doap:created "2022-04-28T15:18:47+00:00"^^xsd:dateTime ;
     doap:description "Web application for distributed compute analysis of Archive-It web archive collections." ;
     doap:developer <https://github.com/internetarchive> ;
@@ -282,20 +282,20 @@
     ns1:num_stars 20 ;
     ns1:num_watchers 20 .
 
-<http://127.0.0.1:8000/iipc/projects/archive-it.org> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/archive-it.org> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Archive-It" ;
     dcterms:description "From the Internet Archive." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/hosted-closed-source> ;
+    doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
     owl:sameAs <https://archive-it.org/> .
 
-<http://127.0.0.1:8000/iipc/projects/archivenow> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/archivenow> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "archivenow" ;
     dcterms:date "2025-08-20T12:09:15+00:00"^^xsd:dateTime ;
     dcterms:description "A " ;
     doap:bug-database <https://github.com/oduwsdl/archivenow/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2017-02-09T12:29:08+00:00"^^xsd:dateTime ;
     doap:description "A Tool To Push Web Resources Into Web Archives" ;
     doap:developer <https://github.com/oduwsdl> ;
@@ -307,33 +307,33 @@
     ns1:num_stars 422 ;
     ns1:num_watchers 20 .
 
-<http://127.0.0.1:8000/iipc/projects/archivers.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/archivers.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Archivers Slack" ;
     dcterms:description "" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/slack> ;
+    doap:category <http://awesome.org/iipc/categories/slack> ;
     owl:sameAs <https://archivers.slack.com> .
 
-<http://127.0.0.1:8000/iipc/projects/archivesunleashed.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/archivesunleashed.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Archives Unleashed Slack" ;
     dcterms:description "" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/slack> ;
+    doap:category <http://awesome.org/iipc/categories/slack> ;
     owl:sameAs <https://archivesunleashed.slack.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/archivewebpage> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/archivewebpage> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "ArchiveWeb.Page" ;
     dcterms:description "A plugin for Chrome and other Chromium based browsers that lets you interactively archive web pages, replay them, and export them as WARC & WACZ files. Also available as an Electron based desktop application." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <https://webrecorder.net/archivewebpage/> .
 
-<http://127.0.0.1:8000/iipc/projects/aut> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/aut> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Archives Unleashed Toolkit" ;
     dcterms:date "2025-09-22T12:12:52+00:00"^^xsd:dateTime ;
     dcterms:description "Archives Unleashed Toolkit (AUT) is an open-source platform for analyzing web archives with Apache Spark. " ;
     doap:bug-database <https://github.com/archivesunleashed/aut/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/analysis> ;
     doap:created "2017-07-06T10:13:44+00:00"^^xsd:dateTime ;
     doap:description "The Archives Unleashed Toolkit is an open-source toolkit for analyzing web archives." ;
     doap:developer <https://github.com/archivesunleashed> ;
@@ -346,13 +346,13 @@
     ns1:num_stars 148 ;
     ns1:num_watchers 14 .
 
-<http://127.0.0.1:8000/iipc/projects/auto-archiver> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/auto-archiver> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Auto Archiver" ;
     dcterms:date "2025-09-21T14:50:16+00:00"^^xsd:dateTime ;
     dcterms:description "Python script to automatically archive social media posts, videos, and images from a Google Sheets document. Read the " ;
     doap:bug-database <https://github.com/bellingcat/auto-archiver/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2021-01-15T10:30:03+00:00"^^xsd:dateTime ;
     doap:description "Automatically archive links to videos, images, and social media content from Google Sheets (and more)." ;
     doap:developer <https://github.com/bellingcat> ;
@@ -365,17 +365,17 @@
     ns1:num_stars 942 ;
     ns1:num_watchers 26 .
 
-<http://127.0.0.1:8000/iipc/projects/awesome-memento> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/awesome-memento> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Awesome Memento" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/other-awesome-lists> ;
+    doap:category <http://awesome.org/iipc/categories/other-awesome-lists> ;
     owl:sameAs <https://github.com/machawk1/awesome-memento> .
 
-<http://127.0.0.1:8000/iipc/projects/awesome-website-change-monitoring> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/awesome-website-change-monitoring> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Awesome Website Change Monitoring" ;
     dcterms:date "2025-09-10T14:45:09+00:00"^^xsd:dateTime ;
     doap:bug-database <https://github.com/edgi-govdata-archiving/awesome-website-change-monitoring/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/tools--software> ;
+    doap:category <http://awesome.org/iipc/categories/tools--software> ;
     doap:created "2017-05-24T05:33:41+00:00"^^xsd:dateTime ;
     doap:description "A curated list of awesome tools for website diffing and change monitoring." ;
     doap:developer <https://github.com/edgi-govdata-archiving> ;
@@ -387,32 +387,32 @@
     ns1:num_stars 511 ;
     ns1:num_watchers 30 .
 
-<http://127.0.0.1:8000/iipc/projects/blog> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/blog> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Common Crawl Foundation Blog" ;
     dcterms:description "" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship> ;
+    doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
     owl:sameAs <https://commoncrawl.org/blog> .
 
-<http://127.0.0.1:8000/iipc/projects/blog.dshr.org> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/blog.dshr.org> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "DSHR's Blog" ;
     dcterms:description "David Rosenthal regularly reviews and summarizes work done in the Digital Preservation field." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship> ;
+    doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
     owl:sameAs <https://blog.dshr.org/> .
 
-<http://127.0.0.1:8000/iipc/projects/browsertrix> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/browsertrix> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Browsertrix" ;
     dcterms:description "From " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/self-hostable-open-source> ;
+    doap:category <http://awesome.org/iipc/categories/self-hostable-open-source> ;
     owl:sameAs <https://webrecorder.net/browsertrix/> .
 
-<http://127.0.0.1:8000/iipc/projects/browsertrix-crawler> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/browsertrix-crawler> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Browsertrix Crawler" ;
     dcterms:date "2025-09-21T09:44:44+00:00"^^xsd:dateTime ;
     dcterms:description "A Chromium based high-fidelity crawling system, designed to run a complex, customizable browser-based crawl in a single Docker container. " ;
     doap:bug-database <https://github.com/webrecorder/browsertrix-crawler/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2020-11-02T04:37:14+00:00"^^xsd:dateTime ;
     doap:description "Run a high-fidelity browser-based web archiving crawler in a single Docker container" ;
     doap:developer <https://github.com/webrecorder> ;
@@ -425,14 +425,14 @@
     ns1:num_stars 877 ;
     ns1:num_watchers 23 .
 
-<http://127.0.0.1:8000/iipc/projects/brozzler> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/brozzler> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Brozzler" ;
     dcterms:date "2025-09-23T13:14:20+00:00"^^xsd:dateTime ;
     dcterms:description "A distributed web crawler (爬虫) that uses a real browser (Chrome or Chromium) to fetch pages and embedded urls and to extract links. " ;
     doap:bug-database <https://github.com/internetarchive/brozzler/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2015-07-13T23:48:11+00:00"^^xsd:dateTime ;
     doap:description "brozzler - distributed browser-based web crawler" ;
     doap:developer <https://github.com/internetarchive> ;
@@ -444,14 +444,14 @@
     ns1:num_stars 743 ;
     ns1:num_watchers 38 .
 
-<http://127.0.0.1:8000/iipc/projects/cairn> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/cairn> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Cairn" ;
     dcterms:date "2025-08-04T05:50:10+00:00"^^xsd:dateTime ;
     dcterms:description "A npm package and CLI tool for saving webpages. " ;
     doap:bug-database <https://github.com/wabarc/cairn/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2020-10-08T07:18:16+00:00"^^xsd:dateTime ;
     doap:description "NPM package and CLI tool for saving web page as single HTML file" ;
     doap:developer <https://github.com/wabarc> ;
@@ -463,14 +463,14 @@
     ns1:num_stars 49 ;
     ns1:num_watchers 3 .
 
-<http://127.0.0.1:8000/iipc/projects/cc-notebooks> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/cc-notebooks> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Common Crawl Jupyter notebooks" ;
     dcterms:date "2025-09-17T00:23:46+00:00"^^xsd:dateTime ;
     dcterms:description "A collection of notebooks using Common Crawl's various datasets. " ;
     doap:bug-database <https://github.com/commoncrawl/cc-notebooks/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/analysis> ;
     doap:created "2019-07-19T11:38:10+00:00"^^xsd:dateTime ;
     doap:description "Various Jupyter notebooks about Common Crawl data" ;
     doap:developer <https://github.com/commoncrawl> ;
@@ -482,26 +482,26 @@
     ns1:num_stars 58 ;
     ns1:num_watchers 18 .
 
-<http://127.0.0.1:8000/iipc/projects/ccfpartners.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/ccfpartners.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Common Crawl Foundation Partners" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/slack> ;
+    doap:category <http://awesome.org/iipc/categories/slack> ;
     owl:sameAs <https://ccfpartners.slack.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/cdx-toolkit> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/cdx-toolkit> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "cdx-toolkit" ;
     dcterms:description "Library and CLI to consult cdx indexes and create WARC extractions of subsets. Abstracts away Common Crawl's unusual crawl structure. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/utilities> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/utilities> ;
     owl:sameAs <https://pypi.org/project/cdx-toolkit/> .
 
-<http://127.0.0.1:8000/iipc/projects/chatnoir-resiliparse> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/chatnoir-resiliparse> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "FastWARC" ;
     dcterms:date "2025-08-29T10:55:43+00:00"^^xsd:dateTime ;
     dcterms:description "A high-performance WARC parsing library (Python)." ;
     doap:bug-database <https://github.com/chatnoir-eu/chatnoir-resiliparse/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2021-06-22T09:03:44+00:00"^^xsd:dateTime ;
     doap:description "A robust web archive analytics toolkit" ;
     doap:developer <https://github.com/chatnoir-eu> ;
@@ -514,19 +514,19 @@
     ns1:num_stars 116 ;
     ns1:num_watchers 8 .
 
-<http://127.0.0.1:8000/iipc/projects/chronicle> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/chronicle> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Hanzo" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/hosted-closed-source> ;
+    doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
     owl:sameAs <https://www.hanzo.co/chronicle> .
 
-<http://127.0.0.1:8000/iipc/projects/chronicler> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/chronicler> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Chronicler" ;
     dcterms:date "2025-06-23T21:08:07+00:00"^^xsd:dateTime ;
     dcterms:description "Web browser with record and replay functionality. " ;
     doap:bug-database <https://github.com/CGamesPlay/chronicler/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2018-12-27T04:01:42+00:00"^^xsd:dateTime ;
     doap:description "Offline-first web browser" ;
     doap:developer <https://github.com/CGamesPlay> ;
@@ -538,33 +538,33 @@
     ns1:num_stars 89 ;
     ns1:num_watchers 5 .
 
-<http://127.0.0.1:8000/iipc/projects/columnar-index> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/columnar-index> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Common Crawl Columnar Index" ;
     dcterms:description "SQL-queryable index, with CDX info plus language classification. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/analysis> ;
     owl:sameAs <https://commoncrawl.org/tag/columnar-index/> .
 
-<http://127.0.0.1:8000/iipc/projects/common-crawl> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/common-crawl> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Common Crawl" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/mailing-lists> ;
+    doap:category <http://awesome.org/iipc/categories/mailing-lists> ;
     owl:sameAs <https://groups.google.com/g/common-crawl> .
 
-<http://127.0.0.1:8000/iipc/projects/conifer.rhizome.org> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/conifer.rhizome.org> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Conifer" ;
     dcterms:description "From " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/self-hostable-open-source> ;
+    doap:category <http://awesome.org/iipc/categories/self-hostable-open-source> ;
     owl:sameAs <https://conifer.rhizome.org/> .
 
-<http://127.0.0.1:8000/iipc/projects/crau> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/crau> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "crau" ;
     dcterms:date "2025-08-01T13:42:02+00:00"^^xsd:dateTime ;
     dcterms:description "crau is the way (most) Brazilians pronounce crawl, it's the easiest command-line tool for archiving the Web and playing archives: you just need a list of URLs. " ;
     doap:bug-database <https://github.com/turicas/crau/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2019-10-26T19:21:34+00:00"^^xsd:dateTime ;
     doap:description "Easy-to-use Web archiver" ;
     doap:developer <https://github.com/turicas> ;
@@ -576,22 +576,22 @@
     ns1:num_stars 63 ;
     ns1:num_watchers 3 .
 
-<http://127.0.0.1:8000/iipc/projects/crawl> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/crawl> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Crawl" ;
     dcterms:description "A simple web crawler in Golang. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <https://git.autistici.org/ale/crawl> .
 
-<http://127.0.0.1:8000/iipc/projects/crocoite> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/crocoite> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "crocoite" ;
     dcterms:date "2025-07-12T04:02:35+00:00"^^xsd:dateTime ;
     dcterms:description "Crawl websites using headless Google Chrome/Chromium and save resources, static DOM snapshot and page screenshots to WARC files. " ;
     doap:bug-database <https://github.com/PromyLOPh/crocoite/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2017-11-17T18:56:11+00:00"^^xsd:dateTime ;
     doap:description "Web archiving using Google Chrome" ;
     doap:developer <https://github.com/PromyLOPh> ;
@@ -604,21 +604,21 @@
     ns1:num_stars 47 ;
     ns1:num_watchers 6 .
 
-<http://127.0.0.1:8000/iipc/projects/dlknooajieciikpedpldejhhijacnbda> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/dlknooajieciikpedpldejhhijacnbda> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Chrome Revolver" ;
     dcterms:description "Browser extension: switches between browser tabs." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <https://chrome.google.com/webstore/detail/revolver-tabs/dlknooajieciikpedpldejhhijacnbda> .
 
-<http://127.0.0.1:8000/iipc/projects/dn> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/dn> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "DiskerNet" ;
     dcterms:date "2025-09-23T13:56:35+00:00"^^xsd:dateTime ;
     dcterms:description "A non-WARC-based tool which hooks into the Chrome browser and archives everything you browse making it available for offline replay. " ;
     doap:bug-database <https://github.com/DO-SAY-GO/dn/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2019-12-20T09:47:32+00:00"^^xsd:dateTime ;
     doap:description " 💾 dn - offline full-text search and archiving for your Chromium-based browser. " ;
     doap:developer <https://github.com/DO-SAY-GO> ;
@@ -630,24 +630,24 @@
     ns1:num_stars 3853 ;
     ns1:num_watchers 41 .
 
-<http://127.0.0.1:8000/iipc/projects/en> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/en> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "PlayOnLinux",
         "PlayOnMac" ;
     dcterms:description "For running Xenu and Notepad++ on Ubuntu.",
         "For running Xenu and Notepad++ on macOS." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <https://www.playonlinux.com/en/>,
         <https://www.playonmac.com/en/> .
 
-<http://127.0.0.1:8000/iipc/projects/fbarc> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/fbarc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "F(b)arc" ;
     dcterms:date "2025-09-02T21:47:36+00:00"^^xsd:dateTime ;
     dcterms:description "A commandline tool and Python library for archiving data from " ;
     doap:bug-database <https://github.com/justinlittman/fbarc/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2017-02-14T23:45:42+00:00"^^xsd:dateTime ;
     doap:description "A commandline tool and Python library for archiving data from Facebook using the Graph API." ;
     doap:developer <https://github.com/justinlittman> ;
@@ -659,13 +659,13 @@
     ns1:num_stars 78 ;
     ns1:num_watchers 15 .
 
-<http://127.0.0.1:8000/iipc/projects/flameshot> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/flameshot> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "FlameShot" ;
     dcterms:date "2025-09-23T14:48:36+00:00"^^xsd:dateTime ;
     dcterms:description "Screen capture and annotation on Ubuntu." ;
     doap:bug-database <https://github.com/flameshot-org/flameshot/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     doap:created "2017-05-10T19:44:51+00:00"^^xsd:dateTime ;
     doap:description "Powerful yet simple to use screenshot software :desktop_computer: :camera_flash:" ;
     doap:developer <https://github.com/flameshot-org> ;
@@ -678,14 +678,14 @@
     ns1:num_stars 27849 ;
     ns1:num_watchers 210 .
 
-<http://127.0.0.1:8000/iipc/projects/freeze-dry> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/freeze-dry> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "freeze-dry" ;
     dcterms:date "2025-09-16T21:45:49+00:00"^^xsd:dateTime ;
     dcterms:description "JavaScript library to turn page into static, self-contained HTML document; useful for browser extensions. " ;
     doap:bug-database <https://github.com/WebMemex/freeze-dry/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2017-07-13T23:31:40+00:00"^^xsd:dateTime ;
     doap:description "Snapshots a web page to get it as a static, self-contained HTML document." ;
     doap:developer <https://github.com/WebMemex> ;
@@ -698,14 +698,14 @@
     ns1:num_stars 295 ;
     ns1:num_watchers 10 .
 
-<http://127.0.0.1:8000/iipc/projects/gogetcrawl> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/gogetcrawl> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Go Get Crawl" ;
     dcterms:date "2025-09-22T14:25:20+00:00"^^xsd:dateTime ;
     dcterms:description "Extract web archive data using " ;
     doap:bug-database <https://github.com/karust/gogetcrawl/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/utilities> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/utilities> ;
     doap:created "2019-06-14T19:02:05+00:00"^^xsd:dateTime ;
     doap:description "Extract web archive data using Wayback Machine and Common Crawl" ;
     doap:developer <https://github.com/karust> ;
@@ -717,13 +717,13 @@
     ns1:num_stars 161 ;
     ns1:num_watchers 3 .
 
-<http://127.0.0.1:8000/iipc/projects/gowarcserver> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/gowarcserver> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "gowarcserver" ;
     dcterms:date "2025-01-08T13:38:12+00:00"^^xsd:dateTime ;
     dcterms:description "" ;
     doap:bug-database <https://github.com/nlnwa/gowarcserver/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/utilities> ;
+    doap:category <http://awesome.org/iipc/categories/utilities> ;
     doap:created "2021-01-15T10:42:20+00:00"^^xsd:dateTime ;
     doap:developer <https://github.com/nlnwa> ;
     doap:license <https://api.github.com/licenses/apache-2.0> ;
@@ -733,14 +733,14 @@
     ns1:num_stars 16 ;
     ns1:num_watchers 6 .
 
-<http://127.0.0.1:8000/iipc/projects/grab-site> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/grab-site> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "grab-site" ;
     dcterms:date "2025-09-22T18:28:52+00:00"^^xsd:dateTime ;
     dcterms:description "The archivist's web crawler: WARC output, dashboard for all crawls, dynamic ignore patterns. " ;
     doap:bug-database <https://github.com/ArchiveTeam/grab-site/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2015-02-05T05:01:19+00:00"^^xsd:dateTime ;
     doap:description "The archivist's web crawler: WARC output, dashboard for all crawls, dynamic ignore patterns" ;
     doap:developer <https://github.com/ArchiveTeam> ;
@@ -751,13 +751,13 @@
     ns1:num_stars 1524 ;
     ns1:num_watchers 42 .
 
-<http://127.0.0.1:8000/iipc/projects/har2warc> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/har2warc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "har2warc" ;
     dcterms:date "2025-09-13T01:38:34+00:00"^^xsd:dateTime ;
     dcterms:description "Convert HTTP Archive (HAR) -> Web Archive (WARC) format (Python)." ;
     doap:bug-database <https://github.com/webrecorder/har2warc/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/utilities> ;
+    doap:category <http://awesome.org/iipc/categories/utilities> ;
     doap:created "2017-03-16T00:14:15+00:00"^^xsd:dateTime ;
     doap:description "Convert HTTP Archive (HAR) -> Web Archive (WARC) format" ;
     doap:developer <https://github.com/webrecorder> ;
@@ -770,14 +770,14 @@
     ns1:num_stars 54 ;
     ns1:num_watchers 6 .
 
-<http://127.0.0.1:8000/iipc/projects/html2warc> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/html2warc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "html2warc" ;
     dcterms:date "2025-07-12T19:05:05+00:00"^^xsd:dateTime ;
     dcterms:description "A simple script to convert offline data into a single WARC file. " ;
     doap:bug-database <https://github.com/steffenfritz/html2warc/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2015-12-30T14:29:32+00:00"^^xsd:dateTime ;
     doap:description "simple script to convert web resources to a single warc file" ;
     doap:developer <https://github.com/steffenfritz> ;
@@ -789,14 +789,14 @@
     ns1:num_stars 22 ;
     ns1:num_watchers 3 .
 
-<http://127.0.0.1:8000/iipc/projects/hyphe> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/hyphe> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "hyphe" ;
     dcterms:date "2025-09-16T11:12:34+00:00"^^xsd:dateTime ;
     dcterms:description "A webcrawler built for research uses with a graphical user interface in order to build web corpuses made of lists of web actors and maps of links between them. " ;
     doap:bug-database <https://github.com/medialab/hyphe/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2010-12-23T18:27:34+00:00"^^xsd:dateTime ;
     doap:description "Websites crawler with built-in exploration and control web interface" ;
     doap:developer <https://github.com/medialab> ;
@@ -809,35 +809,35 @@
     ns1:num_stars 359 ;
     ns1:num_watchers 31 .
 
-<http://127.0.0.1:8000/iipc/projects/iipc-mailing-list> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/iipc-mailing-list> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "IIPC" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/mailing-lists> ;
+    doap:category <http://awesome.org/iipc/categories/mailing-lists> ;
     owl:sameAs <http://netpreserve.org/about-us/iipc-mailing-list/> .
 
-<http://127.0.0.1:8000/iipc/projects/iipc.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/iipc.slack.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "IIPC Slack" ;
     dcterms:description "Ask " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/slack> ;
+    doap:category <http://awesome.org/iipc/categories/slack> ;
     owl:sameAs <https://iipc.slack.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/index.html> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/index.html> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Definition of Web Archivability" ;
     dcterms:description "This describes the ease with which web content can be preserved. (" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/resources-for-web-publishers> ;
+    doap:category <http://awesome.org/iipc/categories/resources-for-web-publishers> ;
     owl:sameAs <https://nullhandle.org/web-archivability/index.html> .
 
-<http://127.0.0.1:8000/iipc/projects/index.php?title=The_WARC_Ecosystem> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/index.php?title=The_WARC_Ecosystem> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "The WARC Ecosystem" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/other-awesome-lists> ;
+    doap:category <http://awesome.org/iipc/categories/other-awesome-lists> ;
     owl:sameAs <http://www.archiveteam.org/index.php?title=The_WARC_Ecosystem> .
 
-<http://127.0.0.1:8000/iipc/projects/ipwb> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/ipwb> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "InterPlanetary Wayback (ipwb)" ;
     dcterms:date "2025-09-17T18:30:09+00:00"^^xsd:dateTime ;
     dcterms:description "Web Archive (WARC) indexing and replay using " ;
     doap:bug-database <https://github.com/oduwsdl/ipwb/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/replay> ;
+    doap:category <http://awesome.org/iipc/categories/replay> ;
     doap:created "2016-03-04T15:01:33+00:00"^^xsd:dateTime ;
     doap:description "InterPlanetary Wayback: A distributed and persistent archive replay system using IPFS" ;
     doap:developer <https://github.com/oduwsdl> ;
@@ -849,13 +849,13 @@
     ns1:num_stars 643 ;
     ns1:num_watchers 21 .
 
-<http://127.0.0.1:8000/iipc/projects/jwarc> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/jwarc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "jwarc" ;
     dcterms:date "2025-09-18T05:00:52+00:00"^^xsd:dateTime ;
     dcterms:description "Read and write WARC files with a type safe API (Java)." ;
     doap:bug-database <https://github.com/iipc/jwarc/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2015-09-21T03:07:28+00:00"^^xsd:dateTime ;
     doap:description "Java library for reading and writing WARC files with a typed API" ;
     doap:developer <https://github.com/iipc> ;
@@ -867,14 +867,14 @@
     ns1:num_stars 50 ;
     ns1:num_watchers 5 .
 
-<http://127.0.0.1:8000/iipc/projects/jwat> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/jwat> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Jwat" ;
     dcterms:date "2023-04-17T20:40:09+00:00"^^xsd:dateTime ;
     dcterms:description "Libraries for reading/writing/validating WARC/ARC/GZIP files (Java). " ;
     doap:bug-database <https://github.com/netarchivesuite/jwat/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2018-08-30T17:28:48+00:00"^^xsd:dateTime ;
     doap:description "Java Web Archive Toolkit" ;
     doap:developer <https://github.com/netarchivesuite> ;
@@ -885,14 +885,14 @@
     ns1:num_stars 3 ;
     ns1:num_watchers 7 .
 
-<http://127.0.0.1:8000/iipc/projects/jwat-tools> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/jwat-tools> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Jwat-Tools" ;
     dcterms:date "2024-05-22T05:55:45+00:00"^^xsd:dateTime ;
     dcterms:description "Tools for reading/writing/validating WARC/ARC/GZIP files (Java). " ;
     doap:bug-database <https://github.com/netarchivesuite/jwat-tools/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2018-08-30T17:54:07+00:00"^^xsd:dateTime ;
     doap:description "JWAT Tools" ;
     doap:developer <https://github.com/netarchivesuite> ;
@@ -903,14 +903,14 @@
     ns1:num_stars 5 ;
     ns1:num_watchers 6 .
 
-<http://127.0.0.1:8000/iipc/projects/monolith> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/monolith> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "monolith" ;
     dcterms:date "2025-09-22T18:46:36+00:00"^^xsd:dateTime ;
     dcterms:description "CLI tool to save a web page as a single HTML file. " ;
     doap:bug-database <https://github.com/Y2Z/monolith/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2017-02-20T07:47:35+00:00"^^xsd:dateTime ;
     doap:description "⬛️ CLI tool and library for saving complete web pages as a single HTML file" ;
     doap:developer <https://github.com/Y2Z> ;
@@ -923,19 +923,19 @@
     ns1:num_stars 14238 ;
     ns1:num_watchers 67 .
 
-<http://127.0.0.1:8000/iipc/projects/netpreserveblog.wordpress.com> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/netpreserveblog.wordpress.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "IIPC Blog" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship> ;
+    doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
     owl:sameAs <https://netpreserveblog.wordpress.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/node-warc> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/node-warc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "node-warc" ;
     dcterms:date "2025-08-30T22:24:33+00:00"^^xsd:dateTime ;
     dcterms:description "Parse WARC files or create WARC files using either " ;
     doap:bug-database <https://github.com/N0taN3rd/node-warc/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2017-05-21T06:00:43+00:00"^^xsd:dateTime ;
     doap:description "Parse And Create Web ARChive  (WARC) files with node.js" ;
     doap:developer <https://github.com/N0taN3rd> ;
@@ -947,14 +947,14 @@
     ns1:num_stars 101 ;
     ns1:num_watchers 7 .
 
-<http://127.0.0.1:8000/iipc/projects/notebooks> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/notebooks> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Archives Unleashed Notebooks" ;
     dcterms:date "2025-03-25T22:00:33+00:00"^^xsd:dateTime ;
     dcterms:description "Notebooks for working with web archives with the Archives Unleashed Toolkit, and derivatives generated by the Archives Unleashed Toolkit. " ;
     doap:bug-database <https://github.com/archivesunleashed/notebooks/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/analysis> ;
     doap:created "2019-11-06T03:09:30+00:00"^^xsd:dateTime ;
     doap:description "Various examples of notebooks for working with web archives with the Archives Unleashed Toolkit, and derivatives generated by the Archives Unleashed Toolkit." ;
     doap:developer <https://github.com/archivesunleashed> ;
@@ -966,14 +966,14 @@
     ns1:num_stars 26 ;
     ns1:num_watchers 5 .
 
-<http://127.0.0.1:8000/iipc/projects/obelisk> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/obelisk> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Obelisk" ;
     dcterms:date "2025-09-09T19:21:24+00:00"^^xsd:dateTime ;
     dcterms:description "Go package and CLI tool for saving web page as single HTML file. " ;
     doap:bug-database <https://github.com/go-shiori/obelisk/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2020-03-29T00:53:06+00:00"^^xsd:dateTime ;
     doap:description "Go package and CLI tool for saving web page as single HTML file" ;
     doap:developer <https://github.com/go-shiori> ;
@@ -985,41 +985,41 @@
     ns1:num_stars 293 ;
     ns1:num_watchers 9 .
 
-<http://127.0.0.1:8000/iipc/projects/oifijhaokejakekmnjmphonojcfkpbbh?hl=de> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/oifijhaokejakekmnjmphonojcfkpbbh?hl=de> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Chrome Open Multiple URLs" ;
     dcterms:description "Browser extension: opens multiple URLs and also extracts URLs from text." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <https://chrome.google.com/webstore/detail/open-multiple-urls/oifijhaokejakekmnjmphonojcfkpbbh?hl=de> .
 
-<http://127.0.0.1:8000/iipc/projects/ojkcdipcgfaekbeaelaapakgnjflfglf> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/ojkcdipcgfaekbeaelaapakgnjflfglf> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Chrome Check My Links" ;
     dcterms:description "Browser extension: a link checker with more options." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <https://chrome.google.com/webstore/detail/check-my-links/ojkcdipcgfaekbeaelaapakgnjflfglf> .
 
-<http://127.0.0.1:8000/iipc/projects/openwayback> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/openwayback> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "OpenWayback" ;
     dcterms:description "The open source project aimed to develop Wayback Machine, the key software used by web archives worldwide to play back archived websites in the user's browser. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/replay> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/replay> ;
     owl:sameAs <https://github.com/iipc/openwayback/> .
 
-<http://127.0.0.1:8000/iipc/projects/openwayback-dev> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/openwayback-dev> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "OpenWayback" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/mailing-lists> ;
+    doap:category <http://awesome.org/iipc/categories/mailing-lists> ;
     owl:sameAs <https://groups.google.com/g/openwayback-dev> .
 
-<http://127.0.0.1:8000/iipc/projects/playback> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/playback> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "playback" ;
     dcterms:date "2025-04-12T03:18:37+00:00"^^xsd:dateTime ;
     dcterms:description "A toolkit for searching archived webpages from " ;
     doap:bug-database <https://github.com/wabarc/playback/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2021-04-08T14:21:46+00:00"^^xsd:dateTime ;
     doap:description "Playback webpages from Wayback Machine" ;
     doap:developer <https://github.com/wabarc> ;
@@ -1031,21 +1031,21 @@
     ns1:num_stars 9 ;
     ns1:num_watchers 3 .
 
-<http://127.0.0.1:8000/iipc/projects/publish-accepted?hl=en-US&gl=US> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/publish-accepted?hl=en-US&gl=US> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Chrome link gopher" ;
     dcterms:description "Browser extension: link harvester on a page." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <https://chrome.google.com/webstore/detail/bpjdkodgnbfalgghnbeggfbfjpcfamkf/publish-accepted?hl=en-US&gl=US> .
 
-<http://127.0.0.1:8000/iipc/projects/pywb> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/pywb> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "PYWB" ;
     dcterms:date "2025-09-18T18:58:42+00:00"^^xsd:dateTime ;
     dcterms:description "A Python 3 implementation of web archival replay tools, sometimes also known as 'Wayback Machine'. " ;
     doap:bug-database <https://github.com/webrecorder/pywb/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/replay> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/replay> ;
     doap:created "2013-12-09T03:30:31+00:00"^^xsd:dateTime ;
     doap:description "Core Python Web Archiving Toolkit for replay and recording of web archives" ;
     doap:developer <https://github.com/webrecorder> ;
@@ -1058,22 +1058,22 @@
     ns1:num_stars 1558 ;
     ns1:num_watchers 59 .
 
-<http://127.0.0.1:8000/iipc/projects/replaywebpage> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/replaywebpage> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "ReplayWeb.page" ;
     dcterms:description "A browser-based, fully client-side replay engine for both local and remote WARC & WACZ files. Also available as an Electron based desktop application. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/replay> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/replay> ;
     owl:sameAs <https://webrecorder.net/replaywebpage/> .
 
-<http://127.0.0.1:8000/iipc/projects/scoop> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/scoop> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Scoop" ;
     dcterms:date "2025-09-15T12:20:01+00:00"^^xsd:dateTime ;
     dcterms:description "High-fidelity, browser-based, single-page web archiving library and CLI for witnessing the web. " ;
     doap:bug-database <https://github.com/harvard-lil/scoop/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2022-09-20T18:50:14+00:00"^^xsd:dateTime ;
     doap:description "🍨 High-fidelity, browser-based, single-page web archiving library and CLI for witnessing the web." ;
     doap:developer <https://github.com/harvard-lil> ;
@@ -1085,34 +1085,34 @@
     ns1:num_stars 171 ;
     ns1:num_watchers 6 .
 
-<http://127.0.0.1:8000/iipc/projects/search?q=%23webarchiving> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/search?q=%23webarchiving> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "#WebArchiving" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/twitter> ;
+    doap:category <http://awesome.org/iipc/categories/twitter> ;
     owl:sameAs <https://twitter.com/search?q=%23webarchiving> .
 
-<http://127.0.0.1:8000/iipc/projects/securitytrails.com> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/securitytrails.com> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "SecurityTrails" ;
     dcterms:description "Web based archive for WHOIS and DNS records. REST API available free of charge." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/search--discovery> ;
     owl:sameAs <https://securitytrails.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/sfm-ui> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/sfm-ui> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Social Feed Manager" ;
     dcterms:description "Open source software that enables users to create social media collections from Twitter, Tumblr, Flickr, and Sina Weibo public APIs. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <https://gwu-libraries.github.io/sfm-ui/> .
 
-<http://127.0.0.1:8000/iipc/projects/shine> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/shine> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Shine" ;
     dcterms:date "2024-10-07T08:15:26+00:00"^^xsd:dateTime ;
     dcterms:description "A prototype web archives exploration UI, developed with researchers as part of the " ;
     doap:bug-database <https://github.com/ukwa/shine/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2013-07-03T20:18:03+00:00"^^xsd:dateTime ;
     doap:description "Prototype SOLR-powered web archive exploration UI." ;
     doap:developer <https://github.com/ukwa> ;
@@ -1125,13 +1125,13 @@
     ns1:num_stars 43 ;
     ns1:num_watchers 17 .
 
-<http://127.0.0.1:8000/iipc/projects/solrwayback> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/solrwayback> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "SolrWayback" ;
     dcterms:date "2025-09-23T10:46:10+00:00"^^xsd:dateTime ;
     dcterms:description "A backend Java and frontend VUE JS project with freetext search and a build in playback engine. Require Warc files has been index with the Warc-Indexer. The web application also has a wide range of data visualization tools and data export tools that can be used on the whole webarchive. " ;
     doap:bug-database <https://github.com/netarchivesuite/solrwayback/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2017-02-08T09:33:35+00:00"^^xsd:dateTime ;
     doap:description "A search interface and wayback machine for the UKWA Solr based warc-indexer framework." ;
     doap:developer <https://github.com/netarchivesuite> ;
@@ -1143,22 +1143,22 @@
     ns1:num_stars 131 ;
     ns1:num_watchers 22 .
 
-<http://127.0.0.1:8000/iipc/projects/stormcrawler.net> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/stormcrawler.net> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "StormCrawler" ;
     dcterms:description "A collection of resources for building low-latency, scalable web crawlers on Apache Storm. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <http://stormcrawler.net/> .
 
-<http://127.0.0.1:8000/iipc/projects/twarc> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/twarc> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "twarc" ;
     dcterms:date "2025-09-23T05:07:53+00:00"^^xsd:dateTime ;
     dcterms:description "A command line tool and Python library for archiving Twitter JSON data. " ;
     doap:bug-database <https://github.com/DocNow/twarc/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2013-01-14T14:35:40+00:00"^^xsd:dateTime ;
     doap:description "A command line tool (and Python library) for archiving Twitter JSON" ;
     doap:developer <https://github.com/DocNow> ;
@@ -1171,14 +1171,14 @@
     ns1:num_stars 1386 ;
     ns1:num_watchers 33 .
 
-<http://127.0.0.1:8000/iipc/projects/twut> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/twut> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Tweet Archvies Unleashed Toolkit" ;
     dcterms:date "2024-12-11T21:12:03+00:00"^^xsd:dateTime ;
     dcterms:description "An open-source toolkit for analyzing line-oriented JSON Twitter archives with Apache Spark. " ;
     doap:bug-database <https://github.com/archivesunleashed/twut/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/analysis> ;
     doap:created "2019-11-29T14:52:12+00:00"^^xsd:dateTime ;
     doap:description "An open-source toolkit for analyzing line-oriented JSON Twitter archives with Apache Spark." ;
     doap:developer <https://github.com/archivesunleashed> ;
@@ -1190,13 +1190,13 @@
     ns1:num_stars 9 ;
     ns1:num_watchers 3 .
 
-<http://127.0.0.1:8000/iipc/projects/unwarcit> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/unwarcit> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Unwarcit" ;
     dcterms:date "2025-08-26T09:08:54+00:00"^^xsd:dateTime ;
     dcterms:description "Command line interface to unzip WARC and WACZ files (Python)." ;
     doap:bug-database <https://github.com/emmadickson/unwarcit/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2021-12-11T19:19:28+00:00"^^xsd:dateTime ;
     doap:developer <https://github.com/emmadickson> ;
     doap:license <https://api.github.com/licenses/apache-2.0> ;
@@ -1206,30 +1206,30 @@
     ns1:num_stars 12 ;
     ns1:num_watchers 4 .
 
-<http://127.0.0.1:8000/iipc/projects/v1> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/v1> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Tempas v1" ;
     dcterms:description "Temporal web archive search based on " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     owl:sameAs <http://tempas.L3S.de/v1> .
 
-<http://127.0.0.1:8000/iipc/projects/v2> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/v2> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Tempas v2" ;
     dcterms:description "Temporal web archive search based on links and anchor texts extracted from the German web from 1996 to 2013 (results are not limited to German pages, e.g., " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     owl:sameAs <http://tempas.L3S.de/v2> .
 
-<http://127.0.0.1:8000/iipc/projects/wail> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/wail> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "WAIL" ;
     dcterms:date "2025-09-20T15:47:45+00:00"^^xsd:dateTime ;
     dcterms:description "A graphical user interface (GUI) atop multiple web archiving tools intended to be used as an easy way for anyone to preserve and replay web pages; " ;
     doap:bug-database <https://github.com/machawk1/wail/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2013-03-20T14:42:40+00:00"^^xsd:dateTime ;
     doap:description ":whale2: Web Archiving Integration Layer: One-Click User Instigated Preservation" ;
     doap:developer <https://github.com/machawk1> ;
@@ -1242,13 +1242,13 @@
     ns1:num_stars 378 ;
     ns1:num_watchers 13 .
 
-<http://127.0.0.1:8000/iipc/projects/warc2html> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warc2html> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "warc2html" ;
     dcterms:date "2025-09-18T06:10:24+00:00"^^xsd:dateTime ;
     dcterms:description "Converts WARC files to static HTML suitable for browsing offline or rehosting." ;
     doap:bug-database <https://github.com/iipc/warc2html/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/replay> ;
+    doap:category <http://awesome.org/iipc/categories/replay> ;
     doap:created "2021-11-08T04:09:05+00:00"^^xsd:dateTime ;
     doap:description "Converts WARC files to static HTML" ;
     doap:developer <https://github.com/iipc> ;
@@ -1260,14 +1260,14 @@
     ns1:num_stars 48 ;
     ns1:num_watchers 10 .
 
-<http://127.0.0.1:8000/iipc/projects/warcat> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warcat> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Warcat" ;
     dcterms:date "2025-09-02T06:54:41+00:00"^^xsd:dateTime ;
     dcterms:description "Tool and library for handling Web ARChive (WARC) files (Python). " ;
     doap:bug-database <https://github.com/chfoo/warcat/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2013-04-09T16:23:47+00:00"^^xsd:dateTime ;
     doap:description "Tool and library for handling Web ARChive (WARC) files." ;
     doap:developer <https://github.com/chfoo> ;
@@ -1279,14 +1279,14 @@
     ns1:num_stars 164 ;
     ns1:num_watchers 10 .
 
-<http://127.0.0.1:8000/iipc/projects/warcat-rs> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warcat-rs> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Warcat-rs" ;
     dcterms:date "2025-08-04T15:36:59+00:00"^^xsd:dateTime ;
     dcterms:description "Command-line tool and Rust library for handling Web ARChive (WARC) files. " ;
     doap:bug-database <https://github.com/chfoo/warcat-rs/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2024-09-15T15:24:13+00:00"^^xsd:dateTime ;
     doap:description "Command-line tool and Rust library for handling Web ARChive (WARC) files" ;
     doap:developer <https://github.com/chfoo> ;
@@ -1298,14 +1298,14 @@
     ns1:num_stars 25 ;
     ns1:num_watchers 1 .
 
-<http://127.0.0.1:8000/iipc/projects/warcio> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warcio> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "warcio" ;
     dcterms:date "2025-09-07T12:49:10+00:00"^^xsd:dateTime ;
     dcterms:description "Streaming WARC/ARC library for fast web archive IO (Python). " ;
     doap:bug-database <https://github.com/webrecorder/warcio/issues> ;
     doap:category <file:///Users/abel/bachelorarbeit-utomo/prototype/categorieswarc-io-libraries>,
-        <http://127.0.0.1:8000/iipc/categories/Stable> ;
+        <http://awesome.org/iipc/categories/Stable> ;
     doap:created "2017-03-06T18:17:11+00:00"^^xsd:dateTime ;
     doap:description "Streaming WARC/ARC library for fast web archive IO" ;
     doap:developer <https://github.com/webrecorder> ;
@@ -1318,14 +1318,14 @@
     ns1:num_stars 430 ;
     ns1:num_watchers 21 .
 
-<http://127.0.0.1:8000/iipc/projects/warclight> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warclight> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Warclight" ;
     dcterms:date "2024-12-16T22:46:34+00:00"^^xsd:dateTime ;
     dcterms:description "A Project Blacklight based Rails engine that supports the discovery of web archives held in the WARC and ARC formats. " ;
     doap:bug-database <https://github.com/archivesunleashed/warclight/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2017-08-03T17:45:46+00:00"^^xsd:dateTime ;
     doap:description "A Rails engine supporting the discovery of web archives." ;
     doap:developer <https://github.com/archivesunleashed> ;
@@ -1337,14 +1337,14 @@
     ns1:num_stars 50 ;
     ns1:num_watchers 4 .
 
-<http://127.0.0.1:8000/iipc/projects/warcprox> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warcprox> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Warcprox" ;
     dcterms:date "2025-09-13T22:14:43+00:00"^^xsd:dateTime ;
     dcterms:description "WARC-writing MITM HTTP/S proxy. " ;
     doap:bug-database <https://github.com/internetarchive/warcprox/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2013-10-25T23:27:02+00:00"^^xsd:dateTime ;
     doap:description "WARC writing MITM HTTP/S proxy" ;
     doap:developer <https://github.com/internetarchive> ;
@@ -1355,21 +1355,21 @@
     ns1:num_stars 420 ;
     ns1:num_watchers 35 .
 
-<http://127.0.0.1:8000/iipc/projects/warcreate> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warcreate> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "WARCreate" ;
     dcterms:description "A " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <http://matkelly.com/warcreate/> .
 
-<http://127.0.0.1:8000/iipc/projects/warctools> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warctools> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "warctools" ;
     dcterms:date "2025-08-30T21:56:53+00:00"^^xsd:dateTime ;
     dcterms:description "Library to work with ARC and WARC files (Python)." ;
     doap:bug-database <https://github.com/internetarchive/warctools/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2013-03-22T20:52:55+00:00"^^xsd:dateTime ;
     doap:description "Command line tools and libraries for handling and manipulating WARC files (and HTTP contents)" ;
     doap:developer <https://github.com/internetarchive> ;
@@ -1381,14 +1381,14 @@
     ns1:num_stars 164 ;
     ns1:num_watchers 41 .
 
-<http://127.0.0.1:8000/iipc/projects/warcworker> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/warcworker> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Warcworker" ;
     dcterms:date "2025-07-04T13:39:00+00:00"^^xsd:dateTime ;
     dcterms:description "An open source, dockerized, queued, high fidelity web archiver based on Squidwarc with a simple web GUI. " ;
     doap:bug-database <https://github.com/peterk/warcworker/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2018-07-21T08:31:18+00:00"^^xsd:dateTime ;
     doap:description "A dockerized, queued high fidelity web archiver based on Squidwarc" ;
     doap:developer <https://github.com/peterk> ;
@@ -1400,19 +1400,19 @@
     ns1:num_stars 61 ;
     ns1:num_watchers 5 .
 
-<http://127.0.0.1:8000/iipc/projects/wasapi-community> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/wasapi-community> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "WASAPI" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/mailing-lists> ;
+    doap:category <http://awesome.org/iipc/categories/mailing-lists> ;
     owl:sameAs <https://groups.google.com/g/wasapi-community> .
 
-<http://127.0.0.1:8000/iipc/projects/wasp> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/wasp> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Wasp" ;
     dcterms:date "2024-12-07T10:22:33+00:00"^^xsd:dateTime ;
     dcterms:description "A fully functional prototype of a personal " ;
     doap:bug-database <https://github.com/webis-de/wasp/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/In_Development>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/In_Development>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2018-03-25T18:58:42+00:00"^^xsd:dateTime ;
     doap:developer <https://github.com/webis-de> ;
     doap:license <https://api.github.com/licenses/mit> ;
@@ -1422,14 +1422,14 @@
     ns1:num_stars 27 ;
     ns1:num_watchers 12 .
 
-<http://127.0.0.1:8000/iipc/projects/wayback> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/wayback> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Wayback" ;
     dcterms:date "2025-09-21T14:15:22+00:00"^^xsd:dateTime ;
     dcterms:description "A toolkit for snapshot webpage to Internet Archive, archive.today, IPFS and beyond. " ;
     doap:bug-database <https://github.com/wabarc/wayback/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2020-06-13T10:08:05+00:00"^^xsd:dateTime ;
     doap:description "An archiving tool with an IM-style interface that prioritizes privacy and accessibility, integrated with various archival services including Internet Archive, archive.today, Ghostarchive, IPFS, Telegraph, and file systems." ;
     doap:developer <https://github.com/wabarc> ;
@@ -1442,14 +1442,14 @@
     ns1:num_stars 2064 ;
     ns1:num_watchers 9 .
 
-<http://127.0.0.1:8000/iipc/projects/waybackpy> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/waybackpy> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Waybackpy" ;
     dcterms:date "2025-09-16T12:44:05+00:00"^^xsd:dateTime ;
     dcterms:description " Wayback Machine Save, CDX and availability API interface in Python and a command-line tool  " ;
     doap:bug-database <https://github.com/akamhy/waybackpy/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2020-05-02T09:19:45+00:00"^^xsd:dateTime ;
     doap:description "Wayback Machine API interface & a command-line tool" ;
     doap:developer <https://github.com/akamhy> ;
@@ -1462,34 +1462,34 @@
     ns1:num_stars 549 ;
     ns1:num_watchers 10 .
 
-<http://127.0.0.1:8000/iipc/projects/web-archive> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/web-archive> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Smarsh" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/hosted-closed-source> ;
+    doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
     owl:sameAs <https://www.smarsh.com/platform/compliance-management/web-archive> .
 
-<http://127.0.0.1:8000/iipc/projects/web-graph> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/web-graph> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Common Crawl Web Graph" ;
     dcterms:description "A host or domain-level graph of the web, with ranking information. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/analysis> ;
     owl:sameAs <https://commoncrawl.org/category/web-graph/> .
 
-<http://127.0.0.1:8000/iipc/projects/web_archiving> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/web_archiving> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Comparison of web archiving software" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/tools--software> ;
+    doap:category <http://awesome.org/iipc/categories/tools--software> ;
     owl:sameAs <https://github.com/archivers-space/research/tree/master/web_archiving> .
 
-<http://127.0.0.1:8000/iipc/projects/webarchive> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/webarchive> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "UK Web Archive Blog",
         "webarchive" ;
     dcterms:date "2025-03-22T10:45:19+00:00"^^xsd:dateTime ;
     dcterms:description "Golang readers for ARC and WARC webarchive formats (Golang)." ;
     doap:bug-database <https://github.com/richardlehane/webarchive/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> ;
+    doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> ;
     doap:created "2015-09-21T06:38:52+00:00"^^xsd:dateTime ;
     doap:description "golang readers for ARC and WARC webarchive formats" ;
     doap:developer <https://github.com/richardlehane> ;
@@ -1502,14 +1502,14 @@
     ns1:num_stars 20 ;
     ns1:num_watchers 7 .
 
-<http://127.0.0.1:8000/iipc/projects/webarchive-discovery> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/webarchive-discovery> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "webarchive-discovery" ;
     dcterms:date "2025-08-13T11:10:16+00:00"^^xsd:dateTime ;
     dcterms:description "WARC and ARC full-text indexing and discovery tools, with a number of associated tools capable of using the index shown below. " ;
     doap:bug-database <https://github.com/ukwa/webarchive-discovery/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/search--discovery> ;
     doap:created "2012-12-20T12:17:14+00:00"^^xsd:dateTime ;
     doap:description "Please note that the warc-indexer tool & code is now supported by NetArchiveSuite. The 'warc-indexer' directory and code that exists in this repo is now only for reference. For support and issues of 'warc-indexer', please communicate with NetArchiveSuite." ;
     doap:developer <https://github.com/ukwa> ;
@@ -1521,59 +1521,59 @@
     ns1:num_stars 128 ;
     ns1:num_watchers 24 .
 
-<http://127.0.0.1:8000/iipc/projects/webarchivewednesday> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/webarchivewednesday> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "#WebArchiveWednesday" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/twitter> ;
+    doap:category <http://awesome.org/iipc/categories/twitter> ;
     owl:sameAs <https://twitter.com/hashtag/webarchivewednesday> .
 
-<http://127.0.0.1:8000/iipc/projects/webarchivingrt.wordpress.com> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/webarchivingrt.wordpress.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Web Archiving Roundtable" ;
     dcterms:description "Unofficial blog of the Web Archiving Roundtable of the " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship> ;
+    doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
     owl:sameAs <https://webarchivingrt.wordpress.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/webcuratortool.org> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/webcuratortool.org> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Web Curator Tool" ;
     dcterms:description "Open-source workflow management for selective web archiving. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <https://webcuratortool.org> .
 
-<http://127.0.0.1:8000/iipc/projects/webdatacommons.org> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/webdatacommons.org> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Web Data Commons" ;
     dcterms:description "Structured data extracted from Common Crawl. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/analysis> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/analysis> ;
     owl:sameAs <http://webdatacommons.org/> .
 
-<http://127.0.0.1:8000/iipc/projects/website-archiving> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/website-archiving> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "MirrorWeb" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/hosted-closed-source> ;
+    doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
     owl:sameAs <https://www.mirrorweb.com/solutions/capabilities/website-archiving> .
 
-<http://127.0.0.1:8000/iipc/projects/websites> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/websites> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "Arkiwera" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/hosted-closed-source> ;
+    doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
     owl:sameAs <https://arkiwera.se/wp/websites/> .
 
-<http://127.0.0.1:8000/iipc/projects/wget> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/wget> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Wget" ;
     dcterms:description "An open source file retrieval utility that of " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <http://www.gnu.org/software/wget/> .
 
-<http://127.0.0.1:8000/iipc/projects/wget-lua> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/wget-lua> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Wget-lua" ;
     dcterms:date "2025-04-02T14:39:23+00:00"^^xsd:dateTime ;
     dcterms:description "Wget with Lua extension. " ;
     doap:bug-database <https://github.com/alard/wget-lua/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2012-08-21T20:39:22+00:00"^^xsd:dateTime ;
     doap:description "Wget with Lua extension" ;
     doap:developer <https://github.com/alard> ;
@@ -1585,36 +1585,36 @@
     ns1:num_stars 24 ;
     ns1:num_watchers 3 .
 
-<http://127.0.0.1:8000/iipc/projects/wiki> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/wiki> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Heritrix" ;
     dcterms:description "An open source, extensible, web-scale, archival quality web crawler. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <https://github.com/internetarchive/heritrix3/wiki> .
 
-<http://127.0.0.1:8000/iipc/projects/windows-use-snipping-tool-to-capture-screenshots> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/windows-use-snipping-tool-to-capture-screenshots> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Windows Snipping Tool" ;
     dcterms:description "Windows built-in for partial screen capture and annotation. On macOS you can use Command + Shift + 4 (keyboard shortcut for taking partial screen capture)." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <https://support.microsoft.com/en-gb/help/13776/windows-use-snipping-tool-to-capture-screenshots> .
 
-<http://127.0.0.1:8000/iipc/projects/winebottler.kronenberg.org> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/winebottler.kronenberg.org> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "WineBottler" ;
     dcterms:description "For running Xenu and Notepad++ on macOS." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <http://winebottler.kronenberg.org/> .
 
-<http://127.0.0.1:8000/iipc/projects/wpull> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/wpull> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Wpull" ;
     dcterms:date "2025-09-05T19:40:55+00:00"^^xsd:dateTime ;
     dcterms:description "A Wget-compatible (or remake/clone/replacement/alternative) web downloader and crawler. " ;
     doap:bug-database <https://github.com/ArchiveTeam/wpull/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     doap:created "2013-12-07T13:03:15+00:00"^^xsd:dateTime ;
     doap:description "Wget-compatible web downloader and crawler." ;
     doap:developer <https://github.com/ArchiveTeam> ;
@@ -1626,39 +1626,39 @@
     ns1:num_stars 593 ;
     ns1:num_watchers 22 .
 
-<http://127.0.0.1:8000/iipc/projects/ws-dl.blogspot.com> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/ws-dl.blogspot.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "WS-DL Blog" ;
     dcterms:description "Web Science and Digital Libraries Research Group blogs about various Web archiving related topics, scholarly work, and academic trip reports." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship> ;
+    doap:category <http://awesome.org/iipc/categories/blogs-and-scholarship> ;
     owl:sameAs <https://ws-dl.blogspot.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/www.community-archive.org> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/www.community-archive.org> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Community Archive" ;
     dcterms:description "Open Twitter Database and API with tools and resources for building on archived Twitter data." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <https://www.community-archive.org/> .
 
-<http://127.0.0.1:8000/iipc/projects/www.httrack.com> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/www.httrack.com> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "HTTrack" ;
     dcterms:description "An open source website copying utility. " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/Stable>,
-        <http://127.0.0.1:8000/iipc/categories/acquisition> ;
+    doap:category <http://awesome.org/iipc/categories/Stable>,
+        <http://awesome.org/iipc/categories/acquisition> ;
     owl:sameAs <http://www.httrack.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/www.pagefreezer.com> a <http://rdfs.org/sioc/ns#Item> ;
+<http://awesome.org/iipc/projects/www.pagefreezer.com> a <http://rdfs.org/sioc/ns#Item> ;
     rdfs:label "PageFreezer" ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/hosted-closed-source> ;
+    doap:category <http://awesome.org/iipc/categories/hosted-closed-source> ;
     owl:sameAs <https://www.pagefreezer.com/> .
 
-<http://127.0.0.1:8000/iipc/projects/xdotool> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/xdotool> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "xDoTool" ;
     dcterms:date "2025-09-22T18:53:46+00:00"^^xsd:dateTime ;
     dcterms:description "Click automation on Ubuntu." ;
     doap:bug-database <https://github.com/jordansissel/xdotool/issues> ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     doap:created "2011-02-16T02:41:01+00:00"^^xsd:dateTime ;
     doap:description "fake keyboard/mouse input, window management, and more " ;
     doap:developer <https://github.com/jordansissel> ;
@@ -1669,21 +1669,21 @@
     ns1:num_stars 3572 ;
     ns1:num_watchers 64 .
 
-<http://127.0.0.1:8000/iipc/projects/xenulink.html> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/xenulink.html> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Xenu" ;
     dcterms:description "Desktop link checker for Windows." ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/quality-assurance> ;
+    doap:category <http://awesome.org/iipc/categories/quality-assurance> ;
     owl:sameAs <http://home.snafu.de/tilman/xenulink.html> .
 
-<http://127.0.0.1:8000/iipc/projects/zotero> a <http://rdfs.org/sioc/ns#Item>,
+<http://awesome.org/iipc/projects/zotero> a <http://rdfs.org/sioc/ns#Item>,
         doap:Project ;
     rdfs:label "Zotero Robust Links Extension" ;
     dcterms:description "A " ;
-    doap:category <http://127.0.0.1:8000/iipc/categories/curation> ;
+    doap:category <http://awesome.org/iipc/categories/curation> ;
     owl:sameAs <https://robustlinks.mementoweb.org/zotero/> .
 
-<http://127.0.0.1:8000/iipc/categories/resources-for-web-publishers> a <http://127.0.0.1:8000/schema#Category>,
+<http://awesome.org/iipc/categories/resources-for-web-publishers> a <http://awesome.org/schema#Category>,
         skos:Concept ;
     rdfs:label "Resources for Web Publishers" ;
     dcterms:description "These resources can help when working with individuals or organisations who publish on the web, and who want to make sure their site can be archived." .
@@ -2049,17 +2049,17 @@
     doap:browse <https://github.com/webrecorder/warcio> ;
     doap:location <https://github.com/webrecorder/warcio> .
 
-<http://127.0.0.1:8000/iipc/categories/curation> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/curation> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Curation" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/tools--software> .
+    skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://127.0.0.1:8000/iipc/categories/web-archiving-service-providers> a <http://127.0.0.1:8000/schema#Category>,
+<http://awesome.org/iipc/categories/web-archiving-service-providers> a <http://awesome.org/schema#Category>,
         skos:Concept ;
     rdfs:label "Web Archiving Service Providers" ;
     dcterms:description "The intention is that we only list services that allow web archives to be exported in standard formats (WARC or WACZ). But this is not an endorsement of these services, and readers should check and evaluate these options based on their needs." ;
-    skos:narrower <http://127.0.0.1:8000/iipc/categories/hosted-closed-source>,
-        <http://127.0.0.1:8000/iipc/categories/self-hostable-open-source> .
+    skos:narrower <http://awesome.org/iipc/categories/hosted-closed-source>,
+        <http://awesome.org/iipc/categories/self-hostable-open-source> .
 
 <https://github.com/ArchiveBox/ArchiveBox.git> a doap:GitRepository ;
     doap:browse <https://github.com/ArchiveBox/ArchiveBox> ;
@@ -2481,10 +2481,10 @@
         <git@github.com:webrecorder/warcio.git>,
         <https://github.com/webrecorder/warcio.git> .
 
-<http://127.0.0.1:8000/iipc/categories/self-hostable-open-source> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/self-hostable-open-source> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Self-hostable, Open Source" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/web-archiving-service-providers> .
+    skos:broader <http://awesome.org/iipc/categories/web-archiving-service-providers> .
 
 <https://api.github.com/licenses/cc0-1.0> rdfs:label "Creative Commons Zero v1.0 Universal" .
 
@@ -2522,107 +2522,107 @@
 <https://github.com/webrecorder> a foaf:Agent,
         foaf:Organization .
 
-<http://127.0.0.1:8000/iipc/categories/community-resources> a <http://127.0.0.1:8000/schema#Category>,
+<http://awesome.org/iipc/categories/community-resources> a <http://awesome.org/schema#Category>,
         skos:Concept ;
     rdfs:label "Community Resources" ;
-    skos:narrower <http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship>,
-        <http://127.0.0.1:8000/iipc/categories/mailing-lists>,
-        <http://127.0.0.1:8000/iipc/categories/other-awesome-lists>,
-        <http://127.0.0.1:8000/iipc/categories/slack>,
-        <http://127.0.0.1:8000/iipc/categories/twitter> .
+    skos:narrower <http://awesome.org/iipc/categories/blogs-and-scholarship>,
+        <http://awesome.org/iipc/categories/mailing-lists>,
+        <http://awesome.org/iipc/categories/other-awesome-lists>,
+        <http://awesome.org/iipc/categories/slack>,
+        <http://awesome.org/iipc/categories/twitter> .
 
-<http://127.0.0.1:8000/iipc/categories/mailing-lists> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/mailing-lists> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Mailing Lists" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/community-resources> .
+    skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
-<http://127.0.0.1:8000/iipc/categories/other-awesome-lists> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/other-awesome-lists> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Other Awesome Lists" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/community-resources> .
+    skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
-<http://127.0.0.1:8000/iipc/categories/slack> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/slack> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Slack" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/community-resources> .
+    skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
-<http://127.0.0.1:8000/iipc/categories/twitter> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/twitter> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Twitter" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/community-resources> .
+    skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
 <https://github.com/internetarchive> a foaf:Agent,
         foaf:Organization .
 
-<http://127.0.0.1:8000/iipc/categories/utilities> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/utilities> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Utilities" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/tools--software> .
+    skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://127.0.0.1:8000/iipc/categories/hosted-closed-source> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/hosted-closed-source> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Hosted, Closed Source" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/web-archiving-service-providers> .
+    skos:broader <http://awesome.org/iipc/categories/web-archiving-service-providers> .
 
-<http://127.0.0.1:8000/iipc/categories/replay> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/replay> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Replay" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/tools--software> .
+    skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://127.0.0.1:8000/iipc/categories/blogs-and-scholarship> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/blogs-and-scholarship> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Blogs and Scholarship" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/community-resources> .
+    skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
 <https://api.github.com/licenses/gpl-3.0> rdfs:label "GNU General Public License v3.0" .
 
-<http://127.0.0.1:8000/iipc/categories/analysis> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/analysis> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Analysis" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/tools--software> .
+    skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://127.0.0.1:8000/iipc/categories/tools--software> a <http://127.0.0.1:8000/schema#Category>,
+<http://awesome.org/iipc/categories/tools--software> a <http://awesome.org/schema#Category>,
         skos:Concept ;
     rdfs:label "Tools & Software" ;
     dcterms:description "This list of tools and software is intended to briefly describe some of the most important and widely-used tools related to web archiving. For more details, we recommend you refer to (and contribute to!) these excellent resources from other groups:" ;
-    skos:narrower <http://127.0.0.1:8000/iipc/categories/acquisition>,
-        <http://127.0.0.1:8000/iipc/categories/analysis>,
-        <http://127.0.0.1:8000/iipc/categories/curation>,
-        <http://127.0.0.1:8000/iipc/categories/quality-assurance>,
-        <http://127.0.0.1:8000/iipc/categories/replay>,
-        <http://127.0.0.1:8000/iipc/categories/search--discovery>,
-        <http://127.0.0.1:8000/iipc/categories/utilities>,
-        <http://127.0.0.1:8000/iipc/categories/warc-io-libraries> .
+    skos:narrower <http://awesome.org/iipc/categories/acquisition>,
+        <http://awesome.org/iipc/categories/analysis>,
+        <http://awesome.org/iipc/categories/curation>,
+        <http://awesome.org/iipc/categories/quality-assurance>,
+        <http://awesome.org/iipc/categories/replay>,
+        <http://awesome.org/iipc/categories/search--discovery>,
+        <http://awesome.org/iipc/categories/utilities>,
+        <http://awesome.org/iipc/categories/warc-io-libraries> .
 
-<http://127.0.0.1:8000/iipc/categories/In_Development> a <http://127.0.0.1:8000/schema#Category>,
+<http://awesome.org/iipc/categories/In_Development> a <http://awesome.org/schema#Category>,
         skos:Concept ;
     rdfs:label "In Development" .
 
-<http://127.0.0.1:8000/iipc/categories/quality-assurance> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/quality-assurance> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Quality Assurance" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/tools--software> .
+    skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://127.0.0.1:8000/iipc/categories/search--discovery> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/search--discovery> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Search & Discovery" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/tools--software> .
+    skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://127.0.0.1:8000/iipc/categories/warc-io-libraries> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/warc-io-libraries> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "WARC I/O Libraries" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/tools--software> .
+    skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
 <https://api.github.com/licenses/apache-2.0> rdfs:label "Apache License 2.0" .
 
 <https://api.github.com/licenses/mit> rdfs:label "MIT License" .
 
-<http://127.0.0.1:8000/iipc/categories/acquisition> a <http://127.0.0.1:8000/schema#SubCategory>,
+<http://awesome.org/iipc/categories/acquisition> a <http://awesome.org/schema#SubCategory>,
         skos:Concept ;
     rdfs:label "Acquisition" ;
-    skos:broader <http://127.0.0.1:8000/iipc/categories/tools--software> .
+    skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://127.0.0.1:8000/iipc/categories/Stable> a <http://127.0.0.1:8000/schema#Category>,
+<http://awesome.org/iipc/categories/Stable> a <http://awesome.org/schema#Category>,
         skos:Concept ;
     rdfs:label "Stable" .
 

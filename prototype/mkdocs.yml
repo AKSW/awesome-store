@@ -1,7 +1,6 @@
 site_name: AKSW demo Store
 logo_path: resources/images/logo.png
 theme:
-theme:
   name: null
   custom_dir: templates
   features:
@@ -17,11 +16,11 @@ plugins:
   - mkrdf:
       graph_file: ./awesome_new.ttl
       # sparql_endpoint: http://localhost:8080/
-      base_iri: http://127.0.0.1:8000/
+      base_iri: http://awesome.org/
       class_template_map:
-          http://127.0.0.1:8000/schema#Category: category.jinja
-          http://127.0.0.1:8000/schema#SubCategory: sub_category.jinja
+          http://awesome.org/schema#Category: category.jinja
+          http://awesome.org/schema#SubCategory: sub_category.jinja
           http://rdfs.org/sioc/ns#Item: project.jinja
           
       instance_template_map:
-        http://127.0.0.1:8000/: home.jinja
+        http://awesome.org/: home.jinja
