@@ -12,3 +12,14 @@ function openTab(evt, tab) {
   document.getElementById(tab).className += " active";
   evt.currentTarget.className += " active";
 }
+
+const input = document.getElementById("mkdocs-search-query");
+const results = document.getElementById("mkdocs-search-results");
+
+input.addEventListener("input", function () {
+    if (input.value.trim().length > 0) {
+        results.style.display = "block";
+    } else {
+        results.style.display = "none";
+    }
+});

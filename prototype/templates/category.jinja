@@ -25,7 +25,6 @@ SELECT ?project_iri {
         %}
 
         <p class="description">{{ description }}</p>
-
         {% set sub_cats = resource | query(subcat_query) %}
 
         {% if sub_cats %}

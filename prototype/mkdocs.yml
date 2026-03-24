@@ -4,6 +4,8 @@ theme:
 theme:
   name: null
   custom_dir: templates
+  features:
+    - search.suggest
 extra_css:
   - resources/css/bootstrap.min.css
   - resources/css/custom.css
@@ -15,11 +17,11 @@ plugins:
   - mkrdf:
       graph_file: ./awesome_new.ttl
       # sparql_endpoint: http://localhost:8080/
-      base_iri: http://awesome.org/
+      base_iri: http://127.0.0.1:8000/
       class_template_map:
-          http://awesome.org/schema#Category: category.jinja
-          http://awesome.org/schema#SubCategory: sub_category.jinja
+          http://127.0.0.1:8000/schema#Category: category.jinja
+          http://127.0.0.1:8000/schema#SubCategory: sub_category.jinja
           http://rdfs.org/sioc/ns#Item: project.jinja
           
       instance_template_map:
-        http://awesome.org/: home.jinja
+        http://127.0.0.1:8000/: home.jinja
