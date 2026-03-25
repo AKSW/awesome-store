@@ -63,14 +63,14 @@ for s, p, o in g:
     new_graph.add((s, p, o))
 
 # classify Category / SubCategory
-for concept, new_iri in category_map.items():
+#for concept, new_iri in category_map.items():
 
-    parent = list(g.objects(concept, SKOS.broader))
+#    parent = list(g.objects(concept, SKOS.broader))
 
-    if parent:
-        new_graph.add((new_iri, RDF.type, EX.SubCategory))
-    else:
-        new_graph.add((new_iri, RDF.type, EX.Category))
+#    if parent:
+#        new_graph.add((new_iri, RDF.type, EX.SubCategory))
+#    else:
+#        new_graph.add((new_iri, RDF.type, EX.Category))
 
 # write result
 new_graph.serialize("awesome_new.ttl", format="turtle")

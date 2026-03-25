@@ -26,17 +26,20 @@
             <h1 class="fs-4">{{ config.site_name }}</h1>
           </a>
 
-          <div id="search-wrapper">
-            <form id="search-form" class="d-flex" role="search" onsubmit="return false;">
-              <input
-                id="mkdocs-search-query"
-                class="form-control"
-                type="search"
-                placeholder="Search..."
-              >
-            </form>
-            <div id="mkdocs-search-results"></div>
-          </div>
+<div id="search-wrapper">
+  <form id="search-form" onsubmit="return false;">
+    <input
+      id="mkdocs-search-query"
+      class="form-control"
+      type="search"
+      placeholder="Search..."
+    >
+  </form>
+
+  <div class="search-section">
+    <div id="mkdocs-search-results"></div>
+  </div>
+</div>
       </header>
 
         {% block content %}
@@ -56,6 +59,7 @@
 
     <script>
       var base_url = "{{ config.site_url }}";
+      /* var base_iri = "{{ config.extra['base_iri']}}"; */   
     </script>
 
     {%- for script in config.extra_javascript %}

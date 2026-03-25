@@ -11,15 +11,20 @@ extra_css:
 extra_javascript:
   - resources/js/bootstrap.min.js
   - resources/js/script.js
+#  - resources/js/search.js
+#extra:
+#  base_iri: http://awesome.org/
+
 plugins:
-  - search
+  - search:
+      min_search_length: 1
+      separator: '[\s\-\.\_\*]+'
   - mkrdf:
       graph_file: ./awesome_new.ttl
       # sparql_endpoint: http://localhost:8080/
       base_iri: http://awesome.org/
       class_template_map:
-          http://awesome.org/schema#Category: category.jinja
-          http://awesome.org/schema#SubCategory: sub_category.jinja
+          http://www.w3.org/2004/02/skos/core#Concept: category.jinja
           http://rdfs.org/sioc/ns#Item: project.jinja
           
       instance_template_map:

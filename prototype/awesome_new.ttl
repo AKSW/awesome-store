@@ -7,8 +7,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://awesome.org/iipc/categories/trainingdocumentation> a <http://awesome.org/schema#Category>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/trainingdocumentation> a skos:Concept ;
     rdfs:label "Training/Documentation" .
 
 <http://awesome.org/iipc/projects/84010> a <http://rdfs.org/sioc/ns#Item> ;
@@ -1683,8 +1682,7 @@
     doap:category <http://awesome.org/iipc/categories/curation> ;
     owl:sameAs <https://robustlinks.mementoweb.org/zotero/> .
 
-<http://awesome.org/iipc/categories/resources-for-web-publishers> a <http://awesome.org/schema#Category>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/resources-for-web-publishers> a skos:Concept ;
     rdfs:label "Resources for Web Publishers" ;
     dcterms:description "These resources can help when working with individuals or organisations who publish on the web, and who want to make sure their site can be archived." .
 
@@ -2049,13 +2047,11 @@
     doap:browse <https://github.com/webrecorder/warcio> ;
     doap:location <https://github.com/webrecorder/warcio> .
 
-<http://awesome.org/iipc/categories/curation> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/curation> a skos:Concept ;
     rdfs:label "Curation" ;
     skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://awesome.org/iipc/categories/web-archiving-service-providers> a <http://awesome.org/schema#Category>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/web-archiving-service-providers> a skos:Concept ;
     rdfs:label "Web Archiving Service Providers" ;
     dcterms:description "The intention is that we only list services that allow web archives to be exported in standard formats (WARC or WACZ). But this is not an endorsement of these services, and readers should check and evaluate these options based on their needs." ;
     skos:narrower <http://awesome.org/iipc/categories/hosted-closed-source>,
@@ -2481,8 +2477,7 @@
         <git@github.com:webrecorder/warcio.git>,
         <https://github.com/webrecorder/warcio.git> .
 
-<http://awesome.org/iipc/categories/self-hostable-open-source> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/self-hostable-open-source> a skos:Concept ;
     rdfs:label "Self-hostable, Open Source" ;
     skos:broader <http://awesome.org/iipc/categories/web-archiving-service-providers> .
 
@@ -2522,8 +2517,7 @@
 <https://github.com/webrecorder> a foaf:Agent,
         foaf:Organization .
 
-<http://awesome.org/iipc/categories/community-resources> a <http://awesome.org/schema#Category>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/community-resources> a skos:Concept ;
     rdfs:label "Community Resources" ;
     skos:narrower <http://awesome.org/iipc/categories/blogs-and-scholarship>,
         <http://awesome.org/iipc/categories/mailing-lists>,
@@ -2531,58 +2525,48 @@
         <http://awesome.org/iipc/categories/slack>,
         <http://awesome.org/iipc/categories/twitter> .
 
-<http://awesome.org/iipc/categories/mailing-lists> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/mailing-lists> a skos:Concept ;
     rdfs:label "Mailing Lists" ;
     skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
-<http://awesome.org/iipc/categories/other-awesome-lists> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/other-awesome-lists> a skos:Concept ;
     rdfs:label "Other Awesome Lists" ;
     skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
-<http://awesome.org/iipc/categories/slack> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/slack> a skos:Concept ;
     rdfs:label "Slack" ;
     skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
-<http://awesome.org/iipc/categories/twitter> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/twitter> a skos:Concept ;
     rdfs:label "Twitter" ;
     skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
 <https://github.com/internetarchive> a foaf:Agent,
         foaf:Organization .
 
-<http://awesome.org/iipc/categories/utilities> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/utilities> a skos:Concept ;
     rdfs:label "Utilities" ;
     skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://awesome.org/iipc/categories/hosted-closed-source> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/hosted-closed-source> a skos:Concept ;
     rdfs:label "Hosted, Closed Source" ;
     skos:broader <http://awesome.org/iipc/categories/web-archiving-service-providers> .
 
-<http://awesome.org/iipc/categories/replay> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/replay> a skos:Concept ;
     rdfs:label "Replay" ;
     skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://awesome.org/iipc/categories/blogs-and-scholarship> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/blogs-and-scholarship> a skos:Concept ;
     rdfs:label "Blogs and Scholarship" ;
     skos:broader <http://awesome.org/iipc/categories/community-resources> .
 
 <https://api.github.com/licenses/gpl-3.0> rdfs:label "GNU General Public License v3.0" .
 
-<http://awesome.org/iipc/categories/analysis> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/analysis> a skos:Concept ;
     rdfs:label "Analysis" ;
     skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://awesome.org/iipc/categories/tools--software> a <http://awesome.org/schema#Category>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/tools--software> a skos:Concept ;
     rdfs:label "Tools & Software" ;
     dcterms:description "This list of tools and software is intended to briefly describe some of the most important and widely-used tools related to web archiving. For more details, we recommend you refer to (and contribute to!) these excellent resources from other groups:" ;
     skos:narrower <http://awesome.org/iipc/categories/acquisition>,
@@ -2594,22 +2578,18 @@
         <http://awesome.org/iipc/categories/utilities>,
         <http://awesome.org/iipc/categories/warc-io-libraries> .
 
-<http://awesome.org/iipc/categories/In_Development> a <http://awesome.org/schema#Category>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/In_Development> a skos:Concept ;
     rdfs:label "In Development" .
 
-<http://awesome.org/iipc/categories/quality-assurance> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/quality-assurance> a skos:Concept ;
     rdfs:label "Quality Assurance" ;
     skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://awesome.org/iipc/categories/search--discovery> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/search--discovery> a skos:Concept ;
     rdfs:label "Search & Discovery" ;
     skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://awesome.org/iipc/categories/warc-io-libraries> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/warc-io-libraries> a skos:Concept ;
     rdfs:label "WARC I/O Libraries" ;
     skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
@@ -2617,12 +2597,10 @@
 
 <https://api.github.com/licenses/mit> rdfs:label "MIT License" .
 
-<http://awesome.org/iipc/categories/acquisition> a <http://awesome.org/schema#SubCategory>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/acquisition> a skos:Concept ;
     rdfs:label "Acquisition" ;
     skos:broader <http://awesome.org/iipc/categories/tools--software> .
 
-<http://awesome.org/iipc/categories/Stable> a <http://awesome.org/schema#Category>,
-        skos:Concept ;
+<http://awesome.org/iipc/categories/Stable> a skos:Concept ;
     rdfs:label "Stable" .
 
