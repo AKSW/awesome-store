@@ -3,8 +3,6 @@ logo_path: resources/images/logo.png
 theme:
   name: null
   custom_dir: templates
-  features:
-    - search.suggest
 extra_css:
   - resources/css/bootstrap.min.css
   - resources/css/custom.css
@@ -18,7 +16,7 @@ extra_javascript:
 plugins:
   - search:
       min_search_length: 1
-      separator: '[\s\-\.\_\*]+'
+      separator: '[\s\-\.\_]+'
   - mkrdf:
       graph_file: ./awesome_new.ttl
       # sparql_endpoint: http://localhost:8080/
