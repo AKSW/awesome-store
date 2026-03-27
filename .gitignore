@@ -2,4 +2,5 @@
 **/**site
 **/**.env
 **/**__pycache__
-**/doap-files
+doap-files
+.venv

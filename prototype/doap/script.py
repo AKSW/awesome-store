@@ -19,7 +19,7 @@ def fetch_aksw_repos(org=ORG):
     repos = []
     page = 1
     while True:
-        url = f"https://api.github.com/orgs/{org}/repos?per_page=100&page={page}"
+        url = f"https://api.github.com/orgs/{org}/repos?per_page=59&page={page}"
         resp = requests.get(url)
         resp.raise_for_status()
         data = resp.json()
