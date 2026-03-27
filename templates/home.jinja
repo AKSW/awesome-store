@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% set category_query = " prefix skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?category_iri {
+  ?category_iri a skos:Concept ;
+       rdfs:label ?title .
+  FILTER NOT EXISTS { ?category_iri skos:broader ?parent }
+}
+" %}
+
+{% block content %}
+
+    {{ page.content }}
+
+    <div class="content-wrapper">
+        <h2>Categories</h2>
+
+        <div class="categories-wrapper">
+            {% for cat in resource | query(category_query) %}
+                {% set title = cat.category_iri | property("rdfs:label") %}
+
+				<div class="category">
+                    <h3>{{ title }}</h3>
+
+                    {% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
+                    SELECT ?item_iri ?title {
+                    ?item_iri a sioc:Item ;
+                                    rdfs:label ?title ;
+                                    doap:category ?cat .
+
+                    ?cat (skos:broader)* <" ~ cat.category_iri ~ "> .
+                    }
+                    LIMIT 6
+                    " %}
+
+                    <div class="items-wrapper">
+                        {% for item in resource | query(cat_item_query) %}
+                            <a class="it" href="{{ item.item_iri | iri_resolver }}">
+                                {{ item.title }}
+                            </a>
+
+                        {% endfor %}
+                    </div>
+                    <a href="{{ cat.category_iri | iri_resolver }}">
+                        Show more
+                    </a>
+      		    </div>
+
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

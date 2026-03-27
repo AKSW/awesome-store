@@ -1,0 +1,22 @@
+[project]
+name = "wacalog"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Natanael Arndt",email = "arndtn@gmail.com"}
+]
+license = {text = "EUPL-1.2"}
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "mkdocs (>=1.6.1,<2.0.0)",
+    "mkrdf @ git+https://github.com/aksw/mkrdf@feature/buildFromSparql",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
