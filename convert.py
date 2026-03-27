@@ -12,7 +12,7 @@ DOAP = Namespace("http://usefulinc.com/ns/doap#")
 SIOC = Namespace("http://rdfs.org/sioc/ns#")
 
 g = Graph()
-g.parse("awesome.ttl", format="turtle")
+g.parse("awesome/awesome.ttl", format="turtle")
 
 new_graph = Graph()
 
@@ -73,6 +73,6 @@ for s, p, o in g:
 #        new_graph.add((new_iri, RDF.type, EX.Category))
 
 # write result
-new_graph.serialize("awesome_new.ttl", format="turtle")
+new_graph.serialize("awesome/awesome_new.ttl", format="turtle")
 
 print("Converted graph written to awesome_new.ttl")

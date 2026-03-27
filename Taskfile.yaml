@@ -7,7 +7,7 @@ tasks:
       - task -l
 
   install:
-    desc: Serve the site
+    desc: Install all project dependencies
     cmds:
       - poetry install
 
@@ -22,7 +22,7 @@ tasks:
       - poetry run mkdocs serve
 
   serve:endpoint:
-    desc: Serve the site
+    desc: Serve the data endpoint
     summary: Serve the data with [sparql-file](https://github.com/AKSW/sparql-file)
     cmds:
-      - sparql-file --port 8080 data/websites.ttl
+      - sparql-file --port 8080 awesome/awesome_new.ttl
