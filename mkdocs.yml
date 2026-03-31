@@ -18,7 +18,7 @@ plugins:
       min_search_length: 1
       separator: '[\s\-\.\_]+'
   - mkrdf:
-      graph_file: ./awesome_new.ttl
+      graph_file: ./graph/awesome.ttl
       # sparql_endpoint: http://localhost:8080/
       base_iri: http://awesome.org/
       class_template_map:

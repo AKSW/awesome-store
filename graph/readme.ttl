@@ -1,0 +1,44 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://awesome.org/airML> a sioc:Item ;
+    rdfs:label "airML" ;
+    dct:description "No description available" ;
+    doap:category <http://awesome.org/ai-model-dependency-management> ;
+    owl:sameAs <https://github.com/AKSW/airML> .
+
+<http://awesome.org/building-navigator> a sioc:Item ;
+    rdfs:label "building-navigator" ;
+    dct:description "The Gebäude-Navigator helps you to find accessible places in Leipzig." ;
+    doap:category <http://awesome.org/accessibility> ;
+    owl:sameAs <https://github.com/AKSW/building-navigator> .
+
+<http://awesome.org/leds-asp-f-ontologies> a sioc:Item ;
+    rdfs:label "leds-asp-f-ontologies" ;
+    dct:description "This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." ;
+    doap:category <http://awesome.org/accessibility>,
+        <http://awesome.org/accessibilityservice> ;
+    owl:sameAs <https://github.com/AKSW/leds-asp-f-ontologies> .
+
+<http://awesome.org/natuke> a sioc:Item ;
+    rdfs:label "natuke" ;
+    dct:description "NatUKE: Natural Product Knowledge Extraction Benchmark" ;
+    doap:category <http://awesome.org/academic-data> ;
+    owl:sameAs <https://github.com/AKSW/natuke> .
+
+<http://awesome.org/academic-data> a skos:Concept ;
+    rdfs:label "academic-data" .
+
+<http://awesome.org/accessibilityservice> a skos:Concept ;
+    rdfs:label "accessibilityservice" .
+
+<http://awesome.org/ai-model-dependency-management> a skos:Concept ;
+    rdfs:label "ai-model-dependency-management" .
+
+<http://awesome.org/accessibility> a skos:Concept ;
+    rdfs:label "accessibility" .
+

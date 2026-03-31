@@ -1,0 +1,140 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <https://siodc.example.org/#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://awesome.org/airML> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "airML" ;
+    dcterms:date "2021-08-13T05:50:22+00:00"^^xsd:dateTime ;
+    dcterms:description "No description available" ;
+    doap:bug-database <https://github.com/AKSW/airML/issues> ;
+    doap:category <http://awesome.org/ai-model-dependency-management> ;
+    doap:created "2020-05-05T07:34:01+00:00"^^xsd:dateTime ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/airML.git>,
+        <https://github.com/AKSW/airML.svn> ;
+    owl:sameAs <https://github.com/AKSW/airML> ;
+    ns1:num_stars 1 ;
+    ns1:num_watchers 20 .
+
+<http://awesome.org/building-navigator> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "building-navigator" ;
+    dcterms:date "2023-03-13T00:54:12+00:00"^^xsd:dateTime ;
+    dcterms:description "The Gebäude-Navigator helps you to find accessible places in Leipzig." ;
+    doap:bug-database <https://github.com/AKSW/building-navigator/issues> ;
+    doap:category <http://awesome.org/accessibility> ;
+    doap:created "2016-09-26T07:58:09+00:00"^^xsd:dateTime ;
+    doap:description "The Gebäude-Navigator helps you to find accessible places in Leipzig." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://behindertenverband-leipzig.de/gebaeude-navigator> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/building-navigator.git>,
+        <https://github.com/AKSW/building-navigator.svn> ;
+    doap:shortdesc "The Gebäude-Navigator helps you to find accessible places in Leipzig." ;
+    owl:sameAs <https://github.com/AKSW/building-navigator> ;
+    ns1:num_stars 3 ;
+    ns1:num_watchers 16 .
+
+<http://awesome.org/leds-asp-f-ontologies> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "leds-asp-f-ontologies" ;
+    dcterms:date "2018-08-27T13:35:44+00:00"^^xsd:dateTime ;
+    dcterms:description "This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." ;
+    doap:bug-database <https://github.com/AKSW/leds-asp-f-ontologies/issues> ;
+    doap:category <http://awesome.org/accessibility>,
+        <http://awesome.org/accessibilityservice> ;
+    doap:created "2016-07-19T13:42:45+00:00"^^xsd:dateTime ;
+    doap:description "This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <http://www.leds-projekt.de> ;
+    doap:repository <https://github.com/AKSW/leds-asp-f-ontologies.git>,
+        <https://github.com/AKSW/leds-asp-f-ontologies.svn> ;
+    doap:shortdesc "This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." ;
+    owl:sameAs <https://github.com/AKSW/leds-asp-f-ontologies> ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 20 .
+
+<http://awesome.org/natuke> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "natuke" ;
+    dcterms:date "2024-11-15T18:38:55+00:00"^^xsd:dateTime ;
+    dcterms:description "NatUKE: Natural Product Knowledge Extraction Benchmark" ;
+    doap:bug-database <https://github.com/AKSW/natuke/issues> ;
+    doap:category <http://awesome.org/academic-data> ;
+    doap:created "2022-03-31T13:30:02+00:00"^^xsd:dateTime ;
+    doap:description "NatUKE: Natural Product Knowledge Extraction Benchmark" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/natuke.git>,
+        <https://github.com/AKSW/natuke.svn> ;
+    doap:shortdesc "NatUKE: Natural Product Knowledge Extraction Benchmark" ;
+    owl:sameAs <https://github.com/AKSW/natuke> ;
+    ns1:num_stars 10 ;
+    ns1:num_watchers 22 .
+
+<http://awesome.org/academic-data> a skos:Concept ;
+    rdfs:label "academic-data" .
+
+<http://awesome.org/accessibilityservice> a skos:Concept ;
+    rdfs:label "accessibilityservice" .
+
+<http://awesome.org/ai-model-dependency-management> a skos:Concept ;
+    rdfs:label "ai-model-dependency-management" .
+
+<https://api.github.com/licenses/gpl-3.0> rdfs:label "GNU General Public License v3.0" .
+
+<https://github.com/AKSW/airML.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/airML> ;
+    doap:location <https://github.com/AKSW/airML> .
+
+<https://github.com/AKSW/building-navigator.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/building-navigator> ;
+    doap:location <https://github.com/AKSW/building-navigator> .
+
+<https://github.com/AKSW/leds-asp-f-ontologies.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/leds-asp-f-ontologies> ;
+    doap:location <https://github.com/AKSW/leds-asp-f-ontologies> .
+
+<https://github.com/AKSW/natuke.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/natuke> ;
+    doap:location <https://github.com/AKSW/natuke> .
+
+<http://awesome.org/accessibility> a skos:Concept ;
+    rdfs:label "accessibility" .
+
+<https://api.github.com/licenses/apache-2.0> rdfs:label "Apache License 2.0" .
+
+<https://github.com/AKSW/airML.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/airML> ;
+    doap:location <git://github.com/AKSW/airML.git>,
+        <git@github.com:AKSW/airML.git>,
+        <https://github.com/AKSW/airML.git> .
+
+<https://github.com/AKSW/building-navigator.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/building-navigator> ;
+    doap:location <git://github.com/AKSW/building-navigator.git>,
+        <git@github.com:AKSW/building-navigator.git>,
+        <https://github.com/AKSW/building-navigator.git> .
+
+<https://github.com/AKSW/leds-asp-f-ontologies.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/leds-asp-f-ontologies> ;
+    doap:location <git://github.com/AKSW/leds-asp-f-ontologies.git>,
+        <git@github.com:AKSW/leds-asp-f-ontologies.git>,
+        <https://github.com/AKSW/leds-asp-f-ontologies.git> .
+
+<https://github.com/AKSW/natuke.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/natuke> ;
+    doap:location <git://github.com/AKSW/natuke.git>,
+        <git@github.com:AKSW/natuke.git>,
+        <https://github.com/AKSW/natuke.git> .
+
+<https://github.com/AKSW> a foaf:Agent,
+        foaf:Organization .
+

@@ -1,0 +1,82 @@
+@prefix ns1: <http://sparql.xyz/facade-x/data/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a ns1:Document,
+        <http://sparql.xyz/facade-x/ns/root> ;
+    rdf:_1 [ a ns1:Heading ;
+            ns1:level "1"^^xsd:int ;
+            rdf:_1 "AKSW Projects" ] ;
+    rdf:_10 [ a ns1:BulletList ;
+            rdf:_1 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "https://github.com/AKSW/leds-asp-f-ontologies" ;
+                                    rdf:_1 "leds-asp-f-ontologies" ] ;
+                            rdf:_2 " - This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." ] ] ] ;
+    rdf:_11 [ a ns1:Heading ;
+            ns1:level "2"^^xsd:int ;
+            rdf:_1 "ai-model-dependency-management" ] ;
+    rdf:_12 [ a ns1:BulletList ;
+            rdf:_1 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "https://github.com/AKSW/airML" ;
+                                    rdf:_1 "airML" ] ;
+                            rdf:_2 " - No description available" ] ] ] ;
+    rdf:_2 [ a ns1:Paragraph ;
+            rdf:_1 "A list of projects from AKSW grouped by GitHub topics." ] ;
+    rdf:_3 [ a ns1:Heading ;
+            ns1:level "2"^^xsd:int ;
+            rdf:_1 "Contents" ] ;
+    rdf:_4 [ a ns1:BulletList ;
+            rdf:_1 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "#academic-data" ;
+                                    rdf:_1 "academic-data" ] ] ] ;
+            rdf:_2 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "#accessibility" ;
+                                    rdf:_1 "accessibility" ] ] ] ;
+            rdf:_3 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "#accessibilityservice" ;
+                                    rdf:_1 "accessibilityservice" ] ] ] ;
+            rdf:_4 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "#ai-model-dependency-management" ;
+                                    rdf:_1 "ai-model-dependency-management" ] ] ] ] ;
+    rdf:_5 [ a ns1:Heading ;
+            ns1:level "2"^^xsd:int ;
+            rdf:_1 "academic-data" ] ;
+    rdf:_6 [ a ns1:BulletList ;
+            rdf:_1 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "https://github.com/AKSW/natuke" ;
+                                    rdf:_1 "natuke" ] ;
+                            rdf:_2 " - NatUKE: Natural Product Knowledge Extraction Benchmark" ] ] ] ;
+    rdf:_7 [ a ns1:Heading ;
+            ns1:level "2"^^xsd:int ;
+            rdf:_1 "accessibility" ] ;
+    rdf:_8 [ a ns1:BulletList ;
+            rdf:_1 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "https://github.com/AKSW/leds-asp-f-ontologies" ;
+                                    rdf:_1 "leds-asp-f-ontologies" ] ;
+                            rdf:_2 " - This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." ] ] ;
+            rdf:_2 [ a ns1:ListItem ;
+                    rdf:_1 [ a ns1:Paragraph ;
+                            rdf:_1 [ a ns1:Link ;
+                                    ns1:destination "https://github.com/AKSW/building-navigator" ;
+                                    rdf:_1 "building-navigator" ] ;
+                            rdf:_2 " - The Gebäude-Navigator helps you to find accessible places in Leipzig." ] ] ] ;
+    rdf:_9 [ a ns1:Heading ;
+            ns1:level "2"^^xsd:int ;
+            rdf:_1 "accessibilityservice" ] .
+
