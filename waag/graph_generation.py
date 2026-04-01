@@ -1,4 +1,4 @@
-from rdflib import RDF, Graph, URIRef, OWL
+from rdflib import Graph, URIRef
 from gitdoap import doapit
 from pathlib import Path
 from list_parser import ListParser

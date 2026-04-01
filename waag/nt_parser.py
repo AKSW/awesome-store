@@ -1,4 +1,4 @@
-from rdflib import Graph, Literal, Namespace, URIRef, RDF
+from rdflib import Graph, Literal, Namespace, URIRef
 from pathlib import Path
 
 AKSW_TYPES = [
@@ -15,7 +15,8 @@ FOAF = Namespace("http://xmlns.com/foaf/0.1/")
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
 SIOC = Namespace("http://rdfs.org/sioc/ns#")
-OWL = Namespace("http://www.w3.org/TR/owl-ref/")
+OWL = Namespace("http://www.w3.org/2002/07/owl#")
+RDF = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 
 class NTParser:
     def __init__(self, file_path: Path, base_iri: str):
