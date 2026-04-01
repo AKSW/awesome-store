@@ -20,7 +20,7 @@ plugins:
   - mkrdf:
       graph_file: ./graph/awesome.ttl
       # sparql_endpoint: http://localhost:8080/
-      base_iri: http://awesome.org/
+      base_iri: https://aksw.org/
       class_template_map:
           http://www.w3.org/2004/02/skos/core#Concept: category.jinja
           http://rdfs.org/sioc/ns#Item: project.jinja

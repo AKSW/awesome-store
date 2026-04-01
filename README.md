@@ -4,9 +4,7 @@
 
 ## Getting started
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- python3 cli.py -a "../doap/README.md" --base-iri "https://aksw.org/Projects/" --output-dir "../graph/" --graph-nt "../doap/aksw.org.nt"
 
 ## Add your files
 

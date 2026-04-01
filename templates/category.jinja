@@ -8,10 +8,19 @@ SELECT ?subcat_iri {
 }
 " %}
 {% set project_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
-SELECT ?project_iri {
+SELECT DISTINCT ?project_iri {
   ?project_iri a sioc:Item ;
-       rdfs:label ?title .
-  ?project_iri doap:category ?resourceIri .
+               rdfs:label ?title .
+
+  {
+    ?project_iri doap:category ?category .
+    FILTER(?category = ?resourceIri)
+  }
+  UNION
+  {
+    ?project_iri ns1:tag ?category .
+    FILTER(?category = ?resourceIri)
+  }
 }
 " %}
 
@@ -49,10 +58,10 @@ SELECT ?project_iri {
 						<h3>{{ title }}</h3>
 
 						{% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
-						SELECT ?item_iri ?title {
+						SELECT DISTINCT ?item_iri ?title {
 						?item_iri a sioc:Item ;
 							rdfs:label ?title ;
-							doap:category <" ~ sub_cat.subcat_iri ~ "> .
+							ns1:tag <" ~ sub_cat.subcat_iri ~ "> .
 						}
 						LIMIT 6
 						" %}
