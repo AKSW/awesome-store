@@ -1,0 +1,891 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <https://siodc.example.org/#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://api.github.com/licenses/cc0-1.0> rdfs:label "Creative Commons Zero v1.0 Universal" .
+
+<https://api.github.com/licenses/gpl-2.0> rdfs:label "GNU General Public License v2.0" .
+
+<https://api.github.com/licenses/mit> rdfs:label "MIT License" .
+
+<https://github.com/AKSW/ARUQULA.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/ARUQULA> ;
+    doap:location <https://github.com/AKSW/ARUQULA> .
+
+<https://github.com/AKSW/DBNQA.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/DBNQA> ;
+    doap:location <https://github.com/AKSW/DBNQA> .
+
+<https://github.com/AKSW/HiBISCuS.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/HiBISCuS> ;
+    doap:location <https://github.com/AKSW/HiBISCuS> .
+
+<https://github.com/AKSW/KBox.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/KBox> ;
+    doap:location <https://github.com/AKSW/KBox> .
+
+<https://github.com/AKSW/LLM-KG-Bench.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/LLM-KG-Bench> ;
+    doap:location <https://github.com/AKSW/LLM-KG-Bench> .
+
+<https://github.com/AKSW/LLMDatasetGenerator.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/LLMDatasetGenerator> ;
+    doap:location <https://github.com/AKSW/LLMDatasetGenerator> .
+
+<https://github.com/AKSW/LSQ.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/LSQ> ;
+    doap:location <https://github.com/AKSW/LSQ> .
+
+<https://github.com/AKSW/MadamsEditor.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/MadamsEditor> ;
+    doap:location <https://github.com/AKSW/MadamsEditor> .
+
+<https://github.com/AKSW/Mandolin.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/Mandolin> ;
+    doap:location <https://github.com/AKSW/Mandolin> .
+
+<https://github.com/AKSW/OntoWiki.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/OntoWiki> ;
+    doap:location <https://github.com/AKSW/OntoWiki> .
+
+<https://github.com/AKSW/QuitDiff.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/QuitDiff> ;
+    doap:location <https://github.com/AKSW/QuitDiff> .
+
+<https://github.com/AKSW/QuitStore.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/QuitStore> ;
+    doap:location <https://github.com/AKSW/QuitStore> .
+
+<https://github.com/AKSW/RDFUnit.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/RDFUnit> ;
+    doap:location <https://github.com/AKSW/RDFUnit> .
+
+<https://github.com/AKSW/RLOG.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/RLOG> ;
+    doap:location <https://github.com/AKSW/RLOG> .
+
+<https://github.com/AKSW/SeMiFuLi.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/SeMiFuLi> ;
+    doap:location <https://github.com/AKSW/SeMiFuLi> .
+
+<https://github.com/AKSW/SemWeb2NL.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/SemWeb2NL> ;
+    doap:location <https://github.com/AKSW/SemWeb2NL> .
+
+<https://github.com/AKSW/ShacShifter.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/ShacShifter> ;
+    doap:location <https://github.com/AKSW/ShacShifter> .
+
+<https://github.com/AKSW/airML.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/airML> ;
+    doap:location <https://github.com/AKSW/airML> .
+
+<https://github.com/AKSW/aksw.github.io.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/aksw.github.io> ;
+    doap:location <https://github.com/AKSW/aksw.github.io> .
+
+<https://github.com/AKSW/awesome-queryable-linked-open-data.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/awesome-queryable-linked-open-data> ;
+    doap:location <https://github.com/AKSW/awesome-queryable-linked-open-data> .
+
+<https://github.com/AKSW/building-navigator.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/building-navigator> ;
+    doap:location <https://github.com/AKSW/building-navigator> .
+
+<https://github.com/AKSW/frankgraphbench.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/frankgraphbench> ;
+    doap:location <https://github.com/AKSW/frankgraphbench> .
+
+<https://github.com/AKSW/git_lfs_server_sshauth.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/git_lfs_server_sshauth> ;
+    doap:location <https://github.com/AKSW/git_lfs_server_sshauth> .
+
+<https://github.com/AKSW/irbench.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/irbench> ;
+    doap:location <https://github.com/AKSW/irbench> .
+
+<https://github.com/AKSW/jekyll-rdf.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/jekyll-rdf> ;
+    doap:location <https://github.com/AKSW/jekyll-rdf> .
+
+<https://github.com/AKSW/leds-asp-f-ontologies.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/leds-asp-f-ontologies> ;
+    doap:location <https://github.com/AKSW/leds-asp-f-ontologies> .
+
+<https://github.com/AKSW/lswt2019.aksw.org.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/lswt2019.aksw.org> ;
+    doap:location <https://github.com/AKSW/lswt2019.aksw.org> .
+
+<https://github.com/AKSW/lswt2021.aksw.org.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/lswt2021.aksw.org> ;
+    doap:location <https://github.com/AKSW/lswt2021.aksw.org> .
+
+<https://github.com/AKSW/natuke.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/natuke> ;
+    doap:location <https://github.com/AKSW/natuke> .
+
+<https://github.com/AKSW/orkg-dump.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/orkg-dump> ;
+    doap:location <https://github.com/AKSW/orkg-dump> .
+
+<https://github.com/AKSW/orkg-shapes.jekyllrdf.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/orkg-shapes.jekyllrdf> ;
+    doap:location <https://github.com/AKSW/orkg-shapes.jekyllrdf> .
+
+<https://github.com/AKSW/pfarrerbuch.jekyllrdf.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/pfarrerbuch.jekyllrdf> ;
+    doap:location <https://github.com/AKSW/pfarrerbuch.jekyllrdf> .
+
+<https://github.com/AKSW/sante.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/sante> ;
+    doap:location <https://github.com/AKSW/sante> .
+
+<https://github.com/AKSW/text2sparql-client.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/text2sparql-client> ;
+    doap:location <https://github.com/AKSW/text2sparql-client> .
+
+<https://github.com/AKSW/text2sparql.aksw.org.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/text2sparql.aksw.org> ;
+    doap:location <https://github.com/AKSW/text2sparql.aksw.org> .
+
+<https://github.com/AKSW/transform-bvl-csv-to-json-files.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/transform-bvl-csv-to-json-files> ;
+    doap:location <https://github.com/AKSW/transform-bvl-csv-to-json-files> .
+
+<https://github.com/AKSW/transform-bvl-pages-to-csv-file.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/transform-bvl-pages-to-csv-file> ;
+    doap:location <https://github.com/AKSW/transform-bvl-pages-to-csv-file> .
+
+<https://github.com/AKSW/xlsx2owl.svn> a doap:SVNRepository ;
+    doap:browse <https://github.com/AKSW/xlsx2owl> ;
+    doap:location <https://github.com/AKSW/xlsx2owl> .
+
+<https://api.github.com/licenses/cc-by-sa-4.0> rdfs:label "Creative Commons Attribution Share Alike 4.0 International" .
+
+<https://api.github.com/licenses/mpl-2.0> rdfs:label "Mozilla Public License 2.0" .
+
+<https://github.com/AKSW/ARUQULA.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/ARUQULA> ;
+    doap:location <git://github.com/AKSW/ARUQULA.git>,
+        <git@github.com:AKSW/ARUQULA.git>,
+        <https://github.com/AKSW/ARUQULA.git> .
+
+<https://github.com/AKSW/DBNQA.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/DBNQA> ;
+    doap:location <git://github.com/AKSW/DBNQA.git>,
+        <git@github.com:AKSW/DBNQA.git>,
+        <https://github.com/AKSW/DBNQA.git> .
+
+<https://github.com/AKSW/HiBISCuS.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/HiBISCuS> ;
+    doap:location <git://github.com/AKSW/HiBISCuS.git>,
+        <git@github.com:AKSW/HiBISCuS.git>,
+        <https://github.com/AKSW/HiBISCuS.git> .
+
+<https://github.com/AKSW/KBox.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/KBox> ;
+    doap:location <git://github.com/AKSW/KBox.git>,
+        <git@github.com:AKSW/KBox.git>,
+        <https://github.com/AKSW/KBox.git> .
+
+<https://github.com/AKSW/LLM-KG-Bench.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/LLM-KG-Bench> ;
+    doap:location <git://github.com/AKSW/LLM-KG-Bench.git>,
+        <git@github.com:AKSW/LLM-KG-Bench.git>,
+        <https://github.com/AKSW/LLM-KG-Bench.git> .
+
+<https://github.com/AKSW/LLMDatasetGenerator.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/LLMDatasetGenerator> ;
+    doap:location <git://github.com/AKSW/LLMDatasetGenerator.git>,
+        <git@github.com:AKSW/LLMDatasetGenerator.git>,
+        <https://github.com/AKSW/LLMDatasetGenerator.git> .
+
+<https://github.com/AKSW/LSQ.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/LSQ> ;
+    doap:location <git://github.com/AKSW/LSQ.git>,
+        <git@github.com:AKSW/LSQ.git>,
+        <https://github.com/AKSW/LSQ.git> .
+
+<https://github.com/AKSW/MadamsEditor.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/MadamsEditor> ;
+    doap:location <git://github.com/AKSW/MadamsEditor.git>,
+        <git@github.com:AKSW/MadamsEditor.git>,
+        <https://github.com/AKSW/MadamsEditor.git> .
+
+<https://github.com/AKSW/Mandolin.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/Mandolin> ;
+    doap:location <git://github.com/AKSW/Mandolin.git>,
+        <git@github.com:AKSW/Mandolin.git>,
+        <https://github.com/AKSW/Mandolin.git> .
+
+<https://github.com/AKSW/OntoWiki.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/OntoWiki> ;
+    doap:location <git://github.com/AKSW/OntoWiki.git>,
+        <git@github.com:AKSW/OntoWiki.git>,
+        <https://github.com/AKSW/OntoWiki.git> .
+
+<https://github.com/AKSW/QuitDiff.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/QuitDiff> ;
+    doap:location <git://github.com/AKSW/QuitDiff.git>,
+        <git@github.com:AKSW/QuitDiff.git>,
+        <https://github.com/AKSW/QuitDiff.git> .
+
+<https://github.com/AKSW/QuitStore.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/QuitStore> ;
+    doap:location <git://github.com/AKSW/QuitStore.git>,
+        <git@github.com:AKSW/QuitStore.git>,
+        <https://github.com/AKSW/QuitStore.git> .
+
+<https://github.com/AKSW/RDFUnit.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/RDFUnit> ;
+    doap:location <git://github.com/AKSW/RDFUnit.git>,
+        <git@github.com:AKSW/RDFUnit.git>,
+        <https://github.com/AKSW/RDFUnit.git> .
+
+<https://github.com/AKSW/RLOG.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/RLOG> ;
+    doap:location <git://github.com/AKSW/RLOG.git>,
+        <git@github.com:AKSW/RLOG.git>,
+        <https://github.com/AKSW/RLOG.git> .
+
+<https://github.com/AKSW/SeMiFuLi.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/SeMiFuLi> ;
+    doap:location <git://github.com/AKSW/SeMiFuLi.git>,
+        <git@github.com:AKSW/SeMiFuLi.git>,
+        <https://github.com/AKSW/SeMiFuLi.git> .
+
+<https://github.com/AKSW/SemWeb2NL.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/SemWeb2NL> ;
+    doap:location <git://github.com/AKSW/SemWeb2NL.git>,
+        <git@github.com:AKSW/SemWeb2NL.git>,
+        <https://github.com/AKSW/SemWeb2NL.git> .
+
+<https://github.com/AKSW/ShacShifter.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/ShacShifter> ;
+    doap:location <git://github.com/AKSW/ShacShifter.git>,
+        <git@github.com:AKSW/ShacShifter.git>,
+        <https://github.com/AKSW/ShacShifter.git> .
+
+<https://github.com/AKSW/airML.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/airML> ;
+    doap:location <git://github.com/AKSW/airML.git>,
+        <git@github.com:AKSW/airML.git>,
+        <https://github.com/AKSW/airML.git> .
+
+<https://github.com/AKSW/aksw.github.io.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/aksw.github.io> ;
+    doap:location <git://github.com/AKSW/aksw.github.io.git>,
+        <git@github.com:AKSW/aksw.github.io.git>,
+        <https://github.com/AKSW/aksw.github.io.git> .
+
+<https://github.com/AKSW/awesome-queryable-linked-open-data.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/awesome-queryable-linked-open-data> ;
+    doap:location <git://github.com/AKSW/awesome-queryable-linked-open-data.git>,
+        <git@github.com:AKSW/awesome-queryable-linked-open-data.git>,
+        <https://github.com/AKSW/awesome-queryable-linked-open-data.git> .
+
+<https://github.com/AKSW/building-navigator.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/building-navigator> ;
+    doap:location <git://github.com/AKSW/building-navigator.git>,
+        <git@github.com:AKSW/building-navigator.git>,
+        <https://github.com/AKSW/building-navigator.git> .
+
+<https://github.com/AKSW/frankgraphbench.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/frankgraphbench> ;
+    doap:location <git://github.com/AKSW/frankgraphbench.git>,
+        <git@github.com:AKSW/frankgraphbench.git>,
+        <https://github.com/AKSW/frankgraphbench.git> .
+
+<https://github.com/AKSW/git_lfs_server_sshauth.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/git_lfs_server_sshauth> ;
+    doap:location <git://github.com/AKSW/git_lfs_server_sshauth.git>,
+        <git@github.com:AKSW/git_lfs_server_sshauth.git>,
+        <https://github.com/AKSW/git_lfs_server_sshauth.git> .
+
+<https://github.com/AKSW/irbench.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/irbench> ;
+    doap:location <git://github.com/AKSW/irbench.git>,
+        <git@github.com:AKSW/irbench.git>,
+        <https://github.com/AKSW/irbench.git> .
+
+<https://github.com/AKSW/jekyll-rdf.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/jekyll-rdf> ;
+    doap:location <git://github.com/AKSW/jekyll-rdf.git>,
+        <git@github.com:AKSW/jekyll-rdf.git>,
+        <https://github.com/AKSW/jekyll-rdf.git> .
+
+<https://github.com/AKSW/leds-asp-f-ontologies.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/leds-asp-f-ontologies> ;
+    doap:location <git://github.com/AKSW/leds-asp-f-ontologies.git>,
+        <git@github.com:AKSW/leds-asp-f-ontologies.git>,
+        <https://github.com/AKSW/leds-asp-f-ontologies.git> .
+
+<https://github.com/AKSW/lswt2019.aksw.org.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/lswt2019.aksw.org> ;
+    doap:location <git://github.com/AKSW/lswt2019.aksw.org.git>,
+        <git@github.com:AKSW/lswt2019.aksw.org.git>,
+        <https://github.com/AKSW/lswt2019.aksw.org.git> .
+
+<https://github.com/AKSW/lswt2021.aksw.org.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/lswt2021.aksw.org> ;
+    doap:location <git://github.com/AKSW/lswt2021.aksw.org.git>,
+        <git@github.com:AKSW/lswt2021.aksw.org.git>,
+        <https://github.com/AKSW/lswt2021.aksw.org.git> .
+
+<https://github.com/AKSW/natuke.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/natuke> ;
+    doap:location <git://github.com/AKSW/natuke.git>,
+        <git@github.com:AKSW/natuke.git>,
+        <https://github.com/AKSW/natuke.git> .
+
+<https://github.com/AKSW/orkg-dump.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/orkg-dump> ;
+    doap:location <git://github.com/AKSW/orkg-dump.git>,
+        <git@github.com:AKSW/orkg-dump.git>,
+        <https://github.com/AKSW/orkg-dump.git> .
+
+<https://github.com/AKSW/orkg-shapes.jekyllrdf.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/orkg-shapes.jekyllrdf> ;
+    doap:location <git://github.com/AKSW/orkg-shapes.jekyllrdf.git>,
+        <git@github.com:AKSW/orkg-shapes.jekyllrdf.git>,
+        <https://github.com/AKSW/orkg-shapes.jekyllrdf.git> .
+
+<https://github.com/AKSW/pfarrerbuch.jekyllrdf.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/pfarrerbuch.jekyllrdf> ;
+    doap:location <git://github.com/AKSW/pfarrerbuch.jekyllrdf.git>,
+        <git@github.com:AKSW/pfarrerbuch.jekyllrdf.git>,
+        <https://github.com/AKSW/pfarrerbuch.jekyllrdf.git> .
+
+<https://github.com/AKSW/sante.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/sante> ;
+    doap:location <git://github.com/AKSW/sante.git>,
+        <git@github.com:AKSW/sante.git>,
+        <https://github.com/AKSW/sante.git> .
+
+<https://github.com/AKSW/text2sparql-client.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/text2sparql-client> ;
+    doap:location <git://github.com/AKSW/text2sparql-client.git>,
+        <git@github.com:AKSW/text2sparql-client.git>,
+        <https://github.com/AKSW/text2sparql-client.git> .
+
+<https://github.com/AKSW/text2sparql.aksw.org.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/text2sparql.aksw.org> ;
+    doap:location <git://github.com/AKSW/text2sparql.aksw.org.git>,
+        <git@github.com:AKSW/text2sparql.aksw.org.git>,
+        <https://github.com/AKSW/text2sparql.aksw.org.git> .
+
+<https://github.com/AKSW/transform-bvl-csv-to-json-files.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/transform-bvl-csv-to-json-files> ;
+    doap:location <git://github.com/AKSW/transform-bvl-csv-to-json-files.git>,
+        <git@github.com:AKSW/transform-bvl-csv-to-json-files.git>,
+        <https://github.com/AKSW/transform-bvl-csv-to-json-files.git> .
+
+<https://github.com/AKSW/transform-bvl-pages-to-csv-file.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/transform-bvl-pages-to-csv-file> ;
+    doap:location <git://github.com/AKSW/transform-bvl-pages-to-csv-file.git>,
+        <git@github.com:AKSW/transform-bvl-pages-to-csv-file.git>,
+        <https://github.com/AKSW/transform-bvl-pages-to-csv-file.git> .
+
+<https://github.com/AKSW/xlsx2owl.git> a doap:GitRepository ;
+    doap:browse <https://github.com/AKSW/xlsx2owl> ;
+    doap:location <git://github.com/AKSW/xlsx2owl.git>,
+        <git@github.com:AKSW/xlsx2owl.git>,
+        <https://github.com/AKSW/xlsx2owl.git> .
+
+<https://github.com/AKSW/ARUQULA> a doap:Project ;
+    dcterms:date "2025-12-03T10:00:55+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/ARUQULA/issues> ;
+    doap:created "2025-06-27T11:15:00+00:00"^^xsd:dateTime ;
+    doap:description "ARUQULA: An LLM based Text2SPARQL Approach using ReAct and Knowledge Graph Exploration Utilities - based on SPINACH" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/ARUQULA.git>,
+        <https://github.com/AKSW/ARUQULA.svn> ;
+    doap:shortdesc "ARUQULA: An LLM based Text2SPARQL Approach using ReAct and Knowledge Graph Exploration Utilities - based on SPINACH" ;
+    ns1:num_stars 2 ;
+    ns1:num_watchers 0 .
+
+<https://github.com/AKSW/DBNQA> a doap:Project ;
+    dcterms:date "2025-02-03T12:29:19+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/DBNQA/issues> ;
+    doap:created "2019-06-03T08:12:02+00:00"^^xsd:dateTime ;
+    doap:description "DBpedia Neural Question Answering Dataset" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/DBNQA.git>,
+        <https://github.com/AKSW/DBNQA.svn> ;
+    doap:shortdesc "DBpedia Neural Question Answering Dataset" ;
+    ns1:num_stars 18 ;
+    ns1:num_watchers 24 .
+
+<https://github.com/AKSW/HiBISCuS> a doap:Project ;
+    dcterms:date "2025-11-20T08:57:15+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/HiBISCuS/issues> ;
+    doap:created "2016-01-12T18:31:15+00:00"^^xsd:dateTime ;
+    doap:description "HiBISCuS: Hypergraph-Based Source Selection for SPARQL Endpoint Federation" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/HiBISCuS.git>,
+        <https://github.com/AKSW/HiBISCuS.svn> ;
+    doap:shortdesc "HiBISCuS: Hypergraph-Based Source Selection for SPARQL Endpoint Federation" ;
+    ns1:num_stars 3 ;
+    ns1:num_watchers 2 .
+
+<https://github.com/AKSW/LLM-KG-Bench> a doap:Project ;
+    dcterms:date "2026-03-06T17:36:07+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/LLM-KG-Bench/issues> ;
+    doap:created "2023-05-24T13:49:02+00:00"^^xsd:dateTime ;
+    doap:description "LLM-KG-Bench is a Framework and task collection for automated benchmarking of Large Language Models (LLMs) on Knowledge Graph (KG) related tasks." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/mpl-2.0> ;
+    doap:repository <https://github.com/AKSW/LLM-KG-Bench.git>,
+        <https://github.com/AKSW/LLM-KG-Bench.svn> ;
+    doap:shortdesc "LLM-KG-Bench is a Framework and task collection for automated benchmarking of Large Language Models (LLMs) on Knowledge Graph (KG) related tasks." ;
+    ns1:num_stars 56 ;
+    ns1:num_watchers 26 .
+
+<https://github.com/AKSW/LLMDatasetGenerator> a doap:Project ;
+    dcterms:date "2025-03-14T17:14:05+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/LLMDatasetGenerator/issues> ;
+    doap:created "2024-08-29T23:46:09+00:00"^^xsd:dateTime ;
+    doap:description "LLM based datatset generator for KGQA on user defined knowledge graphs" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:repository <https://github.com/AKSW/LLMDatasetGenerator.git>,
+        <https://github.com/AKSW/LLMDatasetGenerator.svn> ;
+    doap:shortdesc "LLM based datatset generator for KGQA on user defined knowledge graphs" ;
+    ns1:num_stars 1 ;
+    ns1:num_watchers 24 .
+
+<https://github.com/AKSW/LSQ> a doap:Project ;
+    dcterms:date "2025-09-08T07:43:47+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/LSQ/issues> ;
+    doap:created "2015-04-27T13:16:59+00:00"^^xsd:dateTime ;
+    doap:description "Linked SPARQL Queries (LSQ): Framework for RDFizing triple store (web) logs and performing SPARQL query extraction, analysis and benchmarking in order to produce datasets of Linked SPARQL Queries" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <http://lsq.aksw.org> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/LSQ.git>,
+        <https://github.com/AKSW/LSQ.svn> ;
+    doap:shortdesc "Linked SPARQL Queries (LSQ): Framework for RDFizing triple store (web) logs and performing SPARQL query extraction, analysis and benchmarking in order to produce datasets of Linked SPARQL Queries" ;
+    ns1:num_stars 28 ;
+    ns1:num_watchers 3 .
+
+<https://github.com/AKSW/MadamsEditor> a doap:Project ;
+    dcterms:date "2024-04-22T18:49:56+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/MadamsEditor/issues> ;
+    doap:created "2020-11-19T12:02:05+00:00"^^xsd:dateTime ;
+    doap:description "(yet simple) YARRRML mapping editor: map JSON data to RDF." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/cc-by-sa-4.0> ;
+    doap:repository <https://github.com/AKSW/MadamsEditor.git>,
+        <https://github.com/AKSW/MadamsEditor.svn> ;
+    doap:shortdesc "(yet simple) YARRRML mapping editor: map JSON data to RDF." ;
+    ns1:num_stars 4 ;
+    ns1:num_watchers 25 .
+
+<https://github.com/AKSW/Mandolin> a doap:Project ;
+    dcterms:date "2024-09-18T21:35:56+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/Mandolin/issues> ;
+    doap:created "2017-05-11T12:54:47+00:00"^^xsd:dateTime ;
+    doap:description "❇️ The best modules for Markov Logic Networks condensed in one framework." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/gpl-2.0> ;
+    doap:repository <https://github.com/AKSW/Mandolin.git>,
+        <https://github.com/AKSW/Mandolin.svn> ;
+    doap:shortdesc "❇️ The best modules for Markov Logic Networks condensed in one framework." ;
+    ns1:num_stars 13 ;
+    ns1:num_watchers 25 .
+
+<https://github.com/AKSW/OntoWiki> a doap:Project ;
+    dcterms:date "2026-01-25T19:17:51+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/OntoWiki/issues> ;
+    doap:created "2011-09-23T22:37:42+00:00"^^xsd:dateTime ;
+    doap:description "Semantic data wiki as well as Linked Data publishing engine" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://ontowiki.net> ;
+    doap:repository <https://github.com/AKSW/OntoWiki.git>,
+        <https://github.com/AKSW/OntoWiki.svn> ;
+    doap:shortdesc "Semantic data wiki as well as Linked Data publishing engine" ;
+    ns1:num_stars 208 ;
+    ns1:num_watchers 32 .
+
+<https://github.com/AKSW/QuitDiff> a doap:Project ;
+    dcterms:date "2025-05-08T11:44:18+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/QuitDiff/issues> ;
+    doap:created "2016-08-10T08:42:11+00:00"^^xsd:dateTime ;
+    doap:description "Command line comparison tool for semantic web data, it can be used as git difftool for RDF data as well." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/QuitDiff.git>,
+        <https://github.com/AKSW/QuitDiff.svn> ;
+    doap:shortdesc "Command line comparison tool for semantic web data, it can be used as git difftool for RDF data as well." ;
+    ns1:num_stars 8 ;
+    ns1:num_watchers 19 .
+
+<https://github.com/AKSW/QuitStore> a doap:Project ;
+    dcterms:date "2026-03-21T18:30:59+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/QuitStore/issues> ;
+    doap:created "2016-07-11T12:29:55+00:00"^^xsd:dateTime ;
+    doap:description "🖧 Quads in Git - Distributed Version Control for RDF Knowledge Bases" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <http://aksw.org/Projects/Quit> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/QuitStore.git>,
+        <https://github.com/AKSW/QuitStore.svn> ;
+    doap:shortdesc "🖧 Quads in Git - Distributed Version Control for RDF Knowledge Bases" ;
+    ns1:num_stars 112 ;
+    ns1:num_watchers 24 .
+
+<https://github.com/AKSW/RDFUnit> a doap:Project ;
+    dcterms:date "2026-03-25T05:43:55+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/RDFUnit/issues> ;
+    doap:created "2013-04-02T07:45:41+00:00"^^xsd:dateTime ;
+    doap:description "An RDF Unit Testing Suite" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <http://RDFUnit.aksw.org> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/RDFUnit.git>,
+        <https://github.com/AKSW/RDFUnit.svn> ;
+    doap:shortdesc "An RDF Unit Testing Suite" ;
+    ns1:num_stars 164 ;
+    ns1:num_watchers 26 .
+
+<https://github.com/AKSW/RLOG> a doap:Project ;
+    dcterms:date "2017-07-05T09:47:14+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/RLOG/issues> ;
+    doap:created "2013-06-28T17:28:42+00:00"^^xsd:dateTime ;
+    doap:description "RLOG - an RDF Logging Ontology and its Bindings" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:repository <https://github.com/AKSW/RLOG.git>,
+        <https://github.com/AKSW/RLOG.svn> ;
+    doap:shortdesc "RLOG - an RDF Logging Ontology and its Bindings" ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 8 .
+
+<https://github.com/AKSW/SeMiFuLi> a doap:Project ;
+    dcterms:date "2023-01-19T10:25:57+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/SeMiFuLi/issues> ;
+    doap:created "2023-01-19T09:54:32+00:00"^^xsd:dateTime ;
+    doap:description "SEmantically DEscribed MIni FUnction LIbrary(SeMiFuLi), using FNO for the description in RDF" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/mit> ;
+    doap:repository <https://github.com/AKSW/SeMiFuLi.git>,
+        <https://github.com/AKSW/SeMiFuLi.svn> ;
+    doap:shortdesc "SEmantically DEscribed MIni FUnction LIbrary(SeMiFuLi), using FNO for the description in RDF" ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 22 .
+
+<https://github.com/AKSW/SemWeb2NL> a doap:Project ;
+    dcterms:date "2025-06-19T10:52:03+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/SemWeb2NL/issues> ;
+    doap:created "2014-07-15T07:48:35+00:00"^^xsd:dateTime ;
+    doap:description "Semantic Web related concepts converted to Natural language" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/SemWeb2NL.git>,
+        <https://github.com/AKSW/SemWeb2NL.svn> ;
+    doap:shortdesc "Semantic Web related concepts converted to Natural language" ;
+    ns1:num_stars 44 ;
+    ns1:num_watchers 17 .
+
+<https://github.com/AKSW/ShacShifter> a doap:Project ;
+    dcterms:date "2023-02-02T18:05:12+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/ShacShifter/issues> ;
+    doap:created "2017-07-04T09:05:35+00:00"^^xsd:dateTime ;
+    doap:description "A shape shifter for the Shapes Constraint Language (SHACL) to various other format and vice versa." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:repository <https://github.com/AKSW/ShacShifter.git>,
+        <https://github.com/AKSW/ShacShifter.svn> ;
+    doap:shortdesc "A shape shifter for the Shapes Constraint Language (SHACL) to various other format and vice versa." ;
+    ns1:num_stars 4 ;
+    ns1:num_watchers 7 .
+
+<https://github.com/AKSW/airML> a doap:Project ;
+    dcterms:date "2021-08-13T05:50:22+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/airML/issues> ;
+    doap:created "2020-05-05T07:34:01+00:00"^^xsd:dateTime ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/airML.git>,
+        <https://github.com/AKSW/airML.svn> ;
+    ns1:num_stars 1 ;
+    ns1:num_watchers 20 .
+
+<https://github.com/AKSW/aksw.github.io> a doap:Project ;
+    dcterms:date "2026-03-09T19:25:36+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/aksw.github.io/issues> ;
+    doap:created "2019-06-28T15:28:38+00:00"^^xsd:dateTime ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://aksw.github.io> ;
+    doap:repository <https://github.com/AKSW/aksw.github.io.git>,
+        <https://github.com/AKSW/aksw.github.io.svn> ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 3 .
+
+<https://github.com/AKSW/awesome-queryable-linked-open-data> a doap:Project ;
+    dcterms:date "2025-03-14T17:16:34+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/awesome-queryable-linked-open-data/issues> ;
+    doap:created "2023-02-27T13:45:10+00:00"^^xsd:dateTime ;
+    doap:description "Curated list of queryable linked open data endpoints" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/cc0-1.0> ;
+    doap:repository <https://github.com/AKSW/awesome-queryable-linked-open-data.git>,
+        <https://github.com/AKSW/awesome-queryable-linked-open-data.svn> ;
+    doap:shortdesc "Curated list of queryable linked open data endpoints" ;
+    ns1:num_stars 5 ;
+    ns1:num_watchers 25 .
+
+<https://github.com/AKSW/building-navigator> a doap:Project ;
+    dcterms:date "2023-03-13T00:54:12+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/building-navigator/issues> ;
+    doap:created "2016-09-26T07:58:09+00:00"^^xsd:dateTime ;
+    doap:description "The Gebäude-Navigator helps you to find accessible places in Leipzig." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://behindertenverband-leipzig.de/gebaeude-navigator> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/building-navigator.git>,
+        <https://github.com/AKSW/building-navigator.svn> ;
+    doap:shortdesc "The Gebäude-Navigator helps you to find accessible places in Leipzig." ;
+    ns1:num_stars 3 ;
+    ns1:num_watchers 16 .
+
+<https://github.com/AKSW/frankgraphbench> a doap:Project ;
+    dcterms:date "2026-03-31T10:59:23+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/frankgraphbench/issues> ;
+    doap:created "2023-05-27T22:45:34+00:00"^^xsd:dateTime ;
+    doap:description "The FranKGraphBench is a Framework to allow KG Aware RSs to be benchmarked in a reproducible and easy to implement manner. It was first created on Google Summer of Code 2023 for Data Integration between DBpedia and some standard RS datasets in a reproducible framework." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://frankgraphbench.readthedocs.io> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/frankgraphbench.git>,
+        <https://github.com/AKSW/frankgraphbench.svn> ;
+    doap:shortdesc "The FranKGraphBench is a Framework to allow KG Aware RSs to be benchmarked in a reproducible and easy to implement manner. It was first created on Google Summer of Code 2023 for Data Integration between DBpedia and some standard RS datasets in a reproducible framework." ;
+    ns1:num_stars 8 ;
+    ns1:num_watchers 1 .
+
+<https://github.com/AKSW/git_lfs_server_sshauth> a doap:Project ;
+    dcterms:date "2025-09-15T12:38:05+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/git_lfs_server_sshauth/issues> ;
+    doap:created "2021-03-21T20:07:46+00:00"^^xsd:dateTime ;
+    doap:description "Git LFS Server with SSH Authentication backing" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:repository <https://github.com/AKSW/git_lfs_server_sshauth.git>,
+        <https://github.com/AKSW/git_lfs_server_sshauth.svn> ;
+    doap:shortdesc "Git LFS Server with SSH Authentication backing" ;
+    ns1:num_stars 8 ;
+    ns1:num_watchers 25 .
+
+<https://github.com/AKSW/irbench> a doap:Project ;
+    dcterms:date "2023-10-17T20:14:11+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/irbench/issues> ;
+    doap:created "2019-04-01T12:45:32+00:00"^^xsd:dateTime ;
+    doap:description "Open Information Retrieval Benchmark Framework" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:repository <https://github.com/AKSW/irbench.git>,
+        <https://github.com/AKSW/irbench.svn> ;
+    doap:shortdesc "Open Information Retrieval Benchmark Framework" ;
+    ns1:num_stars 4 ;
+    ns1:num_watchers 20 .
+
+<https://github.com/AKSW/jekyll-rdf> a doap:Project ;
+    dcterms:date "2025-10-09T11:00:30+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/jekyll-rdf/issues> ;
+    doap:created "2016-06-10T10:55:29+00:00"^^xsd:dateTime ;
+    doap:description "📃 A Jekyll plugin to include RDF data in your static site or build a complete site for your RDF graph" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <http://aksw.org/Projects/JekyllRDF> ;
+    doap:repository <https://github.com/AKSW/jekyll-rdf.git>,
+        <https://github.com/AKSW/jekyll-rdf.svn> ;
+    doap:shortdesc "📃 A Jekyll plugin to include RDF data in your static site or build a complete site for your RDF graph" ;
+    ns1:num_stars 63 ;
+    ns1:num_watchers 17 .
+
+<https://github.com/AKSW/leds-asp-f-ontologies> a doap:Project ;
+    dcterms:date "2018-08-27T13:35:44+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/leds-asp-f-ontologies/issues> ;
+    doap:created "2016-07-19T13:42:45+00:00"^^xsd:dateTime ;
+    doap:description "This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <http://www.leds-projekt.de> ;
+    doap:repository <https://github.com/AKSW/leds-asp-f-ontologies.git>,
+        <https://github.com/AKSW/leds-asp-f-ontologies.svn> ;
+    doap:shortdesc "This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 20 .
+
+<https://github.com/AKSW/lswt2019.aksw.org> a doap:Project ;
+    dcterms:date "2021-05-21T14:03:52+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/lswt2019.aksw.org/issues> ;
+    doap:created "2018-12-19T17:12:20+00:00"^^xsd:dateTime ;
+    doap:description "Webpage for #LSWT2019" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://lswt2019.aksw.org/> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/lswt2019.aksw.org.git>,
+        <https://github.com/AKSW/lswt2019.aksw.org.svn> ;
+    doap:shortdesc "Webpage for #LSWT2019" ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 17 .
+
+<https://github.com/AKSW/lswt2021.aksw.org> a doap:Project ;
+    dcterms:date "2022-03-16T10:36:03+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/lswt2021.aksw.org/issues> ;
+    doap:created "2021-04-15T12:16:51+00:00"^^xsd:dateTime ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://lswt2021.aksw.org> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/lswt2021.aksw.org.git>,
+        <https://github.com/AKSW/lswt2021.aksw.org.svn> ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 22 .
+
+<https://github.com/AKSW/natuke> a doap:Project ;
+    dcterms:date "2024-11-15T18:38:55+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/natuke/issues> ;
+    doap:created "2022-03-31T13:30:02+00:00"^^xsd:dateTime ;
+    doap:description "NatUKE: Natural Product Knowledge Extraction Benchmark" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/natuke.git>,
+        <https://github.com/AKSW/natuke.svn> ;
+    doap:shortdesc "NatUKE: Natural Product Knowledge Extraction Benchmark" ;
+    ns1:num_stars 10 ;
+    ns1:num_watchers 22 .
+
+<https://github.com/AKSW/orkg-dump> a doap:Project ;
+    dcterms:date "2026-04-01T05:56:47+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/orkg-dump/issues> ;
+    doap:created "2020-11-09T10:30:06+00:00"^^xsd:dateTime ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:repository <https://github.com/AKSW/orkg-dump.git>,
+        <https://github.com/AKSW/orkg-dump.svn> ;
+    ns1:num_stars 3 ;
+    ns1:num_watchers 23 .
+
+<https://github.com/AKSW/orkg-shapes.jekyllrdf> a doap:Project ;
+    dcterms:date "2026-03-19T14:29:02+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/orkg-shapes.jekyllrdf/issues> ;
+    doap:created "2021-05-21T13:07:15+00:00"^^xsd:dateTime ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://aksw.github.io/orkg-shapes.jekyllrdf/> ;
+    doap:repository <https://github.com/AKSW/orkg-shapes.jekyllrdf.git>,
+        <https://github.com/AKSW/orkg-shapes.jekyllrdf.svn> ;
+    ns1:num_stars 1 ;
+    ns1:num_watchers 21 .
+
+<https://github.com/AKSW/pfarrerbuch.jekyllrdf> a doap:Project ;
+    dcterms:date "2021-05-21T14:07:54+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/pfarrerbuch.jekyllrdf/issues> ;
+    doap:created "2018-10-17T15:48:32+00:00"^^xsd:dateTime ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://aksw.github.io/pfarrerbuch.jekyllrdf/> ;
+    doap:repository <https://github.com/AKSW/pfarrerbuch.jekyllrdf.git>,
+        <https://github.com/AKSW/pfarrerbuch.jekyllrdf.svn> ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 22 .
+
+<https://github.com/AKSW/sante> a doap:Project ;
+    dcterms:date "2026-03-07T21:30:28+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/sante/issues> ;
+    doap:created "2019-10-24T09:08:03+00:00"^^xsd:dateTime ;
+    doap:description "The Ontology, Dataset and Knowledge Search Engine" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://aksw.github.io/sante-api-docs/> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/sante.git>,
+        <https://github.com/AKSW/sante.svn> ;
+    doap:shortdesc "The Ontology, Dataset and Knowledge Search Engine" ;
+    ns1:num_stars 26 ;
+    ns1:num_watchers 18 .
+
+<https://github.com/AKSW/text2sparql-client> a doap:Project ;
+    dcterms:date "2026-03-28T20:31:02+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/text2sparql-client/issues> ;
+    doap:created "2025-04-19T17:14:20+00:00"^^xsd:dateTime ;
+    doap:description "Command Line Client to retrieve SPARQL results from a TEXT2SPARQL conform endpoint." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://text2sparql.aksw.org/> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/text2sparql-client.git>,
+        <https://github.com/AKSW/text2sparql-client.svn> ;
+    doap:shortdesc "Command Line Client to retrieve SPARQL results from a TEXT2SPARQL conform endpoint." ;
+    ns1:num_stars 4 ;
+    ns1:num_watchers 21 .
+
+<https://github.com/AKSW/text2sparql.aksw.org> a doap:Project ;
+    dcterms:date "2026-03-31T12:04:19+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/text2sparql.aksw.org/issues> ;
+    doap:created "2024-12-16T19:48:21+00:00"^^xsd:dateTime ;
+    doap:description "Repository of the TEXT2SPARQL challenge series web page" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://text2sparql.aksw.org> ;
+    doap:license <https://api.github.com/licenses/cc-by-sa-4.0> ;
+    doap:repository <https://github.com/AKSW/text2sparql.aksw.org.git>,
+        <https://github.com/AKSW/text2sparql.aksw.org.svn> ;
+    doap:shortdesc "Repository of the TEXT2SPARQL challenge series web page" ;
+    ns1:num_stars 8 ;
+    ns1:num_watchers 19 .
+
+<https://github.com/AKSW/transform-bvl-csv-to-json-files> a doap:Project ;
+    dcterms:date "2025-11-04T13:02:20+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/transform-bvl-csv-to-json-files/issues> ;
+    doap:created "2016-12-13T11:48:29+00:00"^^xsd:dateTime ;
+    doap:description "Some PHP-scripts which build JSON files tailored to be used in the Location Navigator of the Behindertenverband Leipzig e.V." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:repository <https://github.com/AKSW/transform-bvl-csv-to-json-files.git>,
+        <https://github.com/AKSW/transform-bvl-csv-to-json-files.svn> ;
+    doap:shortdesc "Some PHP-scripts which build JSON files tailored to be used in the Location Navigator of the Behindertenverband Leipzig e.V." ;
+    ns1:num_stars 0 ;
+    ns1:num_watchers 17 .
+
+<https://github.com/AKSW/transform-bvl-pages-to-csv-file> a doap:Project ;
+    dcterms:date "2024-02-26T09:04:01+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/transform-bvl-pages-to-csv-file/issues> ;
+    doap:created "2016-02-09T13:49:00+00:00"^^xsd:dateTime ;
+    doap:description "Repository contains files to extract and enrich data from closed database of the Online-Stadtführer maintained by Behindertenverband Leipzig e.V (in German). Besides that, further files like a R2RML mapping, are maintained." ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://behindertenverband-leipzig.de/projekte/stadtfuehrer/> ;
+    doap:license <https://api.github.com/licenses/gpl-3.0> ;
+    doap:repository <https://github.com/AKSW/transform-bvl-pages-to-csv-file.git>,
+        <https://github.com/AKSW/transform-bvl-pages-to-csv-file.svn> ;
+    doap:shortdesc "Repository contains files to extract and enrich data from closed database of the Online-Stadtführer maintained by Behindertenverband Leipzig e.V (in German). Besides that, further files like a R2RML mapping, are maintained." ;
+    ns1:num_stars 1 ;
+    ns1:num_watchers 18 .
+
+<https://github.com/AKSW/xlsx2owl> a doap:Project ;
+    dcterms:date "2025-03-14T17:14:42+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/xlsx2owl/issues> ;
+    doap:created "2022-11-25T07:20:35+00:00"^^xsd:dateTime ;
+    doap:description "xlsx2owl is a tool for collecting classes and properties with a spreadsheet and converting the input to an ontology" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:license <https://api.github.com/licenses/mpl-2.0> ;
+    doap:repository <https://github.com/AKSW/xlsx2owl.git>,
+        <https://github.com/AKSW/xlsx2owl.svn> ;
+    doap:shortdesc "xlsx2owl is a tool for collecting classes and properties with a spreadsheet and converting the input to an ontology" ;
+    ns1:num_stars 1 ;
+    ns1:num_watchers 24 .
+
+<https://github.com/AKSW/KBox> a doap:Project ;
+    dcterms:date "2026-01-22T00:11:24+00:00"^^xsd:dateTime ;
+    doap:bug-database <https://github.com/AKSW/KBox/issues> ;
+    doap:created "2016-06-06T14:02:58+00:00"^^xsd:dateTime ;
+    doap:description "📦 The Knowledge Box - A data dependency management framework to help users to publish, find and install data models" ;
+    doap:developer <https://github.com/AKSW> ;
+    doap:homepage <https://github.com/AKSW/KBox> ;
+    doap:license <https://api.github.com/licenses/apache-2.0> ;
+    doap:repository <https://github.com/AKSW/KBox.git>,
+        <https://github.com/AKSW/KBox.svn> ;
+    doap:shortdesc "📦 The Knowledge Box - A data dependency management framework to help users to publish, find and install data models" ;
+    ns1:num_stars 48 ;
+    ns1:num_watchers 28 .
+
+<https://api.github.com/licenses/gpl-3.0> rdfs:label "GNU General Public License v3.0" .
+
+<https://api.github.com/licenses/apache-2.0> rdfs:label "Apache License 2.0" .
+
+<https://github.com/AKSW> a foaf:Agent,
+        foaf:Organization .
+

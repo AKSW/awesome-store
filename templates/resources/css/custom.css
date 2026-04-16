@@ -112,9 +112,11 @@ header {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
+    overflow-x: scroll;
+    padding-bottom: 10px;
     .quick-select-subcat{
         display: flex;
-        height: 60px;
+        min-height: 60px;
         justify-content: center;
         align-items: center;
         padding: 15px;

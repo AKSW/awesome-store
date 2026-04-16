@@ -23,7 +23,7 @@ SELECT ?category_iri {
                     <h3>{{ title }}</h3>
 
                     {% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
-                    SELECT ?item_iri ?title {
+                    SELECT DISTINCT ?item_iri ?title {
                     ?item_iri a sioc:Item ;
                                     rdfs:label ?title ;
                                     doap:category ?cat .
