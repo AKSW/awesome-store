@@ -1,5 +1,5 @@
 [project]
-name = "wacalog"
+name = "awesome_store"
 version = "0.1.0"
 description = ""
 authors = [
@@ -9,6 +9,7 @@ license = {text = "EUPL-1.2"}
 readme = "README.md"
 requires-python = ">=3.11,<4.0"
 dependencies = [
+    "requests",
     "mkdocs (>=1.6.1,<2.0.0)",
     "mkrdf @ git+https://github.com/aksw/mkrdf@feature/buildFromSparql",
 ]

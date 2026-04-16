@@ -11,6 +11,11 @@ tasks:
     cmds:
       - poetry install
 
+  graph:pull:
+    desc: Pull graph file from Repo
+    cmds:
+      - python3 ./scripts/graph_pull.py "{{.URL}}"
+
   build:
     desc: Build the site
     cmds:
@@ -25,4 +30,4 @@ tasks:
     desc: Serve the data endpoint
     summary: Serve the data with [sparql-file](https://github.com/AKSW/sparql-file)
     cmds:
-      - sparql-file --port 8080 ./graph/awesome.ttl
+      - sparql-file --port 8080 ./graphs/awesome.ttl

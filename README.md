@@ -3,8 +3,11 @@
 
 
 ## Getting started
+task install
 
-- python3 cli.py -a "../doap/README.md" --base-iri "https://aksw.org/Projects/" --output-dir "../graph/" --graph-nt "../doap/aksw.org.nt"
+task graph:pull URL=https://raw.githubusercontent.com/anastasiautomo/aksw-awesome-graph/refs/heads/Develop/graphs/awesome.ttl
+
+task serve
 
 ## Add your files
 
