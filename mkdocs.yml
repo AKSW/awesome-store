@@ -1,4 +1,5 @@
-site_name: AKSW demo Store
+site_name: !ENV [SITE_NAME, "Awesome Store"]
+site_url: !ENV [SITE_URL, "https://aksw.org/"]
 logo_path: resources/images/logo.png
 theme:
   name: null
@@ -18,12 +19,12 @@ plugins:
       min_search_length: 1
       separator: '[\s\-\.\_]+'
   - mkrdf:
-      graph_file: ./graphs/awesome.ttl
+      graph_file: !ENV [GRAPH_FILE, "./graphs/awesome.ttl"]
       # sparql_endpoint: http://localhost:8080/
-      base_iri: https://aksw.org/
+      base_iri: !ENV [BASE_IRI, SITE_URL, "https://aksw.org/"]
       class_template_map:
           http://www.w3.org/2004/02/skos/core#Concept: category.jinja
           http://rdfs.org/sioc/ns#Item: project.jinja
-          
+
       instance_template_map:
         http://awesome.org/: home.jinja
