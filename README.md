@@ -9,7 +9,7 @@ task install
 
 ### Get some data
 ```
-task graph:pull:aksw
+task graph:pull
 ```
 
 ### Build and serve the site

@@ -3,5 +3,4 @@ site
 __pycache__
 .venv
 graphs
-*.env
-!default.env
+custom.env
