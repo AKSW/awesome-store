@@ -1,6 +1,7 @@
 **/**.DS_Store
 site
-.env
 __pycache__
 .venv
 graphs
+*.env
+!default.env
