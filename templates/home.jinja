@@ -5,48 +5,63 @@ SELECT ?category_iri {
   ?category_iri a skos:Concept ;
        rdfs:label ?title .
   FILTER NOT EXISTS { ?category_iri skos:broader ?parent }
+  FILTER EXISTS { ?project doap:category ?category_iri }
 }
 " %}
+
+{% set logos = ["🛸","🚀","🛰️","🪂","⛵","🎡","🌍","🏓","🎮","🎨","🎩","🪘","📚","📦","📊","🐆","🐀","🦔","🦥"] %}
 
 {% block content %}
 
     {{ page.content }}
 
-    <div class="content-wrapper">
+    {% for cat in resource | query(category_query) %}
+        {% set title = cat.category_iri | property("rdfs:label") %}
 
-        <div class="categories-wrapper">
-            {% for cat in resource | query(category_query) %}
-                {% set title = cat.category_iri | property("rdfs:label") %}
+        <div class="category my-5">
+            <h3 class="my-3">{{ title }}</h3>
 
-				<div class="category">
-                    <h3>{{ title }}</h3>
+            {% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
+            SELECT DISTINCT ?item_iri ?title ?description {
+            ?item_iri a sioc:Item ;
+                            rdfs:label ?title ;
+                            doap:category ?cat .
 
-                    {% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
-                    SELECT DISTINCT ?item_iri ?title {
-                    ?item_iri a sioc:Item ;
-                                    rdfs:label ?title ;
-                                    doap:category ?cat .
+            optional {
+                ?item_iri dcterms:description ?description .
+            }
 
-                    ?cat (skos:broader)* <" ~ cat.category_iri ~ "> .
-                    }
-                    LIMIT 6
-                    " %}
+            ?cat (skos:broader)* <" ~ cat.category_iri ~ "> .
+            }
+            LIMIT 6
+            " %}
 
-                    <div class="items-wrapper">
-                        {% for item in resource | query(cat_item_query) %}
-                            <a class="it" href="{{ item.item_iri | iri_resolver }}">
-                                {{ item.title }}
-                            </a>
-
-                        {% endfor %}
-                    </div>
-                    <a href="{{ cat.category_iri | iri_resolver }}">
-                        Show more
+            <div class="items-wrapper">
+                {% for item in resource | query(cat_item_query) %}
+                    {% set description = item.description or "" %}
+                    <a href="{{ item.item_iri | iri_resolver }}">
+                        <div class="bg-white card mb-3" >
+                            <div class="row g-0" style="max-width: 540px;">
+                                <div class="col-md-4 icon-wrapper" style="font-size: 70px">
+                                    {{ logos | random }}
+                                </div>
+                                <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ item.title }}</h5>
+                                    <p class="card-text"><small class="text-body-secondary">{{ description | truncate(30) }}</small></p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
                     </a>
-      		    </div>
 
-            {% endfor %}
+                {% endfor %}
+            </div>
+            <a class="bg-secondary-subtle" href="{{ cat.category_iri | iri_resolver }}">
+                Show more
+            </a>
         </div>
-    </div>
+
+    {% endfor %}
 
 {% endblock %}

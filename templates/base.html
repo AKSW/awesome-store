@@ -19,16 +19,24 @@
 </head>
 
 <body>
-  <main>
+  <header>
+    <nav class="navbar navbar-expand-md">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <a class="navbar-brand" href="{{ "" | url }}">
+          <ul class="navbar-nav mr-auto">
 
-    <div class="container py-4">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-          href="{{ "" | url }}">
-          <img style="height: 3em" class="me-2" src="{{ config.logo_path | url }}" role="image">
-          <h1 style="margin-bottom: 0;" class="fs-4">{{ config.site_name }}</h1>
+            <li class="nav-item active">
+              <div class="container">
+                <img src="{{ config.logo_path | url }}" alt="Bootstrap" width="30" height="30">
+              </div>
+            </li>
+            <li class="nav-item">
+              <h1 style="margin-bottom: 0;" class="fs-4">{{ config.site_name }}</h1>
+            </li>
+          </ul>
         </a>
-
+      </div>
+      <div class="mx-auto order-0">
         <div id="search-wrapper">
           <form id="search-form" onsubmit="return false;">
             <input id="mkdocs-search-query" class="form-control" type="search" placeholder="Search...">
@@ -38,7 +46,23 @@
             <div id="mkdocs-search-results"></div>
           </div>
         </div>
-      </header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/AKSW/awesome-store">Repository</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="bg-light">
+
+    <div class="container py-5">
 
       {% block content %}
       {{ page.content }}
