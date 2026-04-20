@@ -34,3 +34,10 @@ tasks:
     summary: Serve the data with [sparql-file](https://github.com/AKSW/sparql-file)
     cmds:
       - sparql-file --port 8080 ./graphs/awesome.ttl
+
+  ci:
+    desc: The CI task
+    cmds:
+      - task: install
+      - task: graph:pull
+      - task: build
