@@ -1,5 +1,7 @@
 version: 3
 
+dotenv: ['custom.env', 'default.env']
+
 tasks:
   default:
     desc: List all tasks
