@@ -24,7 +24,7 @@ jobs:
 
     - name: Build site
       run: |
-        ln -s custom.env webarchive.env
+        ln -s webarchive.env custom.env
         task build
 
     - name: Deploy to GitHub Pages
