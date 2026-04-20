@@ -11,10 +11,25 @@ tasks:
     cmds:
       - poetry install
 
+  graph:pull:webarchive:
+    desc: Download the webarchiv graph file
+    cmds:
+      - task: graph:pull
+        vars:
+          URL: https://raw.githubusercontent.com/deutsche-nationalbibliothek/webarchiving-awesome-graph/refs/heads/main/graphs/awesome.ttl
+
+  graph:pull:aksw:
+    desc: Download the aksw graph file
+    cmds:
+      - task: graph:pull
+        vars:
+          URL: https://raw.githubusercontent.com/anastasiautomo/aksw-awesome-graph/refs/heads/Develop/graphs/awesome.ttl
+
   graph:pull:
     desc: Pull graph file from Repo
     cmds:
-      - python3 ./scripts/graph_pull.py "{{.URL}}"
+      - mkdir -p graphs
+      - curl -L -o graphs/awesome.ttl "{{.URL}}"
 
   build:
     desc: Build the site
