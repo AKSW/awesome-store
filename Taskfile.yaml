@@ -40,4 +40,6 @@ tasks:
     cmds:
       - task: install
       - task: graph:pull
+      - env
+      - cat "{{ .GRAPH_FILE }}"
       - task: build
