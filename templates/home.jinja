@@ -13,7 +13,6 @@ SELECT ?category_iri {
     {{ page.content }}
 
     <div class="content-wrapper">
-        <h2>Categories</h2>
 
         <div class="categories-wrapper">
             {% for cat in resource | query(category_query) %}
