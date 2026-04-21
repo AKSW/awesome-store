@@ -45,13 +45,12 @@ tasks:
     desc: Setup prefix
     summary: There is a propper prefix management for mkrdf missing, but dcterms is needed in the templates
     cmd: |
-      sed -i '1s;^;@prefix dcterms: <http://purl.org/dc/terms/> .\n;' "{{ .GRAPH_FILE }}"
+      sed -i '2s;^;@prefix dcterms: <http://purl.org/dc/terms/> .\n;' "{{ .GRAPH_FILE }}"
 
 
   ci:
     desc: The CI task
     cmds:
-      - task: hack:webarchive:env
       - task: install
       - task: graph:pull
       - task: hack:webarchive:prefix

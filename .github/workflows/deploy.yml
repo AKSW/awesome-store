@@ -20,6 +20,7 @@ jobs:
 
     - name: Install and build site
       run: |
+        task hack:webarchive:env
         task ci
 
     - name: Deploy to GitHub Pages
