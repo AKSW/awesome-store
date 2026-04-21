@@ -35,11 +35,26 @@ tasks:
     cmds:
       - sparql-file --port 8080 ./graphs/awesome.ttl
 
+  hack:webarchive:env:
+    desc: Setup env
+    summary: These changes are temporary adjustments for the webarchive setup and should be replaced by better solutions in the future
+    cmd: |
+      ln -s webarchive.env custom.env
+
+  hack:webarchive:prefix:
+    desc: Setup prefix
+    summary: There is a propper prefix management for mkrdf missing, but dcterms is needed in the templates
+    cmd: |
+      sed -i '1s;^;@prefix dcterms: <http://purl.org/dc/terms/> .\n;' "{{ .GRAPH_FILE }}"
+
+
   ci:
     desc: The CI task
     cmds:
+      - task: hack:webarchive:env
       - task: install
       - task: graph:pull
+      - task: hack:webarchive:prefix
       - env
       - cat "{{ .GRAPH_FILE }}"
       - task: build
