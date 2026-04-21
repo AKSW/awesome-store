@@ -21,7 +21,9 @@ SELECT ?category_iri {
         <div class="category my-5">
             <h3 class="my-3">{{ title }}</h3>
 
-            {% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
+            {% set cat_item_query = "
+            prefix sioc: <http://rdfs.org/sioc/ns#>
+            prefix dcterms: <http://purl.org/dc/terms/>
             SELECT DISTINCT ?item_iri ?title ?description {
             ?item_iri a sioc:Item ;
                             rdfs:label ?title ;
@@ -31,8 +33,13 @@ SELECT ?category_iri {
                 ?item_iri dcterms:description ?description .
             }
 
+            optional {
+                ?item_iri dcterms:date ?date .
+            }
+
             ?cat (skos:broader)* <" ~ cat.category_iri ~ "> .
             }
+            ORDER BY DESC(?date)
             LIMIT 6
             " %}
 
