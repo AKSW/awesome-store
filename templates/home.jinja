@@ -24,17 +24,18 @@ SELECT ?category_iri {
             {% set cat_item_query = "
             prefix sioc: <http://rdfs.org/sioc/ns#>
             prefix dcterms: <http://purl.org/dc/terms/>
-            SELECT DISTINCT ?item_iri ?title ?description {
+            prefix siodc: <https://siodc.example.org/#>
+
+            SELECT DISTINCT ?item_iri ?title ?description ?num_stars ?num_watchers {
             ?item_iri a sioc:Item ;
                             rdfs:label ?title ;
                             doap:category ?cat .
 
+            optional { ?item_iri dcterms:description ?description . }
+            optional { ?item_iri dcterms:date ?date . }
             optional {
-                ?item_iri dcterms:description ?description .
-            }
-
-            optional {
-                ?item_iri dcterms:date ?date .
+                ?item_iri siodc:num_stars ?num_stars ;
+                          siodc:num_watchers ?num_watchers .
             }
 
             ?cat (skos:broader)* <" ~ cat.category_iri ~ "> .
@@ -46,6 +47,18 @@ SELECT ?category_iri {
             <div class="items-wrapper">
                 {% for item in resource | query(cat_item_query) %}
                     {% set description = item.description or "" %}
+                    {% if item.num_stars and item.num_watchers %}
+                    {% set stars = item.num_stars | int %}
+                    {% set watchers = item.num_watchers | int %}
+                    {% if stars > 1000 %}
+                        {% set stars = stars / 1000 %}
+                        {% set stars = stars | round(0, 'floor') | int ~ "k" %}
+                    {% endif %}
+                    {% if watchers > 1000 %}
+                        {% set watchers = watchers / 1000 %}
+                        {% set watchers = watchers | round(0, 'floor') | int ~ "k" %}
+                    {% endif %}
+                    {% endif %}
                     <a href="{{ item.item_iri | iri_resolver }}">
                         <div class="bg-white card mb-3" >
                             <div class="row g-0" style="max-width: 540px;">
@@ -56,6 +69,9 @@ SELECT ?category_iri {
                                 <div class="card-body">
                                     <h5 class="card-title">{{ item.title }}</h5>
                                     <p class="card-text"><small class="text-body-secondary">{{ description | truncate(30) }}</small></p>
+                                    {% if item.num_stars and item.num_watchers %}
+                                    <p class="card-text"><small class="text-body-secondary">⭐ {{ stars }} | 👀 {{ watchers }}</small></p>
+                                    {% endif %}
                                 </div>
                                 </div>
                             </div>
