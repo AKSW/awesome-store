@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% set subcat_query = " prefix skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?subcat_iri {
+  ?subcat_iri a skos:Concept ;
+       rdfs:label ?title .
+  ?subcat_iri skos:broader ?resourceIri .
+}
+" %}
+{% set project_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
+SELECT DISTINCT ?project_iri {
+  ?project_iri a sioc:Item ;
+               rdfs:label ?title .
+
+  {
+    ?project_iri doap:category ?category .
+    FILTER(?category = ?resourceIri)
+  }
+  UNION
+  {
+    ?project_iri ns1:tag ?category .
+    FILTER(?category = ?resourceIri)
+  }
+}
+" %}
+
+{% block content %}
+    <div class="content-wrapper">
+        <h1>{{ resource["rdfs:label"] | first }}</h1>
+
+        {% set description =
+            resource["doap:description"] | first
+            or resource["dcterms:description"] | first
+        %}
+
+        <p class="description">{{ description }}</p>
+        {% set sub_cats = resource | query(subcat_query) %}
+
+        {% if sub_cats %}
+			<div>
+				<strong>Subcategories</strong>
+				<div class="quick-select-subcat-wrapper">
+					{% for sub_cat in sub_cats %}
+						{% set title = sub_cat.subcat_iri | property("rdfs:label") %}
+						<a class="quick-select-subcat" href="{{ sub_cat.subcat_iri | iri_resolver }}">
+							{{ title }}
+						</a>
+
+					{% endfor %}
+				</div>
+			</div>
+
+			{% for sub_cat in sub_cats %}
+				{% set title = sub_cat.subcat_iri | property("rdfs:label") %}
+
+				<div class="category">
+					<h3>{{ title }}</h3>
+
+					{% set cat_item_query = " prefix sioc: <http://rdfs.org/sioc/ns#>
+					SELECT DISTINCT ?item_iri ?title {
+					?item_iri a sioc:Item ;
+						rdfs:label ?title ;
+						ns1:tag <" ~ sub_cat.subcat_iri ~ "> .
+					}
+					LIMIT 6
+					" %}
+
+					<div class="items-wrapper">
+						{% for item in resource | query(cat_item_query) %}
+							<a class="it" href="{{ item.item_iri | iri_resolver }}">
+								{{ item.title }}
+							</a>
+
+						{% endfor %}
+					</div>
+					<a href="{{ sub_cat.subcat_iri | iri_resolver }}">
+						Show more
+					</a>
+				</div>
+
+			{% endfor %}
+        {% endif %}
+
+        {% set items = resource | query(project_query) %}
+
+        {% if items %}
+			<div class="list-wrapper">
+				{% for item in items %}
+					{% set title = item.project_iri | property("rdfs:label") %}
+					<a class="it" href="{{ item.project_iri | iri_resolver }}">
+						{{ title }}
+					</a>
+
+				{% endfor %}
+			</div>
+        {% endif %}
+    </div>
+
+{% endblock %}
+
+
+
